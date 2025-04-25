@@ -1,0 +1,10 @@
+2025-04-24 18:17:36 DEBUG org.testng.TestNG - suiteXmlPath: "/var/folders/c5/dbmv4z8n69jdxgcsjc1knj5w0000gp/T/testng-eclipse-661253039/testng-customsuite.xml"
+2025-04-24 18:17:49 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-24 18:17:50 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-24 18:17:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
+2025-04-24 18:17:54 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Data Structures dropdown.
+2025-04-24 18:17:57 ERROR com.dsalgo.automation.pages.HomePage - Failed while verifying visibility of Data Structure Introduction in the drop down
+2025-04-24 18:17:58 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-24 18:17:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
+2025-04-24 18:18:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on NumpyNinja Logo link.
+2025-04-24 18:18:00 INFO  com.dsalgo.automation.tests.HomePageTest - Redirected to home page successfully
