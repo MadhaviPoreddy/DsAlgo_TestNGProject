@@ -40,7 +40,7 @@ public class NavigationUtil {
 		
 	}
 	
-	//Click get started on Data Structure Introduction
+	//Click get started on Data Structure options after sign in
 	public static void clickModuleGetStarted(WebDriver driver, String moduleName) {
 		HomePage homePage = new HomePage(driver);
 		homePage.getStartedhome(moduleName);

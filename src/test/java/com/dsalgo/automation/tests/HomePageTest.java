@@ -99,4 +99,12 @@ public class HomePageTest extends BaseClass {
 		Assert.assertTrue(homePage.isDataStructurePageDisplayed(), "Failed to navigate to Data Structure Page");
 	}
 	
+	
+	@Test
+	public void clickGraphGetStarted() {
+		NavigationUtil.performLogin(driver);
+		NavigationUtil.clickModuleGetStarted(driver, "Graph");
+		Assert.assertTrue(homePage.isGraphPageDisplayed(), "Failed to navigate to Data Structure Page");
+	}
+	
 }
