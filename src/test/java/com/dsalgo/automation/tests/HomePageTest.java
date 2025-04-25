@@ -10,11 +10,14 @@ import org.testng.annotations.Test;
 
 import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.pages.HomePage;
+import com.dsalgo.automation.utils.NavigationUtil;
 
 public class HomePageTest extends BaseClass {
 	private HomePage homePage; // Global declaration for reuse
 	 // Initialize logger for this class
     private static final Logger logger = LogManager.getLogger(HomePageTest.class);
+   
+
     
 	@BeforeClass
     public void setUpPage() {
@@ -24,7 +27,7 @@ public class HomePageTest extends BaseClass {
 	
 	@BeforeMethod
 	public void navigateBeforeEachTest() {
-	    homePage.navigateToHomePage();
+	    NavigationUtil.navigateToHomePage(driver);
 	}
 	
 	@Test
@@ -88,4 +91,12 @@ public class HomePageTest extends BaseClass {
 		homePage.clickSignin();
 		Assert.assertTrue(homePage.isSignInPageDisplayed(), "Failed to navigate to Sign in page.");
 	}
+	
+	@Test
+	public void clickDataStructureGetStarted() {
+		NavigationUtil.performLogin(driver);
+		NavigationUtil.clickModuleGetStarted(driver, "Data Structures-Introduction");
+		Assert.assertTrue(homePage.isDataStructurePageDisplayed(), "Failed to navigate to Data Structure Page");
+	}
+	
 }

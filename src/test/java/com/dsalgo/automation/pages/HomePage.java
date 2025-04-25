@@ -194,31 +194,31 @@ public class HomePage {
 		try {
 			switch (string) {
 			case "Data Structures-Introduction":
-				logger.info("click " + getStartedDSintro.getText() + "link on  DataStructures ");
+				logger.info("clicked " + getStartedDSintro.getText() + "link on  DataStructures ");
 				getStartedDSintro.click();
 				break;
 			case "Arrays":
-				logger.info("click " + getStartedArray.getText() + "link on Array ");
+				logger.info("clicked " + getStartedArray.getText() + "link on Array ");
 				getStartedArray.click();
 				break;
 			case "Linked List":
-				logger.info("click " + getStartedLinkedlist.getText() + "link on LinkedList");
+				logger.info("clicked " + getStartedLinkedlist.getText() + "link on LinkedList");
 				getStartedLinkedlist.click();
 				break;
 			case "Stack":
-				logger.info("click " + getStartedStack.getText() + "link on stack");
+				logger.info("clicked " + getStartedStack.getText() + "link on stack");
 				getStartedStack.click();
 				break;
 			case "Queue":
-				logger.info("click " + getStartedQueue.getText() + "link on queue ");
+				logger.info("clicked " + getStartedQueue.getText() + "link on queue ");
 				getStartedQueue.click();
 				break;
 			case "Tree":
-				logger.info("click " + getStartedTree.getText() + "link on Tree ");
+				logger.info("clicked " + getStartedTree.getText() + "link on Tree ");
 				getStartedTree.click();
 				break;
 			case "Graph":
-				logger.info("click " + getStartedGraph.getText() + "link on Graph ");
+				logger.info("clicked " + getStartedGraph.getText() + "link on Graph ");
 				getStartedGraph.click();
 				break;
 			}
@@ -265,6 +265,8 @@ public class HomePage {
 	    return driver.getTitle().contains("Login");
 	}
 	
-	
+	public boolean isDataStructurePageDisplayed() {
+		return driver.getTitle().contains("Data Structures-Introduction");
+	}
 	
 }

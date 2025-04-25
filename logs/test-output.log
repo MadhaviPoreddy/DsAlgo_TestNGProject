@@ -1,6 +1,11 @@
-2025-04-25 00:07:55 DEBUG org.testng.TestNG - suiteXmlPath: "/var/folders/c5/dbmv4z8n69jdxgcsjc1knj5w0000gp/T/testng-eclipse--1236023026/testng-customsuite.xml"
-2025-04-25 00:08:07 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-04-25 00:08:07 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 00:08:08 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 00:08:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 00:08:13 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-25 11:17:11 DEBUG org.testng.TestNG - suiteXmlPath: "/var/folders/c5/dbmv4z8n69jdxgcsjc1knj5w0000gp/T/testng-eclipse-1149816799/testng-customsuite.xml"
+2025-04-25 11:17:21 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-25 11:17:21 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-25 11:17:24 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-25 11:17:28 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
+2025-04-25 11:17:28 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-25 11:17:28 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-25 11:17:29 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-25 11:17:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-04-25 11:17:31 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-25 11:17:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on  DataStructures 
