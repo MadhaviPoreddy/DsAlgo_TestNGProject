@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
-import com.dsalgo.automation.tests.LoginPageTest;
+
 
 
 public class NavigationUtil {
@@ -18,7 +18,6 @@ public class NavigationUtil {
 	public static void navigateToHomePage(WebDriver driver) {
 		HomePage homePage = new HomePage(driver);
         homePage.navigateToHomePage();    //opens the DSAlgo URL and click on getstarted button
-		
 	}
 	
 	
