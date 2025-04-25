@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dsalgo.automation.tests.HomePageTest">
+      <class name="com.dsalgo.automation.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="checkDropdown"/>
           <include name="setUp"/>
           <include name="navigateBeforeEachTest"/>
+          <include name="testValidLogin"/>
           <include name="setUpPage"/>
         </methods>
-      </class> <!-- com.dsalgo.automation.tests.HomePageTest -->
+      </class> <!-- com.dsalgo.automation.tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

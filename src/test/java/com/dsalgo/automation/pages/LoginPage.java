@@ -25,6 +25,8 @@ public class LoginPage {
 	WebElement loginbtn;
 	@FindBy(xpath = "//div[contains(text(),'Invalid Username and Password')]")
 	WebElement alertMsg;
+	@FindBy(xpath = "//div[contains(text(),'You are logged in')]")
+	WebElement successLogin;
 	@FindBy(xpath = "//a[text()=' Register ']")
 	WebElement registerlink;
 	
@@ -122,7 +124,7 @@ public class LoginPage {
 	}
 	
 	
-	public String successLogout() {
+	public String getSuccessLogout() {
 		String alert = successLogout.getText();
 		return alert;
 	}
@@ -130,5 +132,9 @@ public class LoginPage {
 	public void clickNumpyninjaLogo() {
 		numpyninjaLogo.click();
 	}
-
+	
+	public String getSuccessLogin() {
+		String alert = successLogin.getText();
+		return alert;
+	}
 }

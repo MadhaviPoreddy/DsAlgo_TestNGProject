@@ -39,5 +39,53 @@ public class HomePageTest extends BaseClass {
 		homePage.clickDataStructuresDropdown();
 		Assert.assertTrue(homePage.isDataStructureIntroOptionVisible(), "Expected 'Data Structure Introduction' to be visible, but it was not.");
 	}
+	
+	@Test
+	public void testAllDataStructureDropdownOptionsWithoutLogin() {
+	    String[] options = {"Arrays", "Linked List", "Stack", "Queue", "Tree", "Graph"};
 
+	    for (String option : options) {
+	        homePage.selectDropdown(option);
+	        // Check if warning is displayed
+	        if (homePage.isWarningMessageVisible()) {
+	            String warning = homePage.getWarningMessage();
+	            logger.warn("Warning message displayed for '" + option + "': " + warning);
+	            Assert.assertEquals(warning, "You are not logged in", "Unexpected warning message.");
+	        } else {
+	            logger.info("No warning message for '" + option + "'");
+	        }
+
+	        driver.navigate().back(); // Go back to home page for next iteration
+	    }
+	}
+	
+	@Test
+	public void testGetStartedButtonsWithoutLogin() {
+	    String[] structures = {"Data Structures-Introduction", "Arrays", "Linked List", "Stack", "Queue", "Tree", "Graph"};
+	    for (String structure : structures) {
+	        homePage.getStartedhome(structure);
+	        // Check if warning is displayed
+	        if (homePage.isWarningMessageVisible()) {
+	            String warning = homePage.getWarningMessage();
+	            logger.warn("Warning message displayed for '" + structure + "': " + warning);
+	            Assert.assertEquals(warning, "You are not logged in", "Unexpected warning message.");
+	        } else {
+	            logger.info("No warning message for '" + structure + "'");
+	        }
+
+	        driver.navigate().back(); // Go back to home page for next iteration
+	    }
+	}
+	
+	@Test
+	public void checkRegister() {
+		homePage.clickRegister();
+		Assert.assertTrue(homePage.isRegisterPageDisplayed(), "Failed to navigate to Register page.");
+	}
+	
+	@Test
+	public void checkSignin() {
+		homePage.clickSignin();
+		Assert.assertTrue(homePage.isSignInPageDisplayed(), "Failed to navigate to Sign in page.");
+	}
 }

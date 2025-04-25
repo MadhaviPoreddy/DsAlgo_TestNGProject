@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.InvalidSelectorException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -100,7 +101,7 @@ public class HomePage {
 	
 	//Click getstarted button
 	public void navigateToHomePage() {
-		driver.get(url);
+		driver.navigate().to(url);
 		logger.info("Navigated to DSAlgo portal: " + url);
 		try {
 			getStartedbtn.click();
@@ -164,10 +165,30 @@ public class HomePage {
 				break;
 			}
 		}catch (Exception e) {
-			logger.error("Failed to select dropdown option: " + string);
+			logger.error("Failed to select dropdown option: " + string + e);
 		}
 
 	}
+	
+	// Method to get the warning message "You are not logged in"
+    public String getWarningMessage() {
+    	try {
+            waitHelper.waitForElementVisible(alertMessage);
+            return alertMessage.getText();
+    	} catch (TimeoutException e) {
+    		return "No message";
+    	}
+    }
+    
+    // Method to check if the warning message is visible
+    public boolean isWarningMessageVisible() {
+    	try {
+            waitHelper.waitForElementVisible(alertMessage);
+            return alertMessage.isDisplayed();
+        } catch (TimeoutException e) {
+            return false;
+        }
+    }
 	
 	public void getStartedhome(String string) {
 		try {
@@ -212,7 +233,38 @@ public class HomePage {
 			numpyNinjaLogo.click();
 			logger.info("Clicked on NumpyNinja Logo link.");
 		}catch (Exception e) {
-			logger.error("Failed to click on Sign out link");
+			logger.error("Failed to click on NumpyNinja Logo link" + e);
 		}
 	}
+	
+	//Sign In
+	public void clickSignin() {
+		try {
+			signin.click();
+			logger.info("Clicked on Signin link.");
+		}catch (Exception e) {
+			logger.error("Failed to click on Signin link" + e);
+		}
+	}
+
+	// Register
+	public void clickRegister() {
+		try {
+			register.click();
+			logger.info("Clicked on Register link.");
+		}catch (Exception e) {
+			logger.error("Failed to click on Register link" + e);
+		}
+	}
+	
+	public boolean isRegisterPageDisplayed() {
+	    return driver.getTitle().contains("Registration");
+	}
+	
+	public boolean isSignInPageDisplayed() {
+	    return driver.getTitle().contains("Login");
+	}
+	
+	
+	
 }
