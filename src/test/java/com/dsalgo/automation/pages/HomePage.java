@@ -105,7 +105,7 @@ public class HomePage {
 		logger.info("Navigated to DSAlgo portal: " + url);
 		try {
 			getStartedbtn.click();
-			logger.info("Clicked on Get Started button.");
+			logger.info("Clicked on Get Started button in DSAlgo Portal.");
 		} catch (NoSuchElementException e) {
 		    logger.error("Element not found: Get Started button. ");
 		} catch (InvalidSelectorException e) {
@@ -140,27 +140,27 @@ public class HomePage {
 			dropDown.click();
 			switch (string) {
 			case "Arrays":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownArrays.click();
 				break;
 			case "Linked List":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownLinkedlist.click();
 				break;
 			case "Stack":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownStack.click();
 				break;
 			case "Queue":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownQueue.click();
 				break;
 			case "Tree":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownTree.click();
 				break;
 			case "Graph":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownGraph.click();
 				break;
 			}
@@ -194,31 +194,31 @@ public class HomePage {
 		try {
 			switch (string) {
 			case "Data Structures-Introduction":
-				logger.info("click " + getStartedDSintro.getText() + "link on  DataStructures ");
+				logger.info("clicked " + getStartedDSintro.getText() + "link on  DataStructures ");
 				getStartedDSintro.click();
 				break;
 			case "Arrays":
-				logger.info("click " + getStartedArray.getText() + "link on Array ");
+				logger.info("clicked " + getStartedArray.getText() + "link on Array ");
 				getStartedArray.click();
 				break;
 			case "Linked List":
-				logger.info("click " + getStartedLinkedlist.getText() + "link on LinkedList");
+				logger.info("clicked " + getStartedLinkedlist.getText() + "link on LinkedList");
 				getStartedLinkedlist.click();
 				break;
 			case "Stack":
-				logger.info("click " + getStartedStack.getText() + "link on stack");
+				logger.info("clicked " + getStartedStack.getText() + "link on stack");
 				getStartedStack.click();
 				break;
 			case "Queue":
-				logger.info("click " + getStartedQueue.getText() + "link on queue ");
+				logger.info("clicked " + getStartedQueue.getText() + "link on queue ");
 				getStartedQueue.click();
 				break;
 			case "Tree":
-				logger.info("click " + getStartedTree.getText() + "link on Tree ");
+				logger.info("clicked " + getStartedTree.getText() + "link on Tree ");
 				getStartedTree.click();
 				break;
 			case "Graph":
-				logger.info("click " + getStartedGraph.getText() + "link on Graph ");
+				logger.info("clicked " + getStartedGraph.getText() + "link on Graph ");
 				getStartedGraph.click();
 				break;
 			}
@@ -240,11 +240,31 @@ public class HomePage {
 	//Sign In
 	public void clickSignin() {
 		try {
+			waitHelper.waitForElementVisible(signin);
 			signin.click();
 			logger.info("Clicked on Signin link.");
 		}catch (Exception e) {
 			logger.error("Failed to click on Signin link" + e);
 		}
+	}
+	
+	//Sign out
+	public void clickSignout() {
+		try {
+			signOut.click();
+			logger.info("Clicked on Sign out link.");
+		}catch (Exception e) {
+			logger.error("Failed to click on Sign out link");
+		}
+	}
+	
+	public Boolean isSignoutLinkVisible() {
+		 try {
+			 return signOut.isDisplayed(); // assume you have a logout WebElement
+		    } catch (Exception e) {
+		     return false;
+		    }
+		
 	}
 
 	// Register
@@ -265,6 +285,11 @@ public class HomePage {
 	    return driver.getTitle().contains("Login");
 	}
 	
+	public boolean isDataStructurePageDisplayed() {
+		return driver.getTitle().contains("Data Structures-Introduction");
+	}
 	
-	
+	public boolean isGraphPageDisplayed() {
+		return driver.getTitle().contains("Graph");
+	}
 }

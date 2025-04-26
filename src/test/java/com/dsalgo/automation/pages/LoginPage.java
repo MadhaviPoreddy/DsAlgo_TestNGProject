@@ -64,9 +64,10 @@ public class LoginPage {
 	
 	public void clickLogin() {
 		try {
-		loginbtn.click();
+			waitHelper.waitForElementVisible(loginbtn);
+			loginbtn.click();
 		} catch (Exception e) {
-			logger.error("Unexpected error while clicking login button.");
+				logger.error("Unexpected error while clicking login button.");
 		}
 	}
 
@@ -134,7 +135,9 @@ public class LoginPage {
 	}
 	
 	public String getSuccessLogin() {
+		waitHelper.waitForElementVisible(successLogin);
 		String alert = successLogin.getText();
+		System.out.println(alert);
 		return alert;
 	}
 }
