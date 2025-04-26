@@ -4,7 +4,6 @@ package com.dsalgo.automation.tests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,15 +17,11 @@ public class HomePageTest extends BaseClass {
     private static final Logger logger = LogManager.getLogger(HomePageTest.class);
    
 
-    
-	@BeforeClass
-    public void setUpPage() {
-		//homepage object is initialized using baseclass webdriver
-        homePage = new HomePage(driver);
-    }
 	
 	@BeforeMethod
 	public void navigateBeforeEachTest() {
+		//homepage object is initialized using baseclass webdriver
+		homePage = new HomePage(driver);
 	    NavigationUtil.navigateToHomePage(driver);
 	}
 	
@@ -104,7 +99,7 @@ public class HomePageTest extends BaseClass {
 	public void clickGraphGetStarted() {
 		NavigationUtil.performLogin(driver);
 		NavigationUtil.clickModuleGetStarted(driver, "Graph");
-		Assert.assertTrue(homePage.isGraphPageDisplayed(), "Failed to navigate to Data Structure Page");
+		Assert.assertTrue(homePage.isGraphPageDisplayed(), "Failed to navigate to Graph Page");
 	}
 	
 }

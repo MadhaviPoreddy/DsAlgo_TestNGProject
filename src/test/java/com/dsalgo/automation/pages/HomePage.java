@@ -240,11 +240,31 @@ public class HomePage {
 	//Sign In
 	public void clickSignin() {
 		try {
+			waitHelper.waitForElementVisible(signin);
 			signin.click();
 			logger.info("Clicked on Signin link.");
 		}catch (Exception e) {
 			logger.error("Failed to click on Signin link" + e);
 		}
+	}
+	
+	//Sign out
+	public void clickSignout() {
+		try {
+			signOut.click();
+			logger.info("Clicked on Sign out link.");
+		}catch (Exception e) {
+			logger.error("Failed to click on Sign out link");
+		}
+	}
+	
+	public Boolean isSignoutLinkVisible() {
+		 try {
+			 return signOut.isDisplayed(); // assume you have a logout WebElement
+		    } catch (Exception e) {
+		     return false;
+		    }
+		
 	}
 
 	// Register

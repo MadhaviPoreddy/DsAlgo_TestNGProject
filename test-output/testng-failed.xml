@@ -6,10 +6,9 @@
       <class name="com.dsalgo.automation.tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="navigateBeforeEachTest"/>
+          <include name="checkDropdown"/>
           <include name="setUp"/>
-          <include name="clickDataStructureGetStarted"/>
-          <include name="setUpPage"/>
+          <include name="navigateBeforeEachTest"/>
         </methods>
       </class> <!-- com.dsalgo.automation.tests.HomePageTest -->
     </classes>

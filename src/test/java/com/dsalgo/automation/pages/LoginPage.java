@@ -64,9 +64,10 @@ public class LoginPage {
 	
 	public void clickLogin() {
 		try {
-		loginbtn.click();
+			waitHelper.waitForElementVisible(loginbtn);
+			loginbtn.click();
 		} catch (Exception e) {
-			logger.error("Unexpected error while clicking login button.");
+				logger.error("Unexpected error while clicking login button.");
 		}
 	}
 

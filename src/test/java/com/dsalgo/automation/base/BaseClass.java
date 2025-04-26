@@ -3,11 +3,12 @@ package com.dsalgo.automation.base;
 
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.dsalgo.automation.driver.DriverFactory;
+
 import com.dsalgo.automation.utils.ConfigReader;
 
 
@@ -17,20 +18,20 @@ public class BaseClass {
     
 	//CrossBrowser Tesing
 //	@Parameters("browser")
-//	@BeforeClass
+//	@BeforeMethod
 //	public void setUp(String browser) {
 //        driver = DriverFactory.initializeDriver(browser);  //Launch the browser
 //    }
 	
 	
 	
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() {
 		String browser = ConfigReader.getProperty("browser");
         driver = DriverFactory.initializeDriver(browser);  //Launch the browser
     }
 	
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         DriverFactory.quitDriver();
     }
@@ -39,4 +40,5 @@ public class BaseClass {
         return driver;
     }
 
+    
 }
