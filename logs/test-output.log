@@ -1,76 +1,52 @@
-2025-04-25 19:39:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:39:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:39:33 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:39:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:39:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Data Structures dropdown.
-2025-04-25 19:39:40 ERROR com.dsalgo.automation.pages.HomePage - Failed while verifying visibility of Data Structure Introduction in the drop down
-2025-04-25 19:39:48 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:39:48 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:39:50 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:39:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:39:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on NumpyNinja Logo link.
-2025-04-25 19:39:54 INFO  com.dsalgo.automation.tests.HomePageTest - Redirected to home page successfully
-2025-04-25 19:40:02 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:02 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:04 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:40:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:40:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
-2025-04-25 19:40:16 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:16 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:18 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:40:21 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:40:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-04-25 19:40:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:31 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:40:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:40:34 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:34 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-04-25 19:40:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-04-25 19:40:38 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-04-25 19:40:38 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:38 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on  DataStructures 
-2025-04-25 19:40:47 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:47 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:49 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:40:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:40:51 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:51 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-04-25 19:40:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-04-25 19:40:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-04-25 19:40:55 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:40:55 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Graph 
-2025-04-25 19:41:04 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:41:04 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:41:06 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:41:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:41:09 INFO  com.dsalgo.automation.pages.HomePage - User click on Arrays
-2025-04-25 19:41:11 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Arrays': You are not logged in
-2025-04-25 19:41:11 INFO  com.dsalgo.automation.pages.HomePage - User click on Linked List
-2025-04-25 19:41:12 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Linked List': You are not logged in
-2025-04-25 19:41:12 INFO  com.dsalgo.automation.pages.HomePage - User click on Stack
-2025-04-25 19:41:13 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Stack': You are not logged in
-2025-04-25 19:41:13 INFO  com.dsalgo.automation.pages.HomePage - User click on Queue
-2025-04-25 19:41:14 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Queue': You are not logged in
-2025-04-25 19:41:14 INFO  com.dsalgo.automation.pages.HomePage - User click on Tree
-2025-04-25 19:41:14 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Tree': You are not logged in
-2025-04-25 19:41:15 INFO  com.dsalgo.automation.pages.HomePage - User click on Graph
-2025-04-25 19:41:15 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Graph': You are not logged in
-2025-04-25 19:41:23 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:41:23 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-25 19:41:24 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-25 19:41:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button.
-2025-04-25 19:41:28 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on  DataStructures 
-2025-04-25 19:41:29 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Data Structures-Introduction': You are not logged in
-2025-04-25 19:41:30 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
-2025-04-25 19:41:31 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Arrays': You are not logged in
-2025-04-25 19:41:31 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on LinkedList
-2025-04-25 19:41:32 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Linked List': You are not logged in
-2025-04-25 19:41:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on stack
-2025-04-25 19:41:33 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Stack': You are not logged in
-2025-04-25 19:41:33 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
-2025-04-25 19:41:33 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Queue': You are not logged in
-2025-04-25 19:41:34 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
-2025-04-25 19:41:34 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Tree': You are not logged in
-2025-04-25 19:41:35 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Graph 
-2025-04-25 19:41:35 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Graph': You are not logged in
+2025-04-26 09:20:14 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:14 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:16 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-26 09:20:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-04-26 09:20:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Data Structures dropdown.
+2025-04-26 09:20:23 ERROR com.dsalgo.automation.pages.HomePage - Failed while verifying visibility of Data Structure Introduction in the drop down
+2025-04-26 09:20:24 INFO  com.dsalgo.automation.pages.HomePage - Clicked on NumpyNinja Logo link.
+2025-04-26 09:20:24 INFO  com.dsalgo.automation.tests.HomePageTest - Redirected to home page successfully
+2025-04-26 09:20:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-04-26 09:20:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-26 09:20:27 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:27 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-26 09:20:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-26 09:20:29 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-04-26 09:20:29 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:29 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on  DataStructures 
+2025-04-26 09:20:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-04-26 09:20:31 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:31 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-26 09:20:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-26 09:20:33 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-04-26 09:20:33 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:33 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Graph 
+2025-04-26 09:20:33 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-26 09:20:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-04-26 09:20:34 INFO  com.dsalgo.automation.pages.HomePage - User click on Arraysdropdown
+2025-04-26 09:20:35 WARN  com.dsalgo.automation.tests.HomePageTest - Warning for 'Arrays': You are not logged in
+2025-04-26 09:20:36 INFO  com.dsalgo.automation.pages.HomePage - User click on Linked Listdropdown
+2025-04-26 09:20:36 WARN  com.dsalgo.automation.tests.HomePageTest - Warning for 'Linked List': You are not logged in
+2025-04-26 09:20:37 INFO  com.dsalgo.automation.pages.HomePage - User click on Stackdropdown
+2025-04-26 09:20:37 WARN  com.dsalgo.automation.tests.HomePageTest - Warning for 'Stack': You are not logged in
+2025-04-26 09:20:38 INFO  com.dsalgo.automation.pages.HomePage - User click on Queuedropdown
+2025-04-26 09:20:38 WARN  com.dsalgo.automation.tests.HomePageTest - Warning for 'Queue': You are not logged in
+2025-04-26 09:20:38 INFO  com.dsalgo.automation.pages.HomePage - User click on Treedropdown
+2025-04-26 09:20:39 WARN  com.dsalgo.automation.tests.HomePageTest - Warning for 'Tree': You are not logged in
+2025-04-26 09:20:39 INFO  com.dsalgo.automation.pages.HomePage - User click on Graphdropdown
+2025-04-26 09:20:40 WARN  com.dsalgo.automation.tests.HomePageTest - Warning for 'Graph': You are not logged in
+2025-04-26 09:20:40 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on  DataStructures 
+2025-04-26 09:20:41 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Data Structures-Introduction': You are not logged in
+2025-04-26 09:20:41 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
+2025-04-26 09:20:42 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Arrays': You are not logged in
+2025-04-26 09:20:42 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on LinkedList
+2025-04-26 09:20:42 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Linked List': You are not logged in
+2025-04-26 09:20:43 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on stack
+2025-04-26 09:20:43 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Stack': You are not logged in
+2025-04-26 09:20:43 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-04-26 09:20:44 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Queue': You are not logged in
+2025-04-26 09:20:44 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-04-26 09:20:45 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Tree': You are not logged in
+2025-04-26 09:20:45 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Graph 
+2025-04-26 09:20:46 WARN  com.dsalgo.automation.tests.HomePageTest - Warning message displayed for 'Graph': You are not logged in

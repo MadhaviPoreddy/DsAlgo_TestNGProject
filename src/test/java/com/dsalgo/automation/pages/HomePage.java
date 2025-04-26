@@ -105,7 +105,7 @@ public class HomePage {
 		logger.info("Navigated to DSAlgo portal: " + url);
 		try {
 			getStartedbtn.click();
-			logger.info("Clicked on Get Started button.");
+			logger.info("Clicked on Get Started button in DSAlgo Portal.");
 		} catch (NoSuchElementException e) {
 		    logger.error("Element not found: Get Started button. ");
 		} catch (InvalidSelectorException e) {
@@ -140,27 +140,27 @@ public class HomePage {
 			dropDown.click();
 			switch (string) {
 			case "Arrays":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownArrays.click();
 				break;
 			case "Linked List":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownLinkedlist.click();
 				break;
 			case "Stack":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownStack.click();
 				break;
 			case "Queue":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownQueue.click();
 				break;
 			case "Tree":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownTree.click();
 				break;
 			case "Graph":
-				logger.info("User click on " + string);
+				logger.info("User click on " + string + "dropdown");
 				dropDownGraph.click();
 				break;
 			}

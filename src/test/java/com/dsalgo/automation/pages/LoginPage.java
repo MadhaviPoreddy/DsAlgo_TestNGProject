@@ -135,7 +135,9 @@ public class LoginPage {
 	}
 	
 	public String getSuccessLogin() {
+		waitHelper.waitForElementVisible(successLogin);
 		String alert = successLogin.getText();
+		System.out.println(alert);
 		return alert;
 	}
 }

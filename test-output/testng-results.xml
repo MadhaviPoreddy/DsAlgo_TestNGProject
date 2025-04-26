@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="19" passed="18" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-25T19:39:20 PDT" name="Default suite" finished-at="2025-04-25T19:41:36 PDT" duration-ms="135911">
+  <suite started-at="2025-04-26T09:20:04 PDT" name="Default suite" finished-at="2025-04-26T09:20:46 PDT" duration-ms="41881">
     <groups>
     </groups>
-    <test started-at="2025-04-25T19:39:20 PDT" name="Default test" finished-at="2025-04-25T19:41:36 PDT" duration-ms="135911">
+    <test started-at="2025-04-26T09:20:04 PDT" name="Default test" finished-at="2025-04-26T09:20:46 PDT" duration-ms="41881">
       <class name="com.dsalgo.automation.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:20 PDT" name="setUp" finished-at="2025-04-25T19:39:30 PDT" duration-ms="10338" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:04 PDT" name="setUp" finished-at="2025-04-26T09:20:14 PDT" duration-ms="9894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:30 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:39:36 PDT" duration-ms="5752" status="PASS">
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:14 PDT" name="navigateBeforeEachTest" finished-at="2025-04-26T09:20:19 PDT" duration-ms="4825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="checkDropdown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:36 PDT" name="checkDropdown" finished-at="2025-04-25T19:39:40 PDT" duration-ms="3771" status="FAIL">
+        <test-method signature="checkDropdown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:19 PDT" name="checkDropdown" finished-at="2025-04-26T09:20:23 PDT" duration-ms="3711" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected 'Data Structure Introduction' to be visible, but it was not. expected [true] but found [false]]]>
@@ -25,7 +25,7 @@
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
-at com.dsalgo.automation.tests.HomePageTest.checkDropdown(HomePageTest.java:39)
+at com.dsalgo.automation.tests.HomePageTest.checkDropdown(HomePageTest.java:42)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -58,119 +58,170 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDropdown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:40 PDT" name="tearDown" finished-at="2025-04-25T19:39:40 PDT" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:40 PDT" name="setUp" finished-at="2025-04-25T19:39:48 PDT" duration-ms="8455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:48 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:39:53 PDT" duration-ms="4435" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="checkLogoHomeRedirection()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:53 PDT" name="checkLogoHomeRedirection" finished-at="2025-04-25T19:39:54 PDT" duration-ms="1082" status="PASS">
+        <test-method signature="checkLogoHomeRedirection()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:23 PDT" name="checkLogoHomeRedirection" finished-at="2025-04-26T09:20:24 PDT" duration-ms="1265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoHomeRedirection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:54 PDT" name="tearDown" finished-at="2025-04-25T19:39:54 PDT" duration-ms="125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:39:54 PDT" name="setUp" finished-at="2025-04-25T19:40:02 PDT" duration-ms="7743" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:02 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:40:07 PDT" duration-ms="4958" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="checkRegister()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:07 PDT" name="checkRegister" finished-at="2025-04-25T19:40:08 PDT" duration-ms="1754" status="PASS">
+        <test-method signature="checkRegister()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:24 PDT" name="checkRegister" finished-at="2025-04-26T09:20:25 PDT" duration-ms="1189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRegister -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:08 PDT" name="tearDown" finished-at="2025-04-25T19:40:08 PDT" duration-ms="121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:08 PDT" name="setUp" finished-at="2025-04-25T19:40:16 PDT" duration-ms="7671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:16 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:40:21 PDT" duration-ms="4630" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="checkSignin()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:21 PDT" name="checkSignin" finished-at="2025-04-25T19:40:22 PDT" duration-ms="1329" status="PASS">
+        <test-method signature="checkSignin()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:25 PDT" name="checkSignin" finished-at="2025-04-26T09:20:27 PDT" duration-ms="1475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSignin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:22 PDT" name="tearDown" finished-at="2025-04-25T19:40:22 PDT" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:22 PDT" name="setUp" finished-at="2025-04-25T19:40:30 PDT" duration-ms="7640" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:30 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:40:34 PDT" duration-ms="4256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="clickDataStructureGetStarted()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:34 PDT" name="clickDataStructureGetStarted" finished-at="2025-04-25T19:40:39 PDT" duration-ms="4663" status="PASS">
+        <test-method signature="clickDataStructureGetStarted()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:27 PDT" name="clickDataStructureGetStarted" finished-at="2025-04-26T09:20:31 PDT" duration-ms="4527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickDataStructureGetStarted -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:39 PDT" name="tearDown" finished-at="2025-04-25T19:40:39 PDT" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:39 PDT" name="setUp" finished-at="2025-04-25T19:40:47 PDT" duration-ms="7938" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:47 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:40:51 PDT" duration-ms="4299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="clickGraphGetStarted()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:51 PDT" name="clickGraphGetStarted" finished-at="2025-04-25T19:40:56 PDT" duration-ms="4685" status="PASS">
+        <test-method signature="clickGraphGetStarted()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:31 PDT" name="clickGraphGetStarted" finished-at="2025-04-26T09:20:34 PDT" duration-ms="2940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickGraphGetStarted -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:56 PDT" name="tearDown" finished-at="2025-04-25T19:40:56 PDT" duration-ms="158" status="PASS">
+        <test-method signature="testEachDropdownOptionWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:34 PDT" name="testEachDropdownOptionWithoutLogin" data-provider="dropdownOptions" finished-at="2025-04-26T09:20:36 PDT" duration-ms="1543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:40:56 PDT" name="setUp" finished-at="2025-04-25T19:41:04 PDT" duration-ms="8282" status="PASS">
+        </test-method> <!-- testEachDropdownOptionWithoutLogin -->
+        <test-method signature="testEachDropdownOptionWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:36 PDT" name="testEachDropdownOptionWithoutLogin" data-provider="dropdownOptions" finished-at="2025-04-26T09:20:37 PDT" duration-ms="928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linked List]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:41:04 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:41:08 PDT" duration-ms="4144" status="PASS">
+        </test-method> <!-- testEachDropdownOptionWithoutLogin -->
+        <test-method signature="testEachDropdownOptionWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:37 PDT" name="testEachDropdownOptionWithoutLogin" data-provider="dropdownOptions" finished-at="2025-04-26T09:20:37 PDT" duration-ms="946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stack]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testAllDataStructureDropdownOptionsWithoutLogin()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:41:08 PDT" name="testAllDataStructureDropdownOptionsWithoutLogin" finished-at="2025-04-25T19:41:15 PDT" duration-ms="7054" status="PASS">
+        </test-method> <!-- testEachDropdownOptionWithoutLogin -->
+        <test-method signature="testEachDropdownOptionWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:37 PDT" name="testEachDropdownOptionWithoutLogin" data-provider="dropdownOptions" finished-at="2025-04-26T09:20:38 PDT" duration-ms="841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Queue]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAllDataStructureDropdownOptionsWithoutLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:41:15 PDT" name="tearDown" finished-at="2025-04-25T19:41:16 PDT" duration-ms="159" status="PASS">
+        </test-method> <!-- testEachDropdownOptionWithoutLogin -->
+        <test-method signature="testEachDropdownOptionWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:38 PDT" name="testEachDropdownOptionWithoutLogin" data-provider="dropdownOptions" finished-at="2025-04-26T09:20:39 PDT" duration-ms="970" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tree]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:41:16 PDT" name="setUp" finished-at="2025-04-25T19:41:23 PDT" duration-ms="7435" status="PASS">
+        </test-method> <!-- testEachDropdownOptionWithoutLogin -->
+        <test-method signature="testEachDropdownOptionWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:39 PDT" name="testEachDropdownOptionWithoutLogin" data-provider="dropdownOptions" finished-at="2025-04-26T09:20:40 PDT" duration-ms="725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Graph]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:41:23 PDT" name="navigateBeforeEachTest" finished-at="2025-04-25T19:41:27 PDT" duration-ms="4306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testGetStartedButtonsWithoutLogin()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:41:27 PDT" name="testGetStartedButtonsWithoutLogin" finished-at="2025-04-25T19:41:35 PDT" duration-ms="8111" status="PASS">
+        </test-method> <!-- testEachDropdownOptionWithoutLogin -->
+        <test-method signature="testGetStartedButtonsWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:40 PDT" name="testGetStartedButtonsWithoutLogin" data-provider="getstartedOptions" finished-at="2025-04-26T09:20:41 PDT" duration-ms="799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data Structures-Introduction]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetStartedButtonsWithoutLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@4397ad89]" started-at="2025-04-25T19:41:35 PDT" name="tearDown" finished-at="2025-04-25T19:41:36 PDT" duration-ms="119" status="PASS">
+        <test-method signature="testGetStartedButtonsWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:41 PDT" name="testGetStartedButtonsWithoutLogin" data-provider="getstartedOptions" finished-at="2025-04-26T09:20:42 PDT" duration-ms="914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonsWithoutLogin -->
+        <test-method signature="testGetStartedButtonsWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:42 PDT" name="testGetStartedButtonsWithoutLogin" data-provider="getstartedOptions" finished-at="2025-04-26T09:20:43 PDT" duration-ms="773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linked List]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonsWithoutLogin -->
+        <test-method signature="testGetStartedButtonsWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:43 PDT" name="testGetStartedButtonsWithoutLogin" data-provider="getstartedOptions" finished-at="2025-04-26T09:20:43 PDT" duration-ms="858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonsWithoutLogin -->
+        <test-method signature="testGetStartedButtonsWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:43 PDT" name="testGetStartedButtonsWithoutLogin" data-provider="getstartedOptions" finished-at="2025-04-26T09:20:44 PDT" duration-ms="832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Queue]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonsWithoutLogin -->
+        <test-method signature="testGetStartedButtonsWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:44 PDT" name="testGetStartedButtonsWithoutLogin" data-provider="getstartedOptions" finished-at="2025-04-26T09:20:45 PDT" duration-ms="806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonsWithoutLogin -->
+        <test-method signature="testGetStartedButtonsWithoutLogin(java.lang.String)[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:45 PDT" name="testGetStartedButtonsWithoutLogin" data-provider="getstartedOptions" finished-at="2025-04-26T09:20:46 PDT" duration-ms="776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Graph]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonsWithoutLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.HomePageTest@35645047]" started-at="2025-04-26T09:20:46 PDT" name="tearDown" finished-at="2025-04-26T09:20:46 PDT" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

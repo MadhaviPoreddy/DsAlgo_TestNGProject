@@ -3,7 +3,6 @@ package com.dsalgo.automation.tests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,15 +19,10 @@ public class LoginPageTest extends BaseClass {
     private static final Logger logger = LogManager.getLogger(LoginPageTest.class);
     
     
-    @BeforeClass
-    public void setUpPage() {
-		//Loginpage object is initialized using baseclass webdriver
-        loginPage = new LoginPage(driver);
-       
-    }
-    
     @BeforeMethod
 	public void navigateBeforeEachTest() {
+    	//Loginpage object is initialized using baseclass webdriver
+        loginPage = new LoginPage(driver);
 	    NavigationUtil.navigateToHomePage(driver);
 	    
 	}
@@ -38,5 +32,7 @@ public class LoginPageTest extends BaseClass {
     	NavigationUtil.performLogin(driver);
     	Assert.assertEquals(loginPage.getSuccessLogin(),"You are logged in","Login success message does not match.");
     }
+    
+    
 
 }

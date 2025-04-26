@@ -3,7 +3,8 @@ package com.dsalgo.automation.base;
 
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
@@ -25,13 +26,13 @@ public class BaseClass {
 	
 	
 	
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() {
 		String browser = ConfigReader.getProperty("browser");
         driver = DriverFactory.initializeDriver(browser);  //Launch the browser
     }
 	
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         DriverFactory.quitDriver();
     }

@@ -1,7 +1,4 @@
 package com.dsalgo.automation.utils;
-
-
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -44,5 +41,11 @@ public class NavigationUtil {
 	public static void clickModuleGetStarted(WebDriver driver, String moduleName) {
 		HomePage homePage = new HomePage(driver);
 		homePage.getStartedhome(moduleName);
+	}
+	
+	//Click sign out
+	public static void clickSignout(WebDriver driver) {
+		HomePage homePage = new HomePage(driver);
+		homePage.clickSignout();
 	}
 }
