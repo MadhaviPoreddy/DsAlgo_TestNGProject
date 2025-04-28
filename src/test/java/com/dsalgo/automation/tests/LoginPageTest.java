@@ -52,7 +52,7 @@ public class LoginPageTest extends BaseClass {
     }
     
     
-    @Test(dataProvider = "allInvalidLoginData")
+    @Test(dataProvider = "allInvalidLoginData" , dataProviderClass = LoginPageTest.class)
     public void testInvalidLogin(Map<String, String> data) {
     	homePage.clickSignin();
         String username = data.get("username");

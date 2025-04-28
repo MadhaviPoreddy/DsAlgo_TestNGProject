@@ -49,7 +49,7 @@ public class GraphPageTest extends BaseClass{
 	}
 	
 	
-	@Test(dataProvider = "pythoncodeData")
+	@Test(dataProvider = "pythoncodeData" , dataProviderClass = GraphPageTest.class)
 	public void graphValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(driver);
 		NavigationUtil.clickModuleGetStarted(driver, "Graph");
@@ -68,13 +68,9 @@ public class GraphPageTest extends BaseClass{
 	        	String alertMessage = graphPage.AlertGetText();
 	        	Assert.assertEquals(alertMessage,expectedOutput, "Mismatch! expected output is: " + expectedOutput);
 	            logger.info("Tested alert with code: " + pythonCode + " | Alert: " + alertMessage);
-	            driver.navigate().back();
-		        NavigationUtil.clickSignout(driver);
 	        }else {
 		        String actualOutput = graphPage.successMsg();
 		        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Not the correct Answer!!Mismatch in Try Editor Output!");
-		        driver.navigate().back();
-		        NavigationUtil.clickSignout(driver);
 	        }
         	
         }catch (Exception e) {
@@ -95,14 +91,14 @@ public class GraphPageTest extends BaseClass{
 		graphPage.clickGraphRep();
 		Assert.assertEquals(graphPage.getTitleofPage(), "Graph Representations", "Failed to navigate to Graph Representations Page");
 		
-		//  New overlap check
+		//overlap check
 		boolean isOverlapping = graphPage.isOverlapping();
 		Assert.assertFalse(isOverlapping, "Image and paragraph are overlapping on the Graph Representations page!");
 		driver.navigate().back();
 	    NavigationUtil.clickSignout(driver);
 	}
 	
-	@Test(dataProvider = "pythoncodeData")
+	@Test(dataProvider = "pythoncodeData" , dataProviderClass = GraphPageTest.class)
 	public void graphrepValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(driver);
 		NavigationUtil.clickModuleGetStarted(driver, "Graph");
@@ -122,13 +118,9 @@ public class GraphPageTest extends BaseClass{
 	        	String alertMessage = graphPage.AlertGetText();
 	        	Assert.assertEquals(alertMessage,expectedOutput, "Mismatch! expected output is: " + expectedOutput);
 	            logger.info("Tested alert with code: " + pythonCode + " | Alert: " + alertMessage);
-	            driver.navigate().back();
-		        NavigationUtil.clickSignout(driver);
 	        }else {
 		        String actualOutput = graphPage.successMsg();
 		        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Not the correct Answer!!Mismatch in Try Editor Output!");
-		        driver.navigate().back();
-		        NavigationUtil.clickSignout(driver);
 	        }
         	
         }catch (Exception e) {

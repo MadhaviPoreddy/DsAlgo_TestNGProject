@@ -53,7 +53,7 @@ public class HomePageTest extends BaseClass {
         };
     }
 
-    @Test(dataProvider = "dropdownOptions")
+    @Test(dataProvider = "dropdownOptions" , dataProviderClass = HomePageTest.class)
     public void testEachDropdownOptionWithoutLogin(String option) {
         homePage.selectDropdown(option);
 

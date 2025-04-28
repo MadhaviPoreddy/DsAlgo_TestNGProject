@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dsalgo.automation.tests.GraphPageTest">
+      <class name="com.dsalgo.automation.tests.DataStructureTest">
         <methods>
-          <include name="testGraphRepPageLayout"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="navigateBeforeEachTest"/>
+          <include name="setUp"/>
+          <include name="practiceQues"/>
         </methods>
-      </class> <!-- com.dsalgo.automation.tests.GraphPageTest -->
+      </class> <!-- com.dsalgo.automation.tests.DataStructureTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

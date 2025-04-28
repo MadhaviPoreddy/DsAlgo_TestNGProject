@@ -48,7 +48,7 @@ public class DataStructureTest extends BaseClass {
 	    return result;
 	}
 	
-	@Test(dataProvider = "pythoncodeData")
+	@Test(dataProvider = "pythoncodeData" , dataProviderClass = DataStructureTest.class)
 	public void testValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(driver);
 		NavigationUtil.clickModuleGetStarted(driver, "Data Structures-Introduction");
