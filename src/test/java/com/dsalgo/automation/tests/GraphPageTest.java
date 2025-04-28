@@ -49,7 +49,7 @@ public class GraphPageTest extends BaseClass{
 	}
 	
 	
-	@Test(dataProvider = "runnableData")
+	@Test(dataProvider = "pythoncodeData")
 	public void graphValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(driver);
 		NavigationUtil.clickModuleGetStarted(driver, "Graph");
@@ -102,7 +102,7 @@ public class GraphPageTest extends BaseClass{
 	    NavigationUtil.clickSignout(driver);
 	}
 	
-	@Test(dataProvider = "runnableData")
+	@Test(dataProvider = "pythoncodeData")
 	public void graphrepValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(driver);
 		NavigationUtil.clickModuleGetStarted(driver, "Graph");

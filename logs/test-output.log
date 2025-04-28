@@ -1,61 +1,42 @@
-2025-04-28 13:54:39 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-2025-04-28 13:54:39 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
-2025-04-28 13:54:39 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-2025-04-28 13:54:40 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:54:40 INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
-2025-04-28 13:54:40 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:54:42 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-28 13:54:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
-2025-04-28 13:54:46 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:54:46 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-04-28 13:54:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-04-28 13:54:50 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-04-28 13:54:50 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:54:50 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Graph 
-2025-04-28 13:54:53 INFO  com.dsalgo.automation.pages.GraphPage - Clicked Graph Representation link
-2025-04-28 13:54:53 INFO  com.dsalgo.automation.pages.GraphPage - Page title: Graph Representations
-2025-04-28 13:54:58 INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Try Here
-2025-04-28 13:54:58 INFO  com.dsalgo.automation.pages.GraphPage - Page title: Assessment
-2025-04-28 13:55:01 INFO  com.dsalgo.automation.pages.GraphPage - Entered Python code: print("DSAlgo");
-2025-04-28 13:55:02 INFO  com.dsalgo.automation.pages.GraphPage - Clicked Run button
-2025-04-28 13:55:03 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
-2025-04-28 13:55:05 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
-2025-04-28 13:55:05 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:05 INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
-2025-04-28 13:55:05 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:06 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-28 13:55:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
-2025-04-28 13:55:06 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:06 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-04-28 13:55:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-04-28 13:55:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-04-28 13:55:08 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:09 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Graph 
-2025-04-28 13:55:10 INFO  com.dsalgo.automation.pages.GraphPage - Clicked Graph Representation link
-2025-04-28 13:55:10 INFO  com.dsalgo.automation.pages.GraphPage - Page title: Graph Representations
-2025-04-28 13:55:11 INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Try Here
-2025-04-28 13:55:11 INFO  com.dsalgo.automation.pages.GraphPage - Page title: Assessment
-2025-04-28 13:55:11 INFO  com.dsalgo.automation.pages.GraphPage - Entered Python code: print("NumpyNinja
-2025-04-28 13:55:14 INFO  com.dsalgo.automation.pages.GraphPage - Clicked Run button
-2025-04-28 13:55:14 INFO  com.dsalgo.automation.pages.GraphPage - Alert appeared: SyntaxError: bad input on line 1
-2025-04-28 13:55:14 INFO  com.dsalgo.automation.tests.GraphPageTest - Tested alert with code: print("NumpyNinja | Alert: SyntaxError: bad input on line 1
-2025-04-28 13:55:14 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
-2025-04-28 13:55:16 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
-2025-04-28 13:55:16 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:16 INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
-2025-04-28 13:55:16 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:16 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-28 13:55:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
-2025-04-28 13:55:17 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:17 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-04-28 13:55:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-04-28 13:55:18 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-04-28 13:55:18 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 13:55:18 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Graph 
-2025-04-28 13:55:19 INFO  com.dsalgo.automation.pages.GraphPage - Clicked Graph Representation link
-2025-04-28 13:55:19 INFO  com.dsalgo.automation.pages.GraphPage - Page title: Graph Representations
-2025-04-28 13:55:19 INFO  com.dsalgo.automation.pages.GraphPage - Paragraph and table overlapping: true
+2025-04-28 16:35:36 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-04-28 16:35:36 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-04-28 16:35:36 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-04-28 16:35:37 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-28 16:35:37 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:39 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-28 16:35:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-04-28 16:35:42 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:44 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-28 16:35:46 INFO  com.dsalgo.automation.tests.LoginPageTest - Tested invalid login with: abc@test.com | 
+2025-04-28 16:35:46 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-28 16:35:47 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:48 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-28 16:35:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-04-28 16:35:49 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-28 16:35:50 INFO  com.dsalgo.automation.tests.LoginPageTest - Tested invalid login with:  | testtest@123
+2025-04-28 16:35:50 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-28 16:35:50 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:51 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-28 16:35:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-04-28 16:35:51 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-28 16:35:53 INFO  com.dsalgo.automation.tests.LoginPageTest - Tested invalid login with: abc@test.com | invalid
+2025-04-28 16:35:53 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-28 16:35:53 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:53 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-28 16:35:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-04-28 16:35:53 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:54 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.tests.LoginPageTest - Tested invalid login with: invalid | testtest@123
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:55 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-04-28 16:35:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-04-28 16:35:56 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-04-28 16:35:57 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-04-28 16:35:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
