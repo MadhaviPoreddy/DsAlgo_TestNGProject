@@ -289,6 +289,7 @@ public class HomePage {
 		return driver.getTitle().contains("Data Structures-Introduction");
 	}
 	
+	
 	public boolean isGraphPageDisplayed() {
 		return driver.getTitle().contains("Graph");
 	}

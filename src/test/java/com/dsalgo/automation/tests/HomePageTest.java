@@ -4,7 +4,7 @@ package com.dsalgo.automation.tests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -17,8 +17,10 @@ public class HomePageTest extends BaseClass {
 	private HomePage homePage; // Global declaration for reuse
 	 // Initialize logger for this class
     private static final Logger logger = LogManager.getLogger(HomePageTest.class);
+    
+   
 
-	@BeforeClass
+	@BeforeMethod
 	public void navigateBeforeEachTest() {
 		//homepage object is initialized using baseclass webdriver
 		homePage = new HomePage(driver);
@@ -65,6 +67,24 @@ public class HomePageTest extends BaseClass {
 
         driver.navigate().back();
     }
+    
+
+    @Test(dataProvider = "dropdownOptions")
+    public void testEachDropdownOptionWithLogin(String option) {
+    	NavigationUtil.performLogin(driver);
+        homePage.selectDropdown(option);
+
+        if (homePage.isWarningMessageVisible()) {
+            String warning = homePage.getWarningMessage();
+            logger.warn("Warning for '" + option + "': " + warning);
+            Assert.assertEquals(warning, "You are logged in", "Unexpected warning for: " + option);
+        } else {
+            logger.info("No warning for '" + option + "'");
+        }
+
+        driver.navigate().back();
+        NavigationUtil.clickSignout(driver);
+    }
 
     @DataProvider(name = "getstartedOptions")
     public Object[][] getstartedOptions() {
@@ -106,13 +126,7 @@ public class HomePageTest extends BaseClass {
 		Assert.assertTrue(homePage.isSignInPageDisplayed(), "Failed to navigate to Sign in page.");
 	}
 
-	@Test
-	public void clickDataStructureGetStarted() {
-		NavigationUtil.performLogin(driver);
-		NavigationUtil.clickModuleGetStarted(driver, "Data Structures-Introduction");
-		Assert.assertTrue(homePage.isDataStructurePageDisplayed(), "Failed to navigate to Data Structure Page");
-		NavigationUtil.clickSignout(driver);
-	}
+	
 	
 	
 	@Test

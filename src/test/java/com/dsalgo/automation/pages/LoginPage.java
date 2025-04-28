@@ -47,6 +47,7 @@ public class LoginPage {
 	
 	public void enterUsername(String userName) {
 		try {
+			username.clear();
 			username.sendKeys(userName);
 		} catch (Exception e) {
 			logger.error("Unexpected error while entering username.");
@@ -56,6 +57,7 @@ public class LoginPage {
 	
 	public void enterPassword(String passWord) {
 		try {
+			password.clear();
 			password.sendKeys(passWord);
 		} catch (Exception e) {
 			logger.error("Unexpected error while entering password.");
@@ -71,7 +73,7 @@ public class LoginPage {
 		}
 	}
 
-	public String invalidAlert() {
+	public String getInvalidAlert() {
 		try {
 			String alertMessage = alertMsg.getText();
 			return alertMessage;
