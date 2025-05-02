@@ -25,7 +25,10 @@ import com.dsalgo.automation.utils.*;
 @SuppressWarnings("unused")
 public class StackPageTest extends BaseClass{
 
-	public HomePageTest homeTest= new HomePageTest();
+	//public HomePageTest homeTest= new HomePageTest();
+	private HomePage homePage; // Global declaration for reuse
+	private GraphPage graphPage;
+	private LoginPage loginPage;
 	
 	private StackPage Stack; 
 
@@ -39,9 +42,9 @@ public class StackPageTest extends BaseClass{
 	
 	@BeforeMethod
 	public void navigateBeforeEachTest() {
-	    NavigationUtil.navigateToHomePage(driver);
-	    NavigationUtil.performLogin(driver);
-		NavigationUtil.clickModuleGetStarted(driver, "Stack");
+	    NavigationUtil.navigateToHomePage(homePage);
+	    NavigationUtil.performLogin(homePage,loginPage);
+		NavigationUtil.clickModuleGetStarted(homePage, "Stack");
 	}
 	
 	@AfterTest

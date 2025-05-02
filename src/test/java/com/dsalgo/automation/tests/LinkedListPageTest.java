@@ -28,6 +28,9 @@ import com.dsalgo.automation.utils.NavigationUtil;
 	public class LinkedListPageTest  extends BaseClass{
 
 		public HomePageTest homeTest= new HomePageTest();
+		private HomePage homePage; // Global declaration for reuse
+		private LoginPage loginPage;
+		
 		
 		private LinkedListPage LL; 
 		 // Initialize logger for this class
@@ -39,13 +42,13 @@ import com.dsalgo.automation.utils.NavigationUtil;
 		   LL=new LinkedListPage(driver); 
 	   }
 		
-		@BeforeMethod
+	   @BeforeMethod
 		public void navigateBeforeEachTest() {
-		    NavigationUtil.navigateToHomePage(driver);
-		    NavigationUtil.performLogin(driver);
-			NavigationUtil.clickModuleGetStarted(driver, "Linked List");
-			//NavigationUtil.clickSignout(driver);	
+		    NavigationUtil.navigateToHomePage(homePage);
+		    NavigationUtil.performLogin(homePage,loginPage);
+			NavigationUtil.clickModuleGetStarted(homePage, "Linked List");
 		}
+		
 		
 		@AfterTest
 		public void closeBrowser() {

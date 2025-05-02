@@ -4,11 +4,11 @@ import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+//import org.apache.xmlbeans.impl.xb.xsdschema.Public;
+//import org.openqa.selenium.NoSuchElementException;
+//import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
+//import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.driver.DriverFactory;
 import com.dsalgo.automation.pages.*;
-import com.dsalgo.automation.tests.HomePageTest;
+//import com.dsalgo.automation.tests.HomePageTest;
 
 import com.dsalgo.automation.utils.*;
 
@@ -26,6 +26,9 @@ public class ArrayPageTest extends BaseClass{
 	public HomePageTest homeTest= new HomePageTest();
 	
 	private ArrayPage Array; 
+	private HomePage homePage; // Global declaration for reuse
+	private LoginPage loginPage;
+	
 
    private static final Logger logger = LogManager.getLogger(ArrayPageTest.class);
 
@@ -37,12 +40,13 @@ public class ArrayPageTest extends BaseClass{
    }
    
 
-	@BeforeMethod
+   @BeforeMethod
 	public void navigateBeforeEachTest() {
-	    NavigationUtil.navigateToHomePage(driver);
-	    NavigationUtil.performLogin(driver);
-		NavigationUtil.clickModuleGetStarted(driver, "Array");
+	    NavigationUtil.navigateToHomePage(homePage);
+	    NavigationUtil.performLogin(homePage,loginPage);
+		NavigationUtil.clickModuleGetStarted(homePage, "Array");
 	}
+	
 	
 	@AfterTest
 	public void closeBrowser() {
