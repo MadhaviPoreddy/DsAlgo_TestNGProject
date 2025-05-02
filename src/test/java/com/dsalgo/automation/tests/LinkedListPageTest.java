@@ -44,9 +44,11 @@ import com.dsalgo.automation.utils.NavigationUtil;
 		
 	   @BeforeMethod
 		public void navigateBeforeEachTest() {
-		    NavigationUtil.navigateToHomePage(homePage);
-		    NavigationUtil.performLogin(homePage,loginPage);
-			NavigationUtil.clickModuleGetStarted(homePage, "Linked List");
+		   homePage = new HomePage(driver);
+		   loginPage = new LoginPage(driver);
+		   NavigationUtil.navigateToHomePage(homePage);
+		   NavigationUtil.performLogin(homePage,loginPage);
+		   NavigationUtil.clickModuleGetStarted(homePage, "Linked List");
 		}
 		
 		

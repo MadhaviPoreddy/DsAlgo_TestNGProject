@@ -42,6 +42,8 @@ public class ArrayPageTest extends BaseClass{
 
    @BeforeMethod
 	public void navigateBeforeEachTest() {
+	   homePage = new HomePage(driver);
+		loginPage = new LoginPage(driver);
 	    NavigationUtil.navigateToHomePage(homePage);
 	    NavigationUtil.performLogin(homePage,loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Array");

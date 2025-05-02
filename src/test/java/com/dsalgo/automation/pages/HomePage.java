@@ -1,11 +1,13 @@
 package com.dsalgo.automation.pages;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.InvalidSelectorException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -74,10 +76,11 @@ public class HomePage {
 	// Register
 	@FindBy(xpath = "//a[@href ='/register']")
 	WebElement register;
+	
+	//Dropdown itmes
+	@FindBy(css = ".dropdown-menu .dropdown-item")
+	private List<WebElement> dropdownItems;
 
-	// DataStructure Introduction
-	@FindBy(xpath = "//*[text()='Data Structure Introduction']")
-	WebElement dataStructureIntroOption;
 	
 	//AlertMessage
 	@FindBy(xpath = "//div[contains(text(),'You are logged in')]")
@@ -97,6 +100,13 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver,10);
 		logger.info("HomePage initialized with WebDriver and waitHelper");
+	}
+	
+	//return dropdown options 
+	public List<String> getDropdownOptionTexts() {
+	    return dropdownItems.stream()
+	            .map(WebElement::getText)
+	            .collect(Collectors.toList());
 	}
 	
 	//Click getstarted button
@@ -125,21 +135,12 @@ public class HomePage {
 		logger.info("Clicked on Data Structures dropdown.");
 	}
 	
-	public boolean isDataStructureIntroOptionVisible() {
-		
-		try {
-			return dataStructureIntroOption.isDisplayed();
-		} catch (NoSuchElementException e) {
-			logger.error("Failed while verifying visibility of Data Structure Introduction in the drop down");
-			return false; // Element is not in the DOM
-		}
-
-	}
+	
 	public void selectDropdown(String string) {
 		try {
 			dropDown.click();
 			switch (string) {
-			case "Arrays":
+			case "Array":
 				logger.info("User click on " + string + "dropdown");
 				dropDownArrays.click();
 				break;
@@ -164,6 +165,10 @@ public class HomePage {
 				dropDownGraph.click();
 				break;
 			}
+		} catch (StaleElementReferenceException e) {
+            logger.warn("StaleElementReferenceException caught, retrying...");
+            PageFactory.initElements(driver, this); // Reinitialize PageFactory elements
+            dropDown.click();
 		}catch (Exception e) {
 			logger.error("Failed to select dropdown option: " + string + e);
 		}
@@ -197,7 +202,7 @@ public class HomePage {
 				logger.info("clicked " + getStartedDSintro.getText() + "link on  DataStructures ");
 				getStartedDSintro.click();
 				break;
-			case "Array":
+			case "Arrays":
 				logger.info("clicked " + getStartedArray.getText() + "link on Array ");
 				getStartedArray.click();
 				break;
@@ -289,7 +294,12 @@ public class HomePage {
 		return driver.getTitle().contains("Data Structures-Introduction");
 	}
 	
+	
 	public boolean isGraphPageDisplayed() {
 		return driver.getTitle().contains("Graph");
+	}
+	
+	public boolean isPageDisplayed(String expectedTitle) {
+		return driver.getTitle().contains(expectedTitle);
 	}
 }

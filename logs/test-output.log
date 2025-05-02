@@ -1,0 +1,9 @@
+2025-05-02 11:36:23 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mpore\AppData\Local\Temp\testng-eclipse--1425819329\testng-customsuite.xml"
+2025-05-02 11:36:25 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 11:36:25 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 11:36:25 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 11:36:25 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 11:36:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 11:36:26 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-02 11:36:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-02 11:36:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully

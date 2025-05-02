@@ -4,25 +4,26 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.ConfigReader;
 
 
 public class BaseClass {
 	protected WebDriver driver;   //driver variable is available to all the extended class
 
     //CrossBrowser Tesing
-	@Parameters("browser")
+//	@Parameters("browser")
+//	@BeforeClass
+//	public void setUp(String browser) {
+//        driver = DriverFactory.initializeDriver(browser);  //Launch the browser
+//    }
+	
+
 	@BeforeClass
-	public void setUp(String browser) {
+	public void setUp() {
+		String browser = ConfigReader.getProperty("browser");
         driver = DriverFactory.initializeDriver(browser);  //Launch the browser
     }
 	
-
-//	@BeforeClass
-//	public void setUp() {
-//		String browser = ConfigReader.getProperty("browser");
-//        driver = DriverFactory.initializeDriver(browser);  //Launch the browser
-//    }
-//	
 	
     @AfterClass
     public void tearDown() {

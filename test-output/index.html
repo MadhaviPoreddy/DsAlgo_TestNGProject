@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\mpore\AppData\Local\Temp\testng-eclipse-350527316\testng-customsuite.xml</span>
+                    <span>C:\Users\mpore\AppData\Local\Temp\testng-eclipse--1425819329\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,36 +103,10 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.dsalgo.automation.tests.ArrayPageTest" class="method navigator-link" hash-for-method="testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)">testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.dsalgo.automation.tests.ArrayPageTest" class="method navigator-link" hash-for-method="arrayUsingListfromLeftMenu">arrayUsingListfromLeftMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.dsalgo.automation.tests.ArrayPageTest" class="method navigator-link" hash-for-method="testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)">testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -152,35 +126,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)">
-                  </a> <!-- testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...) -->
-                  <span class="method-name">testSoertedArrayPractieceCodeRun</span>
-                  <span class="parameters">({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        square = nums[i] * nums[i];
-        squares_list.append(square)
-        sorted_squares_list = sorted(squares_list)
-        print sorted_squares_list;
-    return sorted_squares_list;
-sortedSquares([-7,-3,2,3,11]), Output=Submission Successful, Button=Submit})</span>
-                  <div class="stack-trace">java.lang.AssertionError: TestCase Failed: Output is mismatched : Submission Successful expected [Submission Successful] but found [[49]
-[9, 49]
-[4, 9, 49]
-[4, 9, 9, 49]
-[4, 9, 9, 49, 121]]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.dsalgo.automation.tests.ArrayPageTest.testSoertedArrayPractieceCodeRun(ArrayPageTest.java:300)
+                  <a name="arrayUsingListfromLeftMenu">
+                  </a> <!-- arrayUsingListfromLeftMenu -->
+                  <span class="method-name">arrayUsingListfromLeftMenu</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Basic Operations in Lists&apos;]&quot;}
+  (Session info: chrome=135.0.7049.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c08bae21316a258732e501586c352b60, findElement {using=xpath, value=//*[text()=&apos;Basic Operations in Lists&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mpore\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54601/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c08bae21316a258732e501586c352b60
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.dsalgo.automation.pages.ArrayPage.arrayBasicOperinListLink(ArrayPage.java:187)
+	at com.dsalgo.automation.tests.ArrayPageTest.arrayUsingListfromLeftMenu(ArrayPageTest.java:365)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -213,41 +189,10 @@ sortedSquares([-7,-3,2,3,11]), Output=Submission Successful, Button=Submit})</sp
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dsalgo.automation.tests.ArrayPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)">
-                  </a> <!-- testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...) -->
-                  <span class="method-name">testSoertedArrayPractieceCodeRun</span>
-                  <span class="parameters">({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        square = nums[i] * nums[i];
-        squares_list.append(square)
-        sorted_squares_list = sorted(squares_list)
-       
-    return sorted_squares_list;
-i = sortedSquares([-7,-3,2,3,11])
-print (i), Output=[4, 9, 9, 49, 121], Button=run})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mpore\AppData\Local\Temp\testng-eclipse-350527316\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mpore\AppData\Local\Temp\testng-eclipse--1425819329\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,7 +203,7 @@ print (i), Output=[4, 9, 9, 49, 121], Button=run})</span>
     &lt;classes&gt;
       &lt;class name=&quot;com.dsalgo.automation.tests.ArrayPageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testSoertedArrayPractieceCodeRun&quot;/&gt;
+          &lt;include name=&quot;arrayUsingListfromLeftMenu&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.dsalgo.automation.tests.ArrayPageTest --&gt;
     &lt;/classes&gt;
@@ -300,15 +245,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSoertedArrayPractieceCodeRun')
+data.setCell(0, 1, 'arrayUsingListfromLeftMenu')
 data.setCell(0, 2, 'com.dsalgo.automation.tests.ArrayPageTest')
-data.setCell(0, 3, 2029);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSoertedArrayPractieceCodeRun')
-data.setCell(1, 2, 'com.dsalgo.automation.tests.ArrayPageTest')
-data.setCell(1, 3, 1129);
+data.setCell(0, 3, 3042);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -334,45 +275,45 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.dsalgo.automation.tests.ArrayPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testMaxConsecutivePractieceCodeRun</span>
-                <br/>
-                <span class="ignored-method-name">testSearchPractieceCode</span>
-                <br/>
-                <span class="ignored-method-name">testcodeEditor</span>
-                <br/>
-                <span class="ignored-method-name">arrayUsingList</span>
-                <br/>
-                <span class="ignored-method-name">maxPractieceQPractieceQue</span>
-                <br/>
-                <span class="ignored-method-name">testFindEvenPractieceCodeRun</span>
-                <br/>
-                <span class="ignored-method-name">checkArrayLandingPage</span>
-                <br/>
-                <span class="ignored-method-name">basicOperinListTryEdit</span>
-                <br/>
-                <span class="ignored-method-name">arrayBasicOperinListLink</span>
-                <br/>
-                <span class="ignored-method-name">arrayPythonLinkTryEdit</span>
-                <br/>
-                <span class="ignored-method-name">arrayPractieceQue</span>
-                <br/>
-                <span class="ignored-method-name">arrayPythonLink</span>
-                <br/>
                 <span class="ignored-method-name">applicationOfArraryLink</span>
-                <br/>
-                <span class="ignored-method-name">squaredOfSortedArrayPractieceQue</span>
                 <br/>
                 <span class="ignored-method-name">arrayUsingListTryEdit</span>
                 <br/>
-                <span class="ignored-method-name">searchTheArrayPractieceQue</span>
+                <span class="ignored-method-name">checkArrayLandingPage</span>
+                <br/>
+                <span class="ignored-method-name">arrayUsingList</span>
                 <br/>
                 <span class="ignored-method-name">testMaxConsecutivePractieceCodeSubmit</span>
                 <br/>
-                <span class="ignored-method-name">findWithEvenDigitPractieceQue</span>
-                <br/>
                 <span class="ignored-method-name">applicationOfArraryTryEdit</span>
                 <br/>
-                <span class="ignored-method-name">arrayUsingListfromLeftMenu</span>
+                <span class="ignored-method-name">testcodeEditor</span>
+                <br/>
+                <span class="ignored-method-name">arrayPythonLinkTryEdit</span>
+                <br/>
+                <span class="ignored-method-name">testSoertedArrayPractieceCodeRun</span>
+                <br/>
+                <span class="ignored-method-name">basicOperinListTryEdit</span>
+                <br/>
+                <span class="ignored-method-name">arrayPractieceQue</span>
+                <br/>
+                <span class="ignored-method-name">findWithEvenDigitPractieceQue</span>
+                <br/>
+                <span class="ignored-method-name">testMaxConsecutivePractieceCodeRun</span>
+                <br/>
+                <span class="ignored-method-name">maxPractieceQPractieceQue</span>
+                <br/>
+                <span class="ignored-method-name">arrayPythonLink</span>
+                <br/>
+                <span class="ignored-method-name">searchTheArrayPractieceQue</span>
+                <br/>
+                <span class="ignored-method-name">testSearchPractieceCode</span>
+                <br/>
+                <span class="ignored-method-name">testFindEvenPractieceCodeRun</span>
+                <br/>
+                <span class="ignored-method-name">squaredOfSortedArrayPractieceQue</span>
+                <br/>
+                <span class="ignored-method-name">arrayBasicOperinListLink</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -391,39 +332,25 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpPage</span>
-                <span class="method-start">1545 ms</span>
+                <span class="method-start">1736 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateBeforeEachTest</span>
-                <span class="method-start">2325 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)</span>
-                <span class="method-start">4346 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">navigateBeforeEachTest</span>
-                <span class="method-start">6387 ms</span>
+                <span class="method-start">1780 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testSoertedArrayPractieceCodeRun({ValidCode=def sortedSquares(nums):
-    squares_list = []
-    for i in range(0, len(nums)):
-        ...)</span>
-                <span class="method-start">39651 ms</span>
+                <span class="method-name">arrayUsingListfromLeftMenu</span>
+                <span class="method-start">3692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40784 ms</span>
+                <span class="method-start">6755 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">41277 ms</span>
+                <span class="method-start">7428 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -5,10 +5,10 @@
     <classes>
       <class name="com.dsalgo.automation.tests.ArrayPageTest">
         <methods>
-          <include name="testSoertedArrayPractieceCodeRun" invocation-numbers="1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="setUpPage"/>
+          <include name="arrayUsingListfromLeftMenu"/>
           <include name="navigateBeforeEachTest"/>
           <include name="closeBrowser"/>
         </methods>
