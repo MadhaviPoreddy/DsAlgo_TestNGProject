@@ -9,6 +9,7 @@
           <include name="navigateBeforeEachTest"/>
           <include name="setUp"/>
           <include name="practiceQues"/>
+          <include name="afterEachTest"/>
         </methods>
       </class> <!-- com.dsalgo.automation.tests.DataStructureTest -->
     </classes>

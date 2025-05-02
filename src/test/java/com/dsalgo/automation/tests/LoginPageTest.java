@@ -1,5 +1,7 @@
 package com.dsalgo.automation.tests;
 
+import org.testng.annotations.Test;
+
 import java.util.List;
 import java.util.Map;
 
@@ -8,14 +10,12 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
 import com.dsalgo.automation.utils.ExcelReader;
 import com.dsalgo.automation.utils.NavigationUtil;
-
 
 public class LoginPageTest extends BaseClass {
 	private LoginPage loginPage; // Global declaration for reuse
@@ -28,15 +28,18 @@ public class LoginPageTest extends BaseClass {
 	public void navigateBeforeEachTest() {
     	//Loginpage object is initialized using baseclass webdriver
         loginPage = new LoginPage(driver);
-	    NavigationUtil.navigateToHomePage(driver);
 	    homePage = new HomePage(driver);
+	    NavigationUtil.navigateToHomePage(homePage);
+
 	}
-    
+
+	
+   
     @Test
     public void testValidLogin() {
-    	NavigationUtil.performLogin(driver);
+    	NavigationUtil.performLogin(homePage,loginPage);
     	Assert.assertEquals(loginPage.getSuccessLogin(),"You are logged in","Login success message does not match.");
-    	NavigationUtil.clickSignout(driver);
+    	NavigationUtil.clickSignout(homePage);
     }
     
     
@@ -52,7 +55,7 @@ public class LoginPageTest extends BaseClass {
     }
     
     
-    @Test(dataProvider = "allInvalidLoginData" , dataProviderClass = LoginPageTest.class)
+    @Test(dataProvider = "allInvalidLoginData")
     public void testInvalidLogin(Map<String, String> data) {
     	homePage.clickSignin();
         String username = data.get("username");

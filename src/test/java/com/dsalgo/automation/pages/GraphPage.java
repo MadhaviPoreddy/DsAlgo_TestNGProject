@@ -1,9 +1,16 @@
 package com.dsalgo.automation.pages;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -129,6 +136,7 @@ public class GraphPage {
 	}
 	
 	public String successMsg() {
+		waitHelper.waitForElementVisible(successMsg);
 		return successMsg.getText();
 	}
 	
@@ -165,29 +173,6 @@ public class GraphPage {
 		return text;
 	}
 	
-	
-	public boolean isParagraphLeftAligned(WebElement paragraph) {
-	    String alignment = paragraph.getCssValue("text-align");
-		logger.info("Paragraph alignment: " + alignment);
-	    return alignment.equals("left") || alignment.equals("start");
-	}
-	
-	public boolean isParagraphVisible() {
-		try {
-			boolean visible = paragraph.isDisplayed();
-			logger.info("Paragraph visibility: " + visible);
-			return visible;
-		} catch (Exception e) {
-			logger.error("Paragraph not visible");
-			return false;
-		}
-	}
-	    
-    public String getParagraphText() {
-    	String text = paragraph.getText();
-    	logger.info("Paragraph text: " + text);
-    	return text;    
-    }
     
     public boolean isOverlapping() {
         Rectangle paraRect = paragraph.getRect();
@@ -201,8 +186,12 @@ public class GraphPage {
         return overlapping;
     }
     
-    public WebElement getParagraphImage() {
-        return table;
+    public void getOverlapImage() throws IOException {
+		File screenshot = paragraph.getScreenshotAs(OutputType.FILE);
+		String path = System.getProperty("user.dir") + "/screenshots/overlappingImage.png";
+		File destination = new File(path);
+		FileUtils.copyFile(screenshot, destination);
+		logger.info("Overlapped Image saved at: " + path);
     }
     
     //get Alert message text 

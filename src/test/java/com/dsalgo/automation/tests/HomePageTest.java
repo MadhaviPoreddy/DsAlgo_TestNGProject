@@ -1,20 +1,32 @@
 package com.dsalgo.automation.tests;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
+
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
 
 import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.pages.HomePage;
+import com.dsalgo.automation.pages.LoginPage;
 import com.dsalgo.automation.utils.NavigationUtil;
 
+/**
+ * This class contains TestNG test cases for validating the functionality of the Home Page
+ * of the DSAlgo application. It includes tests for logo navigation, dropdown validation,
+ * get started button checks, and navigation to Register/SignIn pages.
+ */
 public class HomePageTest extends BaseClass {
 	private HomePage homePage; // Global declaration for reuse
+	private LoginPage loginPage; // Global declaration for reuse
+
 	 // Initialize logger for this class
     private static final Logger logger = LogManager.getLogger(HomePageTest.class);
     
@@ -24,8 +36,11 @@ public class HomePageTest extends BaseClass {
 	public void navigateBeforeEachTest() {
 		//homepage object is initialized using baseclass webdriver
 		homePage = new HomePage(driver);
-	    NavigationUtil.navigateToHomePage(driver);
+        loginPage = new LoginPage(driver);
+	    NavigationUtil.navigateToHomePage(homePage);
 	}
+	
+
 	
 	@Test
 	public void checkLogoHomeRedirection() {
@@ -34,17 +49,25 @@ public class HomePageTest extends BaseClass {
 		logger.info("Redirected to home page successfully");
 	}
 	
-	@Test
-	public void checkDropdown() {
-		homePage.clickDataStructuresDropdown();
-		Assert.assertTrue(homePage.isDataStructureIntroOptionVisible(), "Expected 'Data Structure Introduction' to be visible, but it was not.");
-	}
 	
+	@Test
+	public void verifyCustomDropdownOptions() {
+	    List<String> expectedOptions = Arrays.asList(
+	    		"Data Structures-Introduction" , "Array", "Linked List", "Stack", "Queue", "Tree", "Graph"
+	    );
+
+	    // Make sure dropdown is visible before accessing items
+	    homePage.clickDataStructuresDropdown(); // method to open dropdown if needed
+
+	    List<String> actualOptions = homePage.getDropdownOptionTexts();
+
+	    Assert.assertEquals(actualOptions, expectedOptions, "Dropdown options mismatch.");
+	}
 
     @DataProvider(name = "dropdownOptions")
     public Object[][] options() {
         return new Object[][] {
-            {"Arrays"},
+            {"Array"},
             {"Linked List"},
             {"Stack"},
             {"Queue"},
@@ -53,7 +76,7 @@ public class HomePageTest extends BaseClass {
         };
     }
 
-    @Test(dataProvider = "dropdownOptions" , dataProviderClass = HomePageTest.class)
+    @Test(dataProvider = "dropdownOptions")
     public void testEachDropdownOptionWithoutLogin(String option) {
         homePage.selectDropdown(option);
 
@@ -71,19 +94,13 @@ public class HomePageTest extends BaseClass {
 
     @Test(dataProvider = "dropdownOptions")
     public void testEachDropdownOptionWithLogin(String option) {
-    	NavigationUtil.performLogin(driver);
+    	NavigationUtil.performLogin(homePage, loginPage);
         homePage.selectDropdown(option);
 
-        if (homePage.isWarningMessageVisible()) {
-            String warning = homePage.getWarningMessage();
-            logger.warn("Warning for '" + option + "': " + warning);
-            Assert.assertEquals(warning, "You are logged in", "Unexpected warning for: " + option);
-        } else {
-            logger.info("No warning for '" + option + "'");
-        }
-
+        Assert.assertTrue(homePage.isPageDisplayed(option), 
+                "Failed to navigate to page for: " + option);
         driver.navigate().back();
-        NavigationUtil.clickSignout(driver);
+        NavigationUtil.clickSignout(homePage);
     }
 
     @DataProvider(name = "getstartedOptions")
@@ -126,15 +143,5 @@ public class HomePageTest extends BaseClass {
 		Assert.assertTrue(homePage.isSignInPageDisplayed(), "Failed to navigate to Sign in page.");
 	}
 
-	
-	
-	
-	@Test
-	public void clickGraphGetStarted() {
-		NavigationUtil.performLogin(driver);
-		NavigationUtil.clickModuleGetStarted(driver, "Graph");
-		Assert.assertTrue(homePage.isGraphPageDisplayed(), "Failed to navigate to Graph Page");
-		NavigationUtil.clickSignout(driver);
-	}
 	
 }
