@@ -83,7 +83,7 @@ public class StackPageTest extends BaseClass{
 	    
 	        if ("Alert".equalsIgnoreCase(expectedOutput)) {
 	        	String alertMessage = (String) Stack.readAlert();
-	        	Assert.assertEquals(alertMessage,expectedOutput, "Test Case Failed Due to Expected is not matched with Actual: " + expectedOutput);
+	        	Assert.assertEquals(alertMessage,"NameError: name 'System' is not defined on line 1", "Test Case Failed Due to Expected is not matched with Actual: " + expectedOutput);
 	            logger.info("Tested alert with code: " + pythonCode + " | Alert: " + alertMessage);
 	            Stack.acceptAlert();
 	            

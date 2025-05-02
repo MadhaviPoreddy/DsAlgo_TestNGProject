@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dsalgo.automation.tests.ArrayPageTest">
+      <class name="com.dsalgo.automation.tests.StackPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="testcodeEditor" invocation-numbers="2"/>
           <include name="setUpPage"/>
-          <include name="arrayUsingListfromLeftMenu"/>
           <include name="navigateBeforeEachTest"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.dsalgo.automation.tests.ArrayPageTest -->
+      </class> <!-- com.dsalgo.automation.tests.StackPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

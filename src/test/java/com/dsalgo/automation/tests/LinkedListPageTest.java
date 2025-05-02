@@ -84,7 +84,7 @@ import com.dsalgo.automation.utils.NavigationUtil;
 		    LL.linkedListIntroductionTextEditRun();
 		    if ("Alert".equalsIgnoreCase(expectedOutput)) {
 		        	String alertMessage = (String) LL.readAlert();
-		        	Assert.assertEquals(alertMessage,expectedOutput, "Test Case Failed Due to Expected is not matched with Actual: " + expectedOutput);
+		        	Assert.assertEquals(alertMessage,"NameError: name 'System' is not defined on line 1", "Test Case Failed Due to Expected is not matched with Actual: " + expectedOutput);
 		            logger.info("Tested alert with code: " + pythonCode + " | Alert: " + alertMessage);
 		            LL.acceptAlert();
 		            

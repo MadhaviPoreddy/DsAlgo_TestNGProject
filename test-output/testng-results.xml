@@ -1,107 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="21" passed="0" failed="1" skipped="0">
+<testng-results ignored="8" total="11" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-02T11:36:23 EDT" name="Default suite" finished-at="2025-05-02T11:36:30 EDT" duration-ms="7468">
+  <suite started-at="2025-05-02T12:07:28 EDT" name="Default suite" finished-at="2025-05-02T12:08:41 EDT" duration-ms="73924">
     <groups>
     </groups>
-    <test started-at="2025-05-02T11:36:23 EDT" name="Default test" finished-at="2025-05-02T11:36:30 EDT" duration-ms="7468">
-      <class name="com.dsalgo.automation.tests.ArrayPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T11:36:23 EDT" name="setUp" finished-at="2025-05-02T11:36:25 EDT" duration-ms="1735" status="PASS">
+    <test started-at="2025-05-02T12:07:28 EDT" name="Default test" finished-at="2025-05-02T12:08:41 EDT" duration-ms="73924">
+      <class name="com.dsalgo.automation.tests.StackPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:07:28 EDT" name="setUp" finished-at="2025-05-02T12:07:29 EDT" duration-ms="1454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T11:36:25 EDT" name="setUpPage" finished-at="2025-05-02T11:36:25 EDT" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:07:29 EDT" name="setUpPage" finished-at="2025-05-02T12:07:29 EDT" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T11:36:25 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T11:36:27 EDT" duration-ms="1909" status="PASS">
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:07:30 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T12:07:32 EDT" duration-ms="2099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="arrayUsingListfromLeftMenu()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T11:36:27 EDT" name="arrayUsingListfromLeftMenu" finished-at="2025-05-02T11:36:30 EDT" duration-ms="3042" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Basic Operations in Lists']"}
-  (Session info: chrome=135.0.7049.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c08bae21316a258732e501586c352b60, findElement {using=xpath, value=//*[text()='Basic Operations in Lists']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mpore\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54601/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c08bae21316a258732e501586c352b60]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Basic Operations in Lists']"}
-  (Session info: chrome=135.0.7049.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c08bae21316a258732e501586c352b60, findElement {using=xpath, value=//*[text()='Basic Operations in Lists']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mpore\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54601/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c08bae21316a258732e501586c352b60
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
-at com.dsalgo.automation.pages.ArrayPage.arrayBasicOperinListLink(ArrayPage.java:187)
-at com.dsalgo.automation.tests.ArrayPageTest.arrayUsingListfromLeftMenu(ArrayPageTest.java:365)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="testcodeEditor(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:07:32 EDT" name="testcodeEditor" data-provider="pythoncode" finished-at="2025-05-02T12:07:33 EDT" duration-ms="1027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=, Output=}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- arrayUsingListfromLeftMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T11:36:30 EDT" name="tearDown" finished-at="2025-05-02T11:36:30 EDT" duration-ms="673" status="PASS">
+        </test-method> <!-- testcodeEditor -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:07:33 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T12:08:06 EDT" duration-ms="33169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testcodeEditor(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:08:06 EDT" name="testcodeEditor" data-provider="pythoncode" finished-at="2025-05-02T12:08:07 EDT" duration-ms="753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=print('Hello,World'), Output=Hello,World}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcodeEditor -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:08:07 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T12:08:40 EDT" duration-ms="33430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testcodeEditor(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:08:40 EDT" name="testcodeEditor" data-provider="pythoncode" finished-at="2025-05-02T12:08:41 EDT" duration-ms="877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=System.out.println("Hello,World");, Output=Alert}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcodeEditor -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:08:41 EDT" name="tearDown" finished-at="2025-05-02T12:08:41 EDT" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T11:36:30 EDT" name="closeBrowser" finished-at="2025-05-02T11:36:30 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.dsalgo.automation.tests.StackPageTest@710b18a6]" started-at="2025-05-02T12:08:41 EDT" name="closeBrowser" finished-at="2025-05-02T12:08:41 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.dsalgo.automation.tests.ArrayPageTest -->
+      </class> <!-- com.dsalgo.automation.tests.StackPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

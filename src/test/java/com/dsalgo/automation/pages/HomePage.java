@@ -202,7 +202,7 @@ public class HomePage {
 				logger.info("clicked " + getStartedDSintro.getText() + "link on  DataStructures ");
 				getStartedDSintro.click();
 				break;
-			case "Arrays":
+			case "Array":
 				logger.info("clicked " + getStartedArray.getText() + "link on Array ");
 				getStartedArray.click();
 				break;
