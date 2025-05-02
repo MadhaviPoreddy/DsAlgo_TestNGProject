@@ -61,7 +61,7 @@ public class HomePageTest extends BaseClass {
 
 	    List<String> actualOptions = homePage.getDropdownOptionTexts();
 
-	    Assert.assertEquals(actualOptions, expectedOptions, "Dropdown options mismatch.");
+	    Assert.assertEquals(actualOptions, expectedOptions, "Dropdown options mismatch. Data Structure Introduction is not available");
 	}
 
     @DataProvider(name = "dropdownOptions")

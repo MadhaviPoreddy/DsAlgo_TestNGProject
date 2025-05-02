@@ -12,7 +12,7 @@ public class DriverFactory {
 	//Parallel execution, each thread gets its own webdriver instance
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	
-	public static WebDriver initializeDriver(String browser) {
+	public static void initializeDriver(String browser) {
 		//Handles multiple browser
         if (browser.equalsIgnoreCase("chrome")) {
             driver.set(new ChromeDriver());
@@ -26,7 +26,6 @@ public class DriverFactory {
         
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        return getDriver();
     }
 
     public static WebDriver getDriver() {

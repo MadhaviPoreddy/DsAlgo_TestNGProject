@@ -52,14 +52,14 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyCustomDropdownOptions"/>
           <include name="navigateBeforeEachTest"/>
+          <include name="verifyCustomDropdownOptions"/>
         </methods>
       </class> <!-- com.dsalgo.automation.tests.HomePageTest -->
       <class name="com.dsalgo.automation.tests.GraphPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="testGraphRepPageLayout"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="afterEachTest"/>
           <include name="navigateBeforeEachTest"/>
@@ -82,15 +82,15 @@
       <class name="com.dsalgo.automation.tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="verifyCustomDropdownOptions"/>
           <include name="navigateBeforeEachTest"/>
           <include name="setUp"/>
-          <include name="verifyCustomDropdownOptions"/>
         </methods>
       </class> <!-- com.dsalgo.automation.tests.HomePageTest -->
       <class name="com.dsalgo.automation.tests.GraphPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="testGraphRepPageLayout"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="afterEachTest"/>
           <include name="navigateBeforeEachTest"/>

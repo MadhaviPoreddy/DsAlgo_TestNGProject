@@ -77,10 +77,10 @@ public class LoginPageTest extends BaseClass {
         
 
         if (username.isEmpty() ) {
-            // If username is empty, check that user stays on login page
+            // If username is empty, check message Please fill out this field
             Assert.assertEquals(loginPage.getUsernameValidationMessage(),"Please fill out this field.", "Username validation message not displayed");
         } else if ( password.isEmpty()){
-        	// If username is empty, check that user stays on login page
+        	// If password is empty, check message Please fill out this field
             Assert.assertEquals(loginPage.getPasswordValidationMessage(),"Please fill out this field.", "Password validation message not displayed");
         }else {
             // Otherwise, check for alert message

@@ -20,11 +20,12 @@ public class BaseClass {
 	protected WebDriver driver;   //driver variable is available to all the extended class
 
     
-//	//CrossBrowser Tesing
+	//CrossBrowser Tesing
 	@Parameters("browser")
 	@BeforeClass
 	public void setUp(String browser) {
-        driver = DriverFactory.initializeDriver(browser);  //Launch the browser
+        DriverFactory.initializeDriver(browser);
+        driver = DriverFactory.getDriver();
     }
 	
 	
@@ -32,18 +33,14 @@ public class BaseClass {
 //	@BeforeClass
 //	public void setUp() {
 //		String browser = ConfigReader.getProperty("browser");
-//        driver = DriverFactory.initializeDriver(browser);  //Launch the browser
+//        DriverFactory.initializeDriver(browser); 
+//        driver = DriverFactory.getDriver();
 //    }
-//	
+	
 	
     @AfterClass
     public void tearDown() {
         DriverFactory.quitDriver();
     }
-
-    public WebDriver getDriver() {
-        return driver;
-    }
-
     
 }
