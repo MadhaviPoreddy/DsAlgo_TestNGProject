@@ -6,11 +6,10 @@
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
 	import org.openqa.selenium.support.ui.ExpectedConditions;
-	import com.dsalgo.automation.driver.DriverFactory;
+	//import com.dsalgo.automation.driver.DriverFactory;
 	import org.apache.logging.log4j.LogManager;
 	import org.apache.logging.log4j.Logger;
-import com.dsalgo.automation.utils.ConfigReader;
-import com.dsalgo.automation.utils.WaitHelper;
+	import com.dsalgo.automation.utils.*;
 
 import org.openqa.selenium.Alert;
 	import org.openqa.selenium.JavascriptExecutor;
@@ -131,13 +130,14 @@ import org.openqa.selenium.Alert;
 	 		return arrayPageHeading.getText();
 
 	 	}
-		public void readAlert()
+		public String readAlert()
 		{
 			
 			driver.switchTo().alert();
 			Alert alert = driver.switchTo().alert();
 			String alertText=alert.getText(); // Get the alert text
 			System.out.println(alertText);
+			return alertText;
 
 		}
 		
@@ -146,6 +146,8 @@ import org.openqa.selenium.Alert;
 			
 			driver.switchTo().alert().accept();
 		}
+		
+		
 		public void arrayHome()
 		{
 		arrayGetStartedBtn.click();

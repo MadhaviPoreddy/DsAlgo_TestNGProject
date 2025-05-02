@@ -1,12 +1,30 @@
-2025-04-28 04:17:53 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mpore\AppData\Local\Temp\testng-eclipse--1812470729\testng-customsuite.xml"
-2025-04-28 04:17:55 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 04:17:55 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 04:17:56 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-04-28 04:17:57 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
-2025-04-28 04:17:57 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 04:17:57 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-04-28 04:17:57 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-04-28 04:17:57 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-04-28 04:17:57 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-04-28 04:17:58 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
-2025-04-28 04:17:59 INFO  com.dsalgo.automation.tests.ArrayPageTest - Redirected to arrays-in-python Text Editor page successfully
+2025-05-02 01:00:13 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mpore\AppData\Local\Temp\testng-eclipse-350527316\testng-customsuite.xml"
+2025-05-02 01:00:15 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 01:00:16 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-02 01:00:16 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-02 01:00:16 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-02 01:00:16 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-02 01:00:16 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-02 01:00:16 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-02 01:00:16 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-02 01:00:16 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 01:00:16 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 01:00:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 01:00:17 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 01:00:17 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 01:00:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-02 01:00:18 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 01:00:18 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 01:00:18 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
+2025-05-02 01:00:20 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 01:00:20 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 01:00:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 01:00:20 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 01:00:20 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 01:00:34 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
+2025-05-02 01:00:37 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
+2025-05-02 01:00:40 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
+2025-05-02 01:00:53 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
+2025-05-02 01:00:53 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 01:00:53 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 01:00:53 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 

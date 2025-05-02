@@ -1,33 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="20" total="22" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-28T04:17:54 EDT" name="Default suite" finished-at="2025-04-28T04:18:01 EDT" duration-ms="7143">
+  <suite started-at="2025-05-02T01:00:14 EDT" name="Default suite" finished-at="2025-05-02T01:00:55 EDT" duration-ms="41314">
     <groups>
     </groups>
-    <test started-at="2025-04-28T04:17:54 EDT" name="Default test" finished-at="2025-04-28T04:18:01 EDT" duration-ms="7143">
+    <test started-at="2025-05-02T01:00:14 EDT" name="Default test" finished-at="2025-05-02T01:00:55 EDT" duration-ms="41314">
       <class name="com.dsalgo.automation.tests.ArrayPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4b6e2263]" started-at="2025-04-28T04:17:54 EDT" name="setUp" finished-at="2025-04-28T04:17:55 EDT" duration-ms="1770" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:14 EDT" name="setUp" finished-at="2025-05-02T01:00:15 EDT" duration-ms="1544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4b6e2263]" started-at="2025-04-28T04:17:55 EDT" name="setUpPage" finished-at="2025-04-28T04:17:55 EDT" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:15 EDT" name="setUpPage" finished-at="2025-05-02T01:00:15 EDT" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4b6e2263]" started-at="2025-04-28T04:17:55 EDT" name="navigateBeforeEachTest" finished-at="2025-04-28T04:17:58 EDT" duration-ms="2390" status="PASS">
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:16 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T01:00:18 EDT" duration-ms="2020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="arrayPythonLinkTryEdit()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4b6e2263]" started-at="2025-04-28T04:17:58 EDT" name="arrayPythonLinkTryEdit" finished-at="2025-04-28T04:17:59 EDT" duration-ms="1036" status="PASS">
+        <test-method signature="testSoertedArrayPractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:18 EDT" name="testSoertedArrayPractieceCodeRun" data-provider="arrayPractieceCode3" finished-at="2025-05-02T01:00:20 EDT" duration-ms="2029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def sortedSquares(nums):
+    squares_list = []
+    for i in range(0, len(nums)):
+        square = nums[i] * nums[i];
+        squares_list.append(square)
+        sorted_squares_list = sorted(squares_list)
+       
+    return sorted_squares_list;
+i = sortedSquares([-7,-3,2,3,11])
+print (i), Output=[4, 9, 9, 49, 121], Button=run}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- arrayPythonLinkTryEdit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4b6e2263]" started-at="2025-04-28T04:17:59 EDT" name="tearDown" finished-at="2025-04-28T04:18:01 EDT" duration-ms="1865" status="PASS">
+        </test-method> <!-- testSoertedArrayPractieceCodeRun -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:20 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T01:00:53 EDT" duration-ms="33264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSoertedArrayPractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:53 EDT" name="testSoertedArrayPractieceCodeRun" data-provider="arrayPractieceCode3" finished-at="2025-05-02T01:00:54 EDT" duration-ms="1129" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def sortedSquares(nums):
+    squares_list = []
+    for i in range(0, len(nums)):
+        square = nums[i] * nums[i];
+        squares_list.append(square)
+        sorted_squares_list = sorted(squares_list)
+        print sorted_squares_list;
+    return sorted_squares_list;
+sortedSquares([-7,-3,2,3,11]), Output=Submission Successful, Button=Submit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TestCase Failed: Output is mismatched : Submission Successful expected [Submission Successful] but found [[49]
+[9, 49]
+[4, 9, 49]
+[4, 9, 9, 49]
+[4, 9, 9, 49, 121]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TestCase Failed: Output is mismatched : Submission Successful expected [Submission Successful] but found [[49]
+[9, 49]
+[4, 9, 49]
+[4, 9, 9, 49]
+[4, 9, 9, 49, 121]]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.dsalgo.automation.tests.ArrayPageTest.testSoertedArrayPractieceCodeRun(ArrayPageTest.java:300)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoertedArrayPractieceCodeRun -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:54 EDT" name="tearDown" finished-at="2025-05-02T01:00:55 EDT" duration-ms="491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4b6e2263]" started-at="2025-04-28T04:18:01 EDT" name="closeBrowser" finished-at="2025-04-28T04:18:01 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@289710d9]" started-at="2025-05-02T01:00:55 EDT" name="closeBrowser" finished-at="2025-05-02T01:00:55 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

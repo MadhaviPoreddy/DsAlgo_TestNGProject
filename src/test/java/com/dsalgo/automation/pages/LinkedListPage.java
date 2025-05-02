@@ -1,16 +1,26 @@
 	package com.dsalgo.automation.pages;
 
-	import org.openqa.selenium.WebDriver;
+	import org.apache.logging.log4j.LogManager;
+	import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+	import org.openqa.selenium.support.PageFactory;
 
-import com.dsalgo.automation.driver.DriverFactory;
+	//import com.dsalgo.automation.driver.DriverFactory;
+	import com.dsalgo.automation.utils.*;
 
 	public class LinkedListPage {
 
-	    WebDriver driver;
+		WebDriver driver;
+		WaitHelper waitHelper;
+		private static final Logger logger = LogManager.getLogger(HomePage.class);
+		
 		@FindBy (xpath="//a[@href ='linked-list']") WebElement linkedListGetStartedBtn;
+		@FindBy (xpath="//h4[text()=\"Linked List\"]") WebElement linkedListHeading;
+		
 		
 		//Introduction
 		@FindBy (xpath="//*[text()='Introduction']") WebElement linkedListIntroductionLink;
@@ -34,6 +44,9 @@ import com.dsalgo.automation.driver.DriverFactory;
 		@FindBy (xpath="//a[@href='/linked-list/types-of-linked-list/']") WebElement typesOfListLinkFromLeftMenu;
 		@FindBy (xpath="//a [text()='singly linked list']") WebElement TypesOfLL_SinglyLinkedListLink;
 		@FindBy (xpath="//a [text()='linked list']") WebElement TypesOfLL_LinkedListLink;
+		@FindBy (xpath="//a [text()='doubly linked list']") WebElement TypesOfLL_DoublyLinkedListLink;
+		@FindBy (xpath="//a [text()='type of the linked list']") WebElement TypesOfLL_TypesofLinkedListLink;
+
 
 		//Implement Linked List in Python
 		@FindBy (xpath="//*[text()='Implement Linked List in Python']") WebElement implementLinkedList;
@@ -71,10 +84,14 @@ import com.dsalgo.automation.driver.DriverFactory;
 		@FindBy(xpath = "//pre[@id='output']") WebElement output;
 		
 		
-		public LinkedListPage()
+		public LinkedListPage(WebDriver driver)
 	 	{
-			this.driver=DriverFactory.getDriver();
-			PageFactory.initElements( driver, this);
+			this.driver=driver;
+				PageFactory.initElements(driver, this);
+				waitHelper = new WaitHelper(driver,10);
+				logger.info("HomePage initialized with WebDriver and waitHelper");	
+			 	
+		
 	 	}
 		public void linkedListGetStartedBtn()
 		{
@@ -85,6 +102,13 @@ import com.dsalgo.automation.driver.DriverFactory;
 	 		return driver.getTitle();
 	 
 	 	}
+		
+		public String linkedListHeading()
+		{
+	 		return linkedListHeading.getText();
+
+	 	}
+		
 		public void linkedListIntroductionLink()
 		{
 		linkedListIntroductionLink.click();
@@ -142,7 +166,15 @@ import com.dsalgo.automation.driver.DriverFactory;
 		{
 			TypesOfLL_LinkedListLink.click();
 		}
+		public void TypesOfLL_DoublyLinkedListLink()
+		{
+			TypesOfLL_DoublyLinkedListLink.click();
+		}
 		
+		public void TypesOfLL_TypesofLinkedListLink()
+		{
+			TypesOfLL_TypesofLinkedListLink.click();
+		}
 		
 		//4th link
 		public void implementLinkedList()
@@ -197,4 +229,25 @@ import com.dsalgo.automation.driver.DriverFactory;
 		       assert false : "This test is designed to fail";
 		    }
 		
+		   public String readAlert()
+			{
+				
+				driver.switchTo().alert();
+				Alert alert = driver.switchTo().alert();
+				String alertText=alert.getText(); // Get the alert text
+				System.out.println(alertText);
+				return alertText;
+
+			}
+			
+			public void acceptAlert()
+			{
+				
+				driver.switchTo().alert().accept();
+			}
+
+			public void verifyCodeEditor(String code) {
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].CodeMirror.setValue(arguments[1]);", linkedListIntroductionTextEdit, code);
+			}   
 	}

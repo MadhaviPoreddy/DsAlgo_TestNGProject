@@ -18,7 +18,6 @@ public class NavigationUtil {
 	}
 	
 	
-	
 	//Test valid login
 	public static void performLogin(WebDriver driver) {
 		try {

@@ -1,6 +1,8 @@
 package com.dsalgo.automation.utils;
 
 import org.apache.poi.ss.usermodel.*;
+import org.testng.annotations.DataProvider;
+
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
@@ -8,11 +10,14 @@ import java.io.IOException;
 import java.util.*;
 
 public class ExcelReader {
-	private static final String EXCEL_FILE_PATH = "src/test/resources/testdata/TestData.xlsx";
-
+	
+	
+	//private static final String EXCEL_FILE_PATH = "src/test/resources/testdata/TestData.xlsx";
+	
+	private static final String EXCEL_FILE_PATH = "src/test/resources/testdata/TestDataNg.xlsx";
 	public static List<Map<String, String>> getAllRows(String sheetName) {
 		List<Map<String, String>> allData = new ArrayList<>();
-		try (FileInputStream file = new FileInputStream(EXCEL_FILE_PATH); Workbook workbook = new XSSFWorkbook(file)) {
+		try (FileInputStream file = new FileInputStream(EXCEL_FILE_PATH);Workbook workbook = new XSSFWorkbook(file)) {
 
 			Sheet sheet = workbook.getSheet(sheetName);
 			Row headerRow = sheet.getRow(0);
@@ -30,8 +35,7 @@ public class ExcelReader {
 
 				for (int col = 0; col < totalColumns; col++) {
 					Cell headerCell = headerRow.getCell(col, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
-					Cell dataCell = (dataRow != null) ? dataRow.getCell(col, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK)
-							: null;
+					Cell dataCell = (dataRow != null) ? dataRow.getCell(col, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK): null;
 
 					String header = headerCell.getStringCellValue().trim();
 					String value = (dataCell != null) ? getCellValue(dataCell) : "";
