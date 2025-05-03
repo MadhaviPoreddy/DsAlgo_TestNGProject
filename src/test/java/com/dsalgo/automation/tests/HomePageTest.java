@@ -18,6 +18,8 @@ public class HomePageTest extends BaseClass {
 	 // Initialize logger for this class
     private static final Logger logger = LogManager.getLogger(HomePageTest.class);
 
+    
+    
 	@BeforeClass
 	public void navigateBeforeEachTest() {
 		//homepage object is initialized using baseclass webdriver

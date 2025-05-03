@@ -1,28 +1,37 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="ParallelByClasses" parallel="classes" thread-count="3">
-    <!--Cross Browser Tesing & parallel Testing-->
-    <!-- Chrome Test -->
-    <test name="CrossBrowserTests-Chrome">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-           
-        </classes>
-    </test>
-
-    <!-- Firefox Test -->
-    <test name="CrossBrowserTests-Firefox">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-           
-        </classes>
-    </test>
-
-    <!-- Edge Test -->
-    <test name="CrossBrowserTests-Edge">
-        <parameter name="browser" value="edge"/>
-        <classes>
-            
-        </classes>
-    </test>
+	<!--Cross Browser Tesing & parallel Testing-->
+	<!-- Chrome Test -->
+	<listeners>
+		<listener class-name="com.dsalgo.automation.listener.RetryListener" />
+		<listener class-name="com.dsalgo.automation.listener.AllureRptListener" />
+		<listener class-name="com.dsalgo.automation.listener.ExtentRptListener" />
+	</listeners>
+	<test name="CrossBrowserTests-Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.dsalgo.automation.tests.QueueTest"></class>
+			<class name="com.dsalgo.automation.tests.RegisterTest"></class>
+			<class name="com.dsalgo.automation.tests.TreeTest"></class>
+		</classes>
+	</test>
+	<!-- Firefox Test -->
+	<test name="CrossBrowserTests-Firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.dsalgo.automation.tests.QueueTest"></class>
+			<class name="com.dsalgo.automation.tests.RegisterTest"></class>
+			<class name="com.dsalgo.automation.tests.TreeTest"></class>
+		</classes>
+	</test>
+	<!-- Edge Test -->
+	<test name="CrossBrowserTests-Edge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.dsalgo.automation.tests.QueueTest"></class>
+			<class name="com.dsalgo.automation.tests.RegisterTest"></class>
+			<class name="com.dsalgo.automation.tests.TreeTest"></class>
+		</classes>
+	</test>
 
 </suite>

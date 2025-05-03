@@ -37,7 +37,7 @@ public class BaseClass {
         DriverFactory.quitDriver();
     }
 
-    public WebDriver getDriver() {
+    public WebDriver getDriver() { 
         return driver;
     }
 
