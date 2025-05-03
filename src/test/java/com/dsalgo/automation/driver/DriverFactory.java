@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
@@ -22,7 +23,9 @@ public class DriverFactory {
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver.set(new FirefoxDriver());
         } else if (browser.equalsIgnoreCase("edge")) {
-            driver.set(new EdgeDriver());
+        	EdgeOptions options = new EdgeOptions();
+        	options.addArguments("--headless=new", "--disable-gpu");
+            driver.set(new EdgeDriver(options));
         } else {
             throw new IllegalArgumentException("Unsupported browser: " + browser);
         }

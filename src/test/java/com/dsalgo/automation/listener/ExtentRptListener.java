@@ -31,9 +31,7 @@ public class ExtentRptListener implements ITestListener {
         if (browserName == null || browserName.isEmpty()) {
             browserName = "chrome"; 
         }
-
-        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String reportPath = "target/ExtentReport_" + browserName + "_" + timestamp + ".html";
+        String reportPath = "target/Extent/" + browserName + "/ExtentReport.html";
 
         ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
         extent = new ExtentReports();
