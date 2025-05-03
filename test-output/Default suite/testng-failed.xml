@@ -5,11 +5,13 @@
     <classes>
       <class name="com.dsalgo.automation.tests.ArrayPageTest">
         <methods>
+          <include name="testSoertedArrayPractieceCodeRun" invocation-numbers="1 2"/>
           <include name="tearDown"/>
+          <include name="testFindEvenPractieceCodeRun" invocation-numbers="1"/>
           <include name="setUp"/>
           <include name="setUpPage"/>
+          <include name="testSearchPractieceCode" invocation-numbers="3"/>
           <include name="navigateBeforeEachTest"/>
-          <include name="closeBrowser"/>
           <include name="testMaxConsecutivePractieceCodeRun" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.dsalgo.automation.tests.ArrayPageTest -->

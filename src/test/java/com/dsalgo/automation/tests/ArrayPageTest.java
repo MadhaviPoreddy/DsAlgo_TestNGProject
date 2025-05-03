@@ -32,28 +32,21 @@ public class ArrayPageTest extends BaseClass{
 
    private static final Logger logger = LogManager.getLogger(ArrayPageTest.class);
 
-   
    @BeforeClass
    public void setUpPage() {
 		
-	   Array=new ArrayPage(driver); 
+	  Array=new ArrayPage(driver); 
    }
-   
-
+	
    @BeforeMethod
 	public void navigateBeforeEachTest() {
+	   Array=new ArrayPage(driver); 
 	   homePage = new HomePage(driver);
 		loginPage = new LoginPage(driver);
 	    NavigationUtil.navigateToHomePage(homePage);
 	    NavigationUtil.performLogin(homePage,loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Array");
 	}
-	
-	
-	@AfterTest
-	public void closeBrowser() {
-        DriverFactory.quitDriver();
-    }
 	
 	   @DataProvider(name = "arrayPractieceCode")
 	    public Object[][] PractieceCode()

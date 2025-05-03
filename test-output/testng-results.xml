@@ -1,25 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="19" total="21" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="31" passed="26" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-02T23:54:57 EDT" name="Default suite" finished-at="2025-05-02T23:55:36 EDT" duration-ms="39055">
+  <suite started-at="2025-05-03T10:33:08 EDT" name="Default suite" finished-at="2025-05-03T10:50:14 EDT" duration-ms="1025923">
     <groups>
     </groups>
-    <test started-at="2025-05-02T23:54:57 EDT" name="Default test" finished-at="2025-05-02T23:55:36 EDT" duration-ms="39055">
+    <test started-at="2025-05-03T10:33:08 EDT" name="Default test" finished-at="2025-05-03T10:50:14 EDT" duration-ms="1025923">
       <class name="com.dsalgo.automation.tests.ArrayPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:54:57 EDT" name="setUp" finished-at="2025-05-02T23:54:58 EDT" duration-ms="1169" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:33:08 EDT" name="setUp" finished-at="2025-05-03T10:33:10 EDT" duration-ms="1615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:54:58 EDT" name="setUpPage" finished-at="2025-05-02T23:54:58 EDT" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:33:10 EDT" name="setUpPage" finished-at="2025-05-03T10:33:10 EDT" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:54:59 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T23:55:01 EDT" duration-ms="2006" status="PASS">
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:33:10 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:33:12 EDT" duration-ms="2103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testMaxConsecutivePractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:01 EDT" name="testMaxConsecutivePractieceCodeRun" data-provider="arrayPractieceCode1" finished-at="2025-05-02T23:55:02 EDT" duration-ms="1393" status="PASS">
+        <test-method signature="applicationOfArraryLink()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:33:12 EDT" name="applicationOfArraryLink" finished-at="2025-05-03T10:33:12 EDT" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationOfArraryLink -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:33:12 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:33:46 EDT" duration-ms="33432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="applicationOfArraryTryEdit()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:33:46 EDT" name="applicationOfArraryTryEdit" finished-at="2025-05-03T10:33:47 EDT" duration-ms="1694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationOfArraryTryEdit -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:33:47 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:34:21 EDT" duration-ms="33286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="arrayBasicOperinListLink()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:34:21 EDT" name="arrayBasicOperinListLink" finished-at="2025-05-03T10:34:21 EDT" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrayBasicOperinListLink -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:34:21 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:34:54 EDT" duration-ms="33332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="arrayPractieceQue()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:34:54 EDT" name="arrayPractieceQue" finished-at="2025-05-03T10:34:55 EDT" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrayPractieceQue -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:34:55 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:35:28 EDT" duration-ms="33011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="arrayPythonLink()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:35:28 EDT" name="arrayPythonLink" finished-at="2025-05-03T10:35:29 EDT" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrayPythonLink -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:35:29 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:36:02 EDT" duration-ms="33043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="arrayPythonLinkTryEdit()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:36:02 EDT" name="arrayPythonLinkTryEdit" finished-at="2025-05-03T10:36:02 EDT" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrayPythonLinkTryEdit -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:36:02 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:36:35 EDT" duration-ms="33169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="arrayUsingList()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:36:35 EDT" name="arrayUsingList" finished-at="2025-05-03T10:36:36 EDT" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrayUsingList -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:36:36 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:37:09 EDT" duration-ms="33022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="arrayUsingListTryEdit()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:37:09 EDT" name="arrayUsingListTryEdit" finished-at="2025-05-03T10:37:10 EDT" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrayUsingListTryEdit -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:37:10 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:37:43 EDT" duration-ms="33085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="arrayUsingListfromLeftMenu()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:37:43 EDT" name="arrayUsingListfromLeftMenu" finished-at="2025-05-03T10:37:43 EDT" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrayUsingListfromLeftMenu -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:37:43 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:38:16 EDT" duration-ms="33179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="basicOperinListTryEdit()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:38:16 EDT" name="basicOperinListTryEdit" finished-at="2025-05-03T10:38:17 EDT" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicOperinListTryEdit -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:38:17 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:38:50 EDT" duration-ms="33069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="checkArrayLandingPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:38:50 EDT" name="checkArrayLandingPage" finished-at="2025-05-03T10:38:50 EDT" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkArrayLandingPage -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:38:50 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:39:23 EDT" duration-ms="33128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="findWithEvenDigitPractieceQue()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:39:23 EDT" name="findWithEvenDigitPractieceQue" finished-at="2025-05-03T10:39:24 EDT" duration-ms="1235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findWithEvenDigitPractieceQue -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:39:24 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:39:58 EDT" duration-ms="33178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="maxPractieceQPractieceQue()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:39:58 EDT" name="maxPractieceQPractieceQue" finished-at="2025-05-03T10:39:58 EDT" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxPractieceQPractieceQue -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:39:58 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:40:31 EDT" duration-ms="33098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="searchTheArrayPractieceQue()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:40:31 EDT" name="searchTheArrayPractieceQue" finished-at="2025-05-03T10:40:32 EDT" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTheArrayPractieceQue -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:40:32 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:41:05 EDT" duration-ms="33011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="squaredOfSortedArrayPractieceQue()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:41:05 EDT" name="squaredOfSortedArrayPractieceQue" finished-at="2025-05-03T10:41:06 EDT" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- squaredOfSortedArrayPractieceQue -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:41:06 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:41:40 EDT" duration-ms="33265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testFindEvenPractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:41:40 EDT" name="testFindEvenPractieceCodeRun" data-provider="arrayPractieceCode2" finished-at="2025-05-03T10:41:40 EDT" duration-ms="847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def findNumbers(nums):
+    c=0
+    for i in nums:
+        j=str(i)
+        x=len(j)
+        if x%2==0:
+            c=c+1
+            print(c)
+    return c, Output=, Button=run}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindEvenPractieceCodeRun -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:41:40 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:42:14 EDT" duration-ms="33148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testFindEvenPractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:42:14 EDT" name="testFindEvenPractieceCodeRun" data-provider="arrayPractieceCode2" finished-at="2025-05-03T10:42:14 EDT" duration-ms="802" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def findNumbers(nums):
+    c=0
+    for i in nums:
+        j=str(i)
+        x=len(j)
+        if x%2==0:
+            c=c+1
+            print(c)
+    return c, Output=Submission Successful, Button=Submit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Case Failed: Actual output is not same as expected output: Submission Successful expected [Submission Successful] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Case Failed: Actual output is not same as expected output: Submission Successful expected [Submission Successful] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.dsalgo.automation.tests.ArrayPageTest.testFindEvenPractieceCodeRun(ArrayPageTest.java:217)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindEvenPractieceCodeRun -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:42:14 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:42:48 EDT" duration-ms="33197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testMaxConsecutivePractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:42:48 EDT" name="testMaxConsecutivePractieceCodeRun" data-provider="arrayPractieceCode1" finished-at="2025-05-03T10:42:48 EDT" duration-ms="898" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,11 +250,11 @@ findMaxConsecutiveOnes([1,0,1,1,0,1]), Output=1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaxConsecutivePractieceCodeRun -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:02 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T23:55:35 EDT" duration-ms="32991" status="PASS">
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:42:48 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:43:21 EDT" duration-ms="33008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testMaxConsecutivePractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:35 EDT" name="testMaxConsecutivePractieceCodeRun" data-provider="arrayPractieceCode1" finished-at="2025-05-02T23:55:36 EDT" duration-ms="740" status="FAIL">
+        <test-method signature="testMaxConsecutivePractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:43:21 EDT" name="testMaxConsecutivePractieceCodeRun" data-provider="arrayPractieceCode1" finished-at="2025-05-03T10:43:22 EDT" duration-ms="889" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -76,7 +283,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
-at com.dsalgo.automation.tests.ArrayPageTest.testMaxConsecutivePractieceCodeRun(ArrayPageTest.java:174)
+at com.dsalgo.automation.tests.ArrayPageTest.testMaxConsecutivePractieceCodeRun(ArrayPageTest.java:167)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -109,14 +316,374 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaxConsecutivePractieceCodeRun -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:36 EDT" name="tearDown" finished-at="2025-05-02T23:55:36 EDT" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:43:22 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:43:56 EDT" duration-ms="33421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:43:56 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-03T10:43:57 EDT" duration-ms="994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def search(input_list, num):
+    if(num in input_list):
+        print("Element Found")
+    else:
+        print("Not Found")
+search([12, 23, 45, 67, 6, 90] , 12), Output=Element Found, Button=run}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPractieceCode -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:43:57 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:44:30 EDT" duration-ms="33120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:44:30 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-03T10:44:31 EDT" duration-ms="820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def search(input_list, num):
+    if(num in input_list):
+        print("Element Found")
+    else:
+        print("Element Not Found")
+search([12, 23, 45, 67, 6, 90] , 1), Output=Element Not Found, Button=run}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPractieceCode -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:44:31 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:45:04 EDT" duration-ms="33098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:45:04 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-03T10:45:05 EDT" duration-ms="876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def search(input_list, num):, Output=Alert, Button=run}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPractieceCode -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:45:05 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:45:38 EDT" duration-ms="33055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:45:38 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-03T10:45:42 EDT" duration-ms="3847" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def search(input_list, num):
+    if(num in input_list):
+        print("Element Found")
+    else:
+        print("Element Not Found")
+search([12, 23, 45, 67, 6, 90] , 1), Output=Submission Successful, Button=Submit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//pre[text()="Error occurred during submission"]"}
+  (Session info: chrome=135.0.7049.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68b143dcabc2646de2d4c76c17729fa8, findElement {using=xpath, value=//pre[text()="Error occurred during submission"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mpore\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62086/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68b143dcabc2646de2d4c76c17729fa8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//pre[text()="Error occurred during submission"]"}
+  (Session info: chrome=135.0.7049.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68b143dcabc2646de2d4c76c17729fa8, findElement {using=xpath, value=//pre[text()="Error occurred during submission"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mpore\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62086/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68b143dcabc2646de2d4c76c17729fa8
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+at com.dsalgo.automation.pages.ArrayPage.verifyOutputError(ArrayPage.java:105)
+at com.dsalgo.automation.tests.ArrayPageTest.testSearchPractieceCode(ArrayPageTest.java:101)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPractieceCode -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:45:42 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:46:15 EDT" duration-ms="33053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:46:15 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-03T10:46:16 EDT" duration-ms="1276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def search(input_list, num):, Output=Error occurred during submission, Button=Submit}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPractieceCode -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:46:16 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:46:49 EDT" duration-ms="33172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:46:49 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-03T10:46:50 EDT" duration-ms="1205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=, Output=Error occurred during submission, Button=Submit}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPractieceCode -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:46:50 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:47:24 EDT" duration-ms="33202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSoertedArrayPractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:47:24 EDT" name="testSoertedArrayPractieceCodeRun" data-provider="arrayPractieceCode3" finished-at="2025-05-03T10:47:24 EDT" duration-ms="810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def sortedSquares(nums):
+    squares_list = []
+    for i in range(0, len(nums)):
+        square = nums[i] * nums[i];
+        squares_list.append(square)
+        sorted_squares_list = sorted(squares_list)
+       
+    return sorted_squares_list;
+i = sortedSquares([-7,-3,2,3,11])
+print (i), Output=[4, 9, 9, 49, 121], Button=run}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoertedArrayPractieceCodeRun -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:47:24 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:47:57 EDT" duration-ms="33041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSoertedArrayPractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:47:57 EDT" name="testSoertedArrayPractieceCodeRun" data-provider="arrayPractieceCode3" finished-at="2025-05-03T10:47:58 EDT" duration-ms="787" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=def sortedSquares(nums):
+    squares_list = []
+    for i in range(0, len(nums)):
+        square = nums[i] * nums[i];
+        squares_list.append(square)
+        sorted_squares_list = sorted(squares_list)
+        print sorted_squares_list;
+    return sorted_squares_list;
+sortedSquares([-7,-3,2,3,11]), Output=Submission Successful, Button=Submit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Case Failed: Actual output is not same as expected output: Submission Successful expected [Submission Successful] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Case Failed: Actual output is not same as expected output: Submission Successful expected [Submission Successful] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.dsalgo.automation.tests.ArrayPageTest.testSoertedArrayPractieceCodeRun(ArrayPageTest.java:264)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoertedArrayPractieceCodeRun -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:47:58 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:48:31 EDT" duration-ms="33125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testSoertedArrayPractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:48:31 EDT" name="testSoertedArrayPractieceCodeRun" data-provider="arrayPractieceCode3" finished-at="2025-05-03T10:48:32 EDT" duration-ms="1101" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=, Output=No tests were collected, Button=Submit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Case Failed: Actual output is not same as expected output:No tests were collected expected [No tests were collected] but found [ No tests were collected]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Case Failed: Actual output is not same as expected output:No tests were collected expected [No tests were collected] but found [ No tests were collected]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.dsalgo.automation.tests.ArrayPageTest.testSoertedArrayPractieceCodeRun(ArrayPageTest.java:271)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoertedArrayPractieceCodeRun -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:48:33 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:49:06 EDT" duration-ms="32972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testcodeEditor(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:49:06 EDT" name="testcodeEditor" data-provider="pythoncode" finished-at="2025-05-03T10:49:06 EDT" duration-ms="622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=, Output=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcodeEditor -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:49:06 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:49:39 EDT" duration-ms="33238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testcodeEditor(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:49:39 EDT" name="testcodeEditor" data-provider="pythoncode" finished-at="2025-05-03T10:49:40 EDT" duration-ms="578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=print('Hello,World'), Output=Hello,World}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcodeEditor -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:49:40 EDT" name="navigateBeforeEachTest" finished-at="2025-05-03T10:50:13 EDT" duration-ms="33145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBeforeEachTest -->
+        <test-method signature="testcodeEditor(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:50:13 EDT" name="testcodeEditor" data-provider="pythoncode" finished-at="2025-05-03T10:50:14 EDT" duration-ms="639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ValidCode=System.out.println("Hello,World");, Output=Alert}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcodeEditor -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@3401a114]" started-at="2025-05-03T10:50:14 EDT" name="tearDown" finished-at="2025-05-03T10:50:14 EDT" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:36 EDT" name="closeBrowser" finished-at="2025-05-02T23:55:36 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
       </class> <!-- com.dsalgo.automation.tests.ArrayPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -34,14 +34,10 @@ public class StackPageTest extends BaseClass{
 
    private static final Logger logger = LogManager.getLogger(ArrayPageTest.class);
    
-   @BeforeClass
-   public void setUpPage() {
-		
-	   Stack=new StackPage(driver); 
-   }
 	
 	@BeforeMethod
 	public void navigateBeforeEachTest() {
+		 Stack=new StackPage(driver); 
 		homePage = new HomePage(driver);
 		loginPage = new LoginPage(driver);
 	    NavigationUtil.navigateToHomePage(homePage);
@@ -49,11 +45,6 @@ public class StackPageTest extends BaseClass{
 		NavigationUtil.clickModuleGetStarted(homePage, "Stack");
 	}
 	
-	@AfterTest
-	public void closeBrowser() {
-        DriverFactory.quitDriver();
-    }
-
     @DataProvider(name = "pythoncode")
     public Object[][] getData()
     {
