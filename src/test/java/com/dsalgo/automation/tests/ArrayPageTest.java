@@ -81,7 +81,7 @@ public class ArrayPageTest extends BaseClass{
 			Array.arrayPractieceQue();
 			Array.searchArrayPractieceQue();
 			Array.verifyCodeEditor(practieceQ);
-						   	
+
 		    if("run".equalsIgnoreCase(button))
 		    {
 			    Array.arrayPythonTextEditRun();
@@ -107,14 +107,20 @@ public class ArrayPageTest extends BaseClass{
 		        if ("Submission Successful".equalsIgnoreCase(expectedOutput)) {
 		        	String actualOutput = Array.verifyOutputError();
 		        	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
+		            logger.info("Actual Output is " + actualOutput );
+
           
 		        }else if("Error occurred during submission".equalsIgnoreCase(expectedOutput)) {
 			        String actualOutput = Array.verifyOutputError();
 			        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
+		            logger.info("Actual Output is " + actualOutput );
+
 		       }
 		        else {
 		        	 String actualOutput = Array.verifyOutput();
 				        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
+			            logger.info("Actual Output is " + actualOutput );
+
 		        }
 		    }
 		    else
@@ -124,8 +130,8 @@ public class ArrayPageTest extends BaseClass{
 		    	   return;
 		    }
 		    
-		
-   } 		
+		}
+    		
 		  @DataProvider(name = "arrayPractieceCode1")
 		    public Object[][] PractieceCode1()
 		    {
@@ -145,31 +151,37 @@ public class ArrayPageTest extends BaseClass{
 		public void testMaxConsecutivePractieceCodeRun(Map<String, String> data)
 		{
 
-			 String practieceQ = data.get("ValidCode");
+			String practieceQ = data.get("ValidCode");
 		    String expectedOutput = data.get("Output");
+		    String button=data.get("Button");
 		    Array.arrayPythonLink();
 			Array.arrayPractieceQue();
 			Array.maxConsucutiveOnesPractieceQue();
 			Array.verifyCodeEditor(practieceQ);
+			
+			 if("run".equalsIgnoreCase(button))
+			    {
 		 	Array.arrayPythonTextEditRun();    
 		 	String actualOutput = Array.verifyOutput();
-			Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "TestCase Failed: Output is mismatched : "+ expectedOutput);
-		}        
-	 @Test(dataProvider="arrayPractieceCode1")
-		public void testMaxConsecutivePractieceCodeSubmit(Map<String, String> data)
-		{
-		String practieceQ = data.get("ValidCode");
-		 String expectedOutput = data.get("Output");
-		    Array.arrayPythonLink();
-			Array.arrayPractieceQue();
-			Array.maxConsucutiveOnesPractieceQue();
-			Array.verifyCodeEditor(practieceQ);  	
-			Array.arrayPracticeSubmit();
- 			String actualOutput = Array.verifyOutput();
-			Assert.assertEquals(actualOutput,expectedOutput, "TestCase Failed: Output is mismatched:  " + expectedOutput);
-				   		   
-		}
+			Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
+            logger.info("Actual Output is " + actualOutput );
 
+		       }
+			 else if("Submit".equalsIgnoreCase(button))
+			    {
+			Array.arrayPracticeSubmit();    
+		 	String actualOutput = Array.verifyOutput();
+			Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
+			logger.info("Actual Output upon clicking Submit is " + actualOutput );
+		       }
+			 else
+			    {
+			    	   System.out.println("Page name is incorrect.");
+			    	    //driver.close();
+			    	   return;
+			    }
+		}
+	
 	 @DataProvider(name = "arrayPractieceCode2")
 	    public Object[][] PractieceCode2()
 	    {
@@ -192,45 +204,97 @@ public class ArrayPageTest extends BaseClass{
 
 			String practieceQ = data.get("ValidCode");
 		    String expectedOutput = data.get("Output");
+		    String button=data.get("Button");
 		    Array.arrayBasicOperinListLink();
 			Array.arrayPractieceQue();
 			Array.findNumwithEvenDigitsPractieceQue();
 			Array.verifyCodeEditor(practieceQ);
-		    Array.arrayPythonTextEditRun();	
-		 	String actualOutput = Array.verifyOutput();
-			Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "TestCase Failed: Output is mismatched : "+ expectedOutput);
+		
+			if("run".equalsIgnoreCase(button))
+		    {
+			 	Array.arrayPythonTextEditRun();    
+			 	String actualOutput = Array.verifyOutput();
+				Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
+	       }
+			else if("Submit".equalsIgnoreCase(button)) 
+		    {
+				
+			    Array.arrayPracticeSubmit();
+		        String actualOutput = Array.verifyOutput();
+		        Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
+		        logger.info("Actual Output is: " + actualOutput );
+	       }
+			
+			else
+		    {
+		    	   System.out.println("Page name is incorrect.");
+		    	   return;
+		    }
 		}        
 
 	 
 		 @DataProvider(name = "arrayPractieceCode3")
 		    public Object[][] PractieceCode3()
-		    {
-						
-		    	 List<Map<String, String>> allData1 = ExcelReader.getAllRows("Arrays_SquaresOfSortedArray");
-		    	 
+		    {					
+		    	 List<Map<String, String>> allData1 = ExcelReader.getAllRows("Arrays_SquaresOfSortedArray");		    	 
 		    	 Object[][] result1 =  new Object[allData1.size()][1];
 		    	 
 		 	    for (int i = 0; i < allData1.size(); i++) {
 		 	    	result1[i][0]  = allData1.get(i);
-		 	    }
-		 	        
+		 	    } 
 		    	 return result1;
 		    }	 
-		 
-		 
-			@Test(dataProvider="arrayPractieceCode3")
+		 @Test(dataProvider="arrayPractieceCode3")
 			public void testSoertedArrayPractieceCodeRun(Map<String, String> data)
 			{
 
 				String practieceQ = data.get("ValidCode");
 			    String expectedOutput = data.get("Output");
+			    String button=data.get("Button");
 			    Array.arrayBasicOperinListLink();
 				Array.arrayPractieceQue();
 				Array.squaresOfSortedArrayPractieceQue();
 				Array.verifyCodeEditor(practieceQ);
-				Array.arrayPythonTextEditRun();	    
-			 	String actualOutput = Array.verifyOutput();
-				Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "TestCase Failed: Output is mismatched : "+ expectedOutput);
+				if("run".equalsIgnoreCase(button))
+				    {
+				 	Array.arrayPythonTextEditRun();    
+				 	String actualOutput = Array.verifyOutput();
+					Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
+				    }
+				else if("Submit".equalsIgnoreCase(button)) 
+			    {
+					
+				    Array.arrayPracticeSubmit();
+
+					if ("Submission Successful".equalsIgnoreCase(expectedOutput)) {
+			        	String actualOutput = Array.verifyOutput();
+			        	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
+			            logger.info("Actual Output is " + actualOutput );
+
+	         		}
+			        else if("No tests were collected".equalsIgnoreCase(expectedOutput))
+			        {
+			        	 String actualOutput = Array.verifyBlankOutputError();
+					        Assert.assertEquals(actualOutput, expectedOutput, "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
+				            logger.info("Actual Output is " + actualOutput );
+
+			        }
+					else 
+					{
+			        	String actualOutput = Array.verifyOutput();
+			        	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
+			            logger.info("Actual Output is " + actualOutput );
+
+	         		}
+
+		       }
+				
+				else
+			    {
+			    	   System.out.println("Page name is incorrect.");
+			    	    //driver.close();
+			    	   return;
+			    }
 			}     
 	 
 
@@ -263,13 +327,13 @@ public class ArrayPageTest extends BaseClass{
 	    
 	        if ("Alert".equalsIgnoreCase(expectedOutput)) {
 	        	String alertMessage = (String) Array.readAlert();
-	        	Assert.assertEquals(alertMessage,"NameError: name 'System' is not defined on line 1", "Mismatched! expected output is: " + expectedOutput);
+	        	Assert.assertEquals(alertMessage,"NameError: name 'System' is not defined on line 1", "Testcase Failed: Mismatched! expected output is: " + expectedOutput);
 	            logger.info("Tested alert with code: " + pythonCode + " | Alert: " + alertMessage);
 	            Array.acceptAlert();
 	            
 	        }else {
 		        String actualOutput = Array.verifyOutput();
-		        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Mismatch in Try Editor Output!");
+		        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Testcase Failed: Mismatch in Try Editor Output!");
 	       }
 		} 
 	

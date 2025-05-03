@@ -1,133 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="26" passed="5" failed="1" skipped="0">
+<testng-results ignored="19" total="21" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-02T21:02:17 EDT" name="Default suite" finished-at="2025-05-02T21:05:15 EDT" duration-ms="178527">
+  <suite started-at="2025-05-02T23:54:57 EDT" name="Default suite" finished-at="2025-05-02T23:55:36 EDT" duration-ms="39055">
     <groups>
     </groups>
-    <test started-at="2025-05-02T21:02:17 EDT" name="Default test" finished-at="2025-05-02T21:05:15 EDT" duration-ms="178527">
+    <test started-at="2025-05-02T23:54:57 EDT" name="Default test" finished-at="2025-05-02T23:55:36 EDT" duration-ms="39055">
       <class name="com.dsalgo.automation.tests.ArrayPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:02:17 EDT" name="setUp" finished-at="2025-05-02T21:02:18 EDT" duration-ms="1117" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:54:57 EDT" name="setUp" finished-at="2025-05-02T23:54:58 EDT" duration-ms="1169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:02:18 EDT" name="setUpPage" finished-at="2025-05-02T21:02:18 EDT" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:54:58 EDT" name="setUpPage" finished-at="2025-05-02T23:54:58 EDT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:02:19 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T21:02:20 EDT" duration-ms="1767" status="PASS">
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:54:59 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T23:55:01 EDT" duration-ms="2006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:02:20 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-02T21:02:22 EDT" duration-ms="1615" status="PASS">
+        <test-method signature="testMaxConsecutivePractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:01 EDT" name="testMaxConsecutivePractieceCodeRun" data-provider="arrayPractieceCode1" finished-at="2025-05-02T23:55:02 EDT" duration-ms="1393" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ValidCode=def search(input_list, num):
-    if(num in input_list):
-        print("Element Found")
-    else:
-        print("Not Found")
-search([12, 23, 45, 67, 6, 90] , 12), Output=Element Found, Button=run}]]>
+                <![CDATA[{ValidCode=def findMaxConsecutiveOnes(nums) :
+    count = 0
+    result = 0
+    for i in range(0, len(nums)):
+        if (nums[i] == 0):
+            count = 0
+        else:
+            count+= 1
+            result = max(result, count)
+            print(result)
+findMaxConsecutiveOnes([1,0,1,1,0,1]), Output=1
+1
+2
+2, Button=run}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchPractieceCode -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:02:22 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T21:02:55 EDT" duration-ms="33002" status="PASS">
+        </test-method> <!-- testMaxConsecutivePractieceCodeRun -->
+        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:02 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T23:55:35 EDT" duration-ms="32991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:02:55 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-02T21:02:56 EDT" duration-ms="746" status="PASS">
+        <test-method signature="testMaxConsecutivePractieceCodeRun(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:35 EDT" name="testMaxConsecutivePractieceCodeRun" data-provider="arrayPractieceCode1" finished-at="2025-05-02T23:55:36 EDT" duration-ms="740" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ValidCode=def search(input_list, num):
-    if(num in input_list):
-        print("Element Found")
-    else:
-        print("Element Not Found")
-search([12, 23, 45, 67, 6, 90] , 1), Output=Element Not Found, Button=run}]]>
+                <![CDATA[{ValidCode=def findMaxConsecutiveOnes(nums) :
+    count = 0
+    result = 0
+    for i in range(0, len(nums)):
+        if (nums[i] == 0):
+            count = 0
+        else:
+            count+= 1
+            result = max(result, count)
+            print(result)
+findMaxConsecutiveOnes([1,0,1,1,0,1]), Output=Some Tests failed. Please review code, Button=Submit}]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchPractieceCode -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:02:56 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T21:03:29 EDT" duration-ms="33054" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:03:29 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-02T21:03:30 EDT" duration-ms="818" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ValidCode=def search(input_list, num):, Output=Alert, Button=run}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchPractieceCode -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:03:30 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T21:04:03 EDT" duration-ms="33058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:04:03 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-02T21:04:06 EDT" duration-ms="3869" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ValidCode=def search(input_list, num):
-    if(num in input_list):
-        print("Element Found")
-    else:
-        print("Element Not Found")
-search([12, 23, 45, 67, 6, 90] , 1), Output=Submission Successful, Button=Submit}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//pre[text()="Error occurred during submission"]"}
-  (Session info: chrome=135.0.7049.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3bfb23424bd8df56510aeb6ff3b9535d, findElement {value=//pre[text()="Error occurred during submission"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mpore\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51298/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bfb23424bd8df56510aeb6ff3b9535d]]>
+              <![CDATA[TestCase Failed: Output is mismatched : Some Tests failed. Please review code expected [Some Tests failed. Please review code] but found []]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//pre[text()="Error occurred during submission"]"}
-  (Session info: chrome=135.0.7049.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3bfb23424bd8df56510aeb6ff3b9535d, findElement {value=//pre[text()="Error occurred during submission"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mpore\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51298/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bfb23424bd8df56510aeb6ff3b9535d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
-at com.dsalgo.automation.pages.ArrayPage.verifyOutputError(ArrayPage.java:105)
-at com.dsalgo.automation.tests.ArrayPageTest.testSearchPractieceCode(ArrayPageTest.java:113)
+              <![CDATA[java.lang.AssertionError: TestCase Failed: Output is mismatched : Some Tests failed. Please review code expected [Some Tests failed. Please review code] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.dsalgo.automation.tests.ArrayPageTest.testMaxConsecutivePractieceCodeRun(ArrayPageTest.java:174)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -156,45 +105,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchPractieceCode -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:04:06 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T21:04:40 EDT" duration-ms="33119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:04:40 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-02T21:04:41 EDT" duration-ms="1281" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ValidCode=def search(input_list, num):, Output=Error occurred during submission, Button=Submit}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchPractieceCode -->
-        <test-method is-config="true" signature="navigateBeforeEachTest()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:04:41 EDT" name="navigateBeforeEachTest" finished-at="2025-05-02T21:05:14 EDT" duration-ms="33029" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBeforeEachTest -->
-        <test-method signature="testSearchPractieceCode(java.util.Map)[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:05:14 EDT" name="testSearchPractieceCode" data-provider="arrayPractieceCode" finished-at="2025-05-02T21:05:15 EDT" duration-ms="1329" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ValidCode=, Output=Error occurred during submission, Button=Submit}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchPractieceCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:05:15 EDT" name="tearDown" finished-at="2025-05-02T21:05:15 EDT" duration-ms="243" status="PASS">
+        </test-method> <!-- testMaxConsecutivePractieceCodeRun -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:36 EDT" name="tearDown" finished-at="2025-05-02T23:55:36 EDT" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@6bb2d00b]" started-at="2025-05-02T21:05:15 EDT" name="closeBrowser" finished-at="2025-05-02T21:05:15 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.dsalgo.automation.tests.ArrayPageTest@4233e892]" started-at="2025-05-02T23:55:36 EDT" name="closeBrowser" finished-at="2025-05-02T23:55:36 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
