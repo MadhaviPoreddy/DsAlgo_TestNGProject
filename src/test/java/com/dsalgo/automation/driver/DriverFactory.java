@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -15,7 +16,9 @@ public class DriverFactory {
 	public static void initializeDriver(String browser) {
 		//Handles multiple browser
         if (browser.equalsIgnoreCase("chrome")) {
-            driver.set(new ChromeDriver());
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("incognito");
+            driver.set(new ChromeDriver(options));
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver.set(new FirefoxDriver());
         } else if (browser.equalsIgnoreCase("edge")) {

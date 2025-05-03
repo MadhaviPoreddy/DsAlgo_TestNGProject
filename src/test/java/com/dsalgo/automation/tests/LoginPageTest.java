@@ -14,6 +14,7 @@ import org.testng.annotations.DataProvider;
 import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
+import com.dsalgo.automation.utils.TestDataProvider;
 import com.dsalgo.automation.utils.ExcelReader;
 import com.dsalgo.automation.utils.NavigationUtil;
 
@@ -43,19 +44,8 @@ public class LoginPageTest extends BaseClass {
     }
     
     
-    @DataProvider(name = "allInvalidLoginData")
-    public static Object[][] getAllLoginData() {
-        List<Map<String, String>> allData = ExcelReader.getAllRows("SignIn"); // No filtering now!
-
-        Object[][] result = new Object[allData.size()][1];
-        for (int i = 0; i < allData.size(); i++) {
-            result[i][0] = allData.get(i);
-        }
-        return result;
-    }
-    
-    
-    @Test(dataProvider = "allInvalidLoginData")
+   
+    @Test(dataProvider = "allInvalidLoginData", dataProviderClass = TestDataProvider.class)
     public void testInvalidLogin(Map<String, String> data) {
     	homePage.clickSignin();
         String username = data.get("username");

@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
+import com.dsalgo.automation.utils.TestDataProvider;
 import com.dsalgo.automation.utils.NavigationUtil;
 
 /**
@@ -64,19 +65,8 @@ public class HomePageTest extends BaseClass {
 	    Assert.assertEquals(actualOptions, expectedOptions, "Dropdown options mismatch. Data Structure Introduction is not available");
 	}
 
-    @DataProvider(name = "dropdownOptions")
-    public Object[][] options() {
-        return new Object[][] {
-            {"Array"},
-            {"Linked List"},
-            {"Stack"},
-            {"Queue"},
-            {"Tree"},
-            {"Graph"}
-        };
-    }
 
-    @Test(dataProvider = "dropdownOptions")
+    @Test(dataProvider = "dropdownOptions", dataProviderClass = TestDataProvider.class)
     public void testEachDropdownOptionWithoutLogin(String option) {
         homePage.selectDropdown(option);
 
@@ -92,7 +82,7 @@ public class HomePageTest extends BaseClass {
     }
     
 
-    @Test(dataProvider = "dropdownOptions")
+    @Test(dataProvider = "dropdownOptions", dataProviderClass = TestDataProvider.class)
     public void testEachDropdownOptionWithLogin(String option) {
     	NavigationUtil.performLogin(homePage, loginPage);
         homePage.selectDropdown(option);
@@ -103,19 +93,8 @@ public class HomePageTest extends BaseClass {
         NavigationUtil.clickSignout(homePage);
     }
 
-    @DataProvider(name = "getstartedOptions")
-    public Object[][] getstartedOptions() {
-        return new Object[][] {
-        	{"Data Structures-Introduction"},
-            {"Arrays"},
-            {"Linked List"},
-            {"Stack"},
-            {"Queue"},
-            {"Tree"},
-            {"Graph"}
-        };
-    }
-	@Test(dataProvider = "getstartedOptions")
+
+	@Test(dataProvider = "getstartedOptions", dataProviderClass = TestDataProvider.class)
 	public void testGetStartedButtonsWithoutLogin(String option) {
 	        homePage.getStartedhome(option);
 	        // Check if warning is displayed

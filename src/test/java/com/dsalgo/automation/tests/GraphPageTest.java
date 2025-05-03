@@ -17,6 +17,7 @@ import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.pages.GraphPage;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
+import com.dsalgo.automation.utils.TestDataProvider;
 import com.dsalgo.automation.utils.ExcelReader;
 import com.dsalgo.automation.utils.NavigationUtil;
 
@@ -44,19 +45,8 @@ public class GraphPageTest extends BaseClass{
 	     NavigationUtil.clickSignout(homePage);
 	}
 	
-	@DataProvider(name = "pythoncodeData")
-	public static Object[][] getPythoncodeData() {
-	    List<Map<String, String>> allData = ExcelReader.getAllRows("Try Here");
-
-	    Object[][] result = new Object[allData.size()][1];
-	    for (int i = 0; i < allData.size(); i++) {
-	        result[i][0] = allData.get(i);
-	    }
-	    return result;
-	}
 	
-	
-	@Test(dataProvider = "pythoncodeData")
+	@Test(dataProvider = "pythoncodeData", dataProviderClass = TestDataProvider.class)
 	public void graphValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(homePage, loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Graph");
@@ -100,7 +90,7 @@ public class GraphPageTest extends BaseClass{
 		Assert.assertFalse(isOverlapping, "Image and paragraph are overlapping on the Graph Representations page!");
 	}
 	
-	@Test(dataProvider = "pythoncodeData")
+	@Test(dataProvider = "pythoncodeData", dataProviderClass = TestDataProvider.class)
 	public void graphrepValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(homePage, loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Graph");
