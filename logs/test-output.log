@@ -1,40 +1,73 @@
-2025-05-02 12:07:27 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mpore\AppData\Local\Temp\testng-eclipse--766093747\testng-customsuite.xml"
-2025-05-02 12:07:29 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-05-02 12:07:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-2025-05-02 12:07:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2025-05-02 12:07:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
-2025-05-02 12:07:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
-2025-05-02 12:07:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
-2025-05-02 12:07:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
-2025-05-02 12:07:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-2025-05-02 12:07:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-05-02 12:07:30 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-05-02 12:07:30 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-05-02 12:07:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
-2025-05-02 12:07:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
-2025-05-02 12:07:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
-2025-05-02 12:07:32 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-05-02 12:07:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on stack
-2025-05-02 12:07:33 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-05-02 12:07:33 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-05-02 12:07:33 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-05-02 12:07:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
-2025-05-02 12:07:33 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
-2025-05-02 12:07:46 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
-2025-05-02 12:07:50 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
-2025-05-02 12:07:53 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
-2025-05-02 12:08:06 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
-2025-05-02 12:08:06 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-05-02 12:08:06 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on stack
-2025-05-02 12:08:07 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
-2025-05-02 12:08:07 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
-2025-05-02 12:08:07 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
-2025-05-02 12:08:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
-2025-05-02 12:08:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
-2025-05-02 12:08:21 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
-2025-05-02 12:08:24 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
-2025-05-02 12:08:27 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
-2025-05-02 12:08:40 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
-2025-05-02 12:08:40 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
-2025-05-02 12:08:40 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on stack
-2025-05-02 12:08:41 INFO  com.dsalgo.automation.tests.ArrayPageTest - Tested alert with code: System.out.println("Hello,World"); | Alert: NameError: name 'System' is not defined on line 1
+2025-05-02 21:02:17 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mpore\AppData\Local\Temp\testng-eclipse-145588997\testng-customsuite.xml"
+2025-05-02 21:02:18 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 21:02:18 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-02 21:02:18 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-02 21:02:18 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-02 21:02:18 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-02 21:02:18 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-02 21:02:18 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-02 21:02:18 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-02 21:02:19 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 21:02:19 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 21:02:19 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 21:02:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 21:02:19 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-02 21:02:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-02 21:02:20 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 21:02:20 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
+2025-05-02 21:02:22 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 21:02:22 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 21:02:22 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 21:02:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 21:02:22 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-02 21:02:35 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
+2025-05-02 21:02:38 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
+2025-05-02 21:02:41 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
+2025-05-02 21:02:55 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
+2025-05-02 21:02:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 21:02:55 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
+2025-05-02 21:02:56 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 21:02:56 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 21:02:56 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 21:02:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 21:02:56 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-02 21:03:09 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
+2025-05-02 21:03:12 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
+2025-05-02 21:03:15 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
+2025-05-02 21:03:28 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
+2025-05-02 21:03:28 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 21:03:28 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
+2025-05-02 21:03:30 INFO  com.dsalgo.automation.tests.ArrayPageTest - Tested alert with code: def search(input_list, num): | Alert: SyntaxError: bad input on line 2
+2025-05-02 21:03:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 21:03:30 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 21:03:30 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 21:03:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 21:03:30 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-02 21:03:43 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
+2025-05-02 21:03:46 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
+2025-05-02 21:03:49 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
+2025-05-02 21:04:02 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
+2025-05-02 21:04:02 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 21:04:02 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
+2025-05-02 21:04:06 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 21:04:06 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 21:04:07 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 21:04:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 21:04:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-02 21:04:20 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
+2025-05-02 21:04:23 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
+2025-05-02 21:04:26 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
+2025-05-02 21:04:39 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
+2025-05-02 21:04:39 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 21:04:39 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 
+2025-05-02 21:04:41 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-02 21:04:41 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-02 21:04:41 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-02 21:04:41 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-02 21:04:41 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-02 21:04:54 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Signin linkorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href ='/login']' (tried for 10 second(s) with 500 milliseconds interval)
+2025-05-02 21:04:57 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering username.
+2025-05-02 21:05:00 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while entering password.
+2025-05-02 21:05:14 ERROR com.dsalgo.automation.pages.LoginPage - Unexpected error while clicking login button.
+2025-05-02 21:05:14 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-02 21:05:14 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Array 

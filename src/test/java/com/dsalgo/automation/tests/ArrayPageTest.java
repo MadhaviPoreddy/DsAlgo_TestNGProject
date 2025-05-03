@@ -77,8 +77,6 @@ public class ArrayPageTest extends BaseClass{
 			String practieceQ = data.get("ValidCode");
 		    String expectedOutput = data.get("Output");
 		    String button = data.get("Button");
-
-
 		    Array.arrayUsingList();
 			Array.arrayPractieceQue();
 			Array.searchArrayPractieceQue();
@@ -93,7 +91,7 @@ public class ArrayPageTest extends BaseClass{
 		        	Assert.assertEquals(alertMessage,"SyntaxError: bad input on line 2", "TestCase Failed: Actual Output is not matched with Expected: " + expectedOutput);
 		            logger.info("Tested alert with code: " + practieceQ + " | Alert: " + alertMessage);
 		            Array.acceptAlert();
-		            
+	            
 		        }
 		        else {
 		        	 String actualOutput = Array.verifyOutput();
@@ -105,27 +103,23 @@ public class ArrayPageTest extends BaseClass{
 		    {
 
 			    Array.arrayPracticeSubmit();
-			    	    
+	    	    
 		        if ("Submission Successful".equalsIgnoreCase(expectedOutput)) {
-		        
-			        String actualOutput = Array.verifyOutput();
-
-		        	Assert.assertEquals(actualOutput,expectedOutput, "Mismatch! expected output is: " + expectedOutput);
-		            
-		            
+		        	String actualOutput = Array.verifyOutputError();
+		        	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
+          
 		        }else if("Error occurred during submission".equalsIgnoreCase(expectedOutput)) {
-			        String actualOutput = Array.verifyOutput();
-			        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output");
+			        String actualOutput = Array.verifyOutputError();
+			        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
 		       }
 		        else {
 		        	 String actualOutput = Array.verifyOutput();
-				        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output");
+				        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
 		        }
 		    }
 		    else
 		    {
-		    	
-		    	    System.out.println("Page name is incorrect.");
+		    	   System.out.println("Page name is incorrect.");
 		    	    //driver.close();
 		    	   return;
 		    }
