@@ -27,7 +27,15 @@ public class ExtentRptListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        ExtentSparkReporter reporter = new ExtentSparkReporter("target/ExtentReport.html");
+        String browserName = context.getCurrentXmlTest().getParameter("browser");
+        if (browserName == null || browserName.isEmpty()) {
+            browserName = "chrome"; 
+        }
+
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String reportPath = "target/ExtentReport_" + browserName + "_" + timestamp + ".html";
+
+        ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
         extent = new ExtentReports();
         extent.attachReporter(reporter);
     }
