@@ -36,21 +36,25 @@ import com.dsalgo.automation.utils.NavigationUtil;
 		 // Initialize logger for this class
 	   private static final Logger logger = LogManager.getLogger(ArrayPageTest.class);
 	   
-//	   @BeforeClass
-//	   public void setUpPage() {
-//			
-//		   LL=new LinkedListPage(driver); 
-//	   }
-//		
+	
 	   @BeforeMethod
 		public void navigateBeforeEachTest() {
+		   LL=new LinkedListPage(driver); 
 		   homePage = new HomePage(driver);
 		   loginPage = new LoginPage(driver);
 		   NavigationUtil.navigateToHomePage(homePage);
 		   NavigationUtil.performLogin(homePage,loginPage);
 		   NavigationUtil.clickModuleGetStarted(homePage, "Linked List");
 		}
-	
+	   @AfterMethod
+	   public void navigateAfterEachTest()
+	   {
+	   
+		   driver.navigate().back();
+		   NavigationUtil.clickSignout(homePage);
+	   }
+	   
+	   
 	    @DataProvider(name = "pythoncode")
 	    public Object[][] getData()
 	    {

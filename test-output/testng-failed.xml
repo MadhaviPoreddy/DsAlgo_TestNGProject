@@ -8,8 +8,8 @@
           <include name="testSoertedArrayPractieceCodeRun" invocation-numbers="1 2"/>
           <include name="tearDown"/>
           <include name="testFindEvenPractieceCodeRun" invocation-numbers="1"/>
+          <include name="navigateAfterEachTest"/>
           <include name="setUp"/>
-          <include name="setUpPage"/>
           <include name="testSearchPractieceCode" invocation-numbers="3"/>
           <include name="navigateBeforeEachTest"/>
           <include name="testMaxConsecutivePractieceCodeRun" invocation-numbers="1"/>

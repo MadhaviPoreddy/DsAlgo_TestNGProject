@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 //import org.openqa.selenium.NoSuchElementException;
 //import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 //import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -32,15 +33,9 @@ public class ArrayPageTest extends BaseClass{
 
    private static final Logger logger = LogManager.getLogger(ArrayPageTest.class);
 
-   @BeforeClass
-   public void setUpPage() {
-		
-	  Array=new ArrayPage(driver); 
-   }
-	
    @BeforeMethod
 	public void navigateBeforeEachTest() {
-	   Array=new ArrayPage(driver); 
+	  Array=new ArrayPage(driver); 
 	   homePage = new HomePage(driver);
 		loginPage = new LoginPage(driver);
 	    NavigationUtil.navigateToHomePage(homePage);
@@ -48,6 +43,14 @@ public class ArrayPageTest extends BaseClass{
 		NavigationUtil.clickModuleGetStarted(homePage, "Array");
 	}
 	
+   @AfterMethod
+   public void navigateAfterEachTest()
+   {
+   
+	   driver.navigate().back();
+	   NavigationUtil.clickSignout(homePage);
+   }
+   
 	   @DataProvider(name = "arrayPractieceCode")
 	    public Object[][] PractieceCode()
 	    {

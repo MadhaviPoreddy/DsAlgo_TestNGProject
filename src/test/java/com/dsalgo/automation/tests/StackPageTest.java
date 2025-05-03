@@ -44,6 +44,14 @@ public class StackPageTest extends BaseClass{
 	    NavigationUtil.performLogin(homePage,loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Stack");
 	}
+	  @AfterMethod
+	   public void navigateAfterEachTest()
+	   {
+	   
+		   driver.navigate().back();
+		   NavigationUtil.clickSignout(homePage);
+	   }
+	   
 	
     @DataProvider(name = "pythoncode")
     public Object[][] getData()
