@@ -31,7 +31,7 @@ public class ExtentRptListener implements ITestListener {
         if (browserName == null || browserName.isEmpty()) {
             browserName = "chrome"; 
         }
-        String reportPath = "target/Extent/" + browserName + "/ExtentReport.html";
+        String reportPath = "target/ExtentReport_" + browserName + ".html"; 
 
         ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
         extent = new ExtentReports();
@@ -56,14 +56,16 @@ public class ExtentRptListener implements ITestListener {
             TakesScreenshot ts = (TakesScreenshot) driver;
             File src = ts.getScreenshotAs(OutputType.FILE);
             String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-            String path = System.getProperty("user.dir") + "/target/screenshots/" + result.getName() + "_" + timestamp + ".png";
-
+            String fileName = result.getName() + "_" + timestamp + ".png";
+            String screenshotDir = "target/screenshots";
+            String fullPath = screenshotDir + "/" + fileName;
+            String relativePath = "screenshots/" + fileName;
 
             try {
-                Files.createDirectories(Paths.get("target/screenshots"));
-                Files.copy(src.toPath(), Paths.get(path));
+                Files.createDirectories(Paths.get(screenshotDir));
+                Files.copy(src.toPath(), Paths.get(fullPath));
                 test.get().fail("Test failed: " + result.getThrowable(),
-                        MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+                        MediaEntityBuilder.createScreenCaptureFromPath(relativePath).build());
             } catch (IOException e) {
                 test.get().fail("Test failed and screenshot could not be saved.");
             }
@@ -71,6 +73,7 @@ public class ExtentRptListener implements ITestListener {
             test.get().fail("Test failed: " + result.getThrowable());
         }
     }
+
 
     @Override
     public void onTestSkipped(ITestResult result) {
