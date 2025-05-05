@@ -15,7 +15,6 @@ import com.dsalgo.automation.driver.DriverFactory;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
 import com.dsalgo.automation.pages.RegisterPage;
-import com.dsalgo.automation.utils.HelperUtility;
 import com.dsalgo.automation.utils.NavigationUtil;
 import com.dsalgo.automation.utils.TestDataProvider;
 
@@ -47,69 +46,70 @@ public class RegisterPageTest extends BaseClass {
 		if (testData == null) {
 			throw new RuntimeException("No test data found for TC_ID");
 		}
-
+	
 		switch (testData.get("TC_ID")) {
 		case "TC_01":
-			getRegisterData(testData);
+			getnEnterRegisterData(testData);
 			verifyValidRegister(testData);
 			break;
 
 		case "TC_02":
-			getRegisterData(testData);
+			getnEnterRegisterData(testData);
 			verifyEmptyPwdErrorMsg();
 			break;
 
 		case "TC_03":
-			getRegisterData(testData);
+			getnEnterRegisterData(testData);
 			verifyEmptyCnPwdErrorMsg();
 			break;
 
 		case "TC_04":
-			getRegisterData(testData);
-			HelperUtility.verifyDisplayMessage(registerPage);
+			getnEnterRegisterData(testData);
+			verifyDisplayMessage();
 			break;
 
 		case "TC_05":
-			getRegisterData(testData);
+			getnEnterRegisterData(testData);
 			verifyEmptyPwdErrorMsg();
 			break;
 
 		case "TC_06":
-			getRegisterData(testData);
+			getnEnterRegisterData(testData);
 			verifyEmptyUserErrorMsg();
 			break;
 
 		case "TC_07":
-			getRegisterData(testData);
-			HelperUtility.verifyDisplayMessage(registerPage);
+			getnEnterRegisterData(testData);
+			verifyDisplayMessage();
 			break;
 
 		case "TC_08":
-			getRegisterData(testData);
-			HelperUtility.verifyDisplayMessage(registerPage);
+			getnEnterRegisterData(testData);
+			verifyDisplayMessage();
 			break;
 
 		case "TC_09":
-			getRegisterData(testData);
-			HelperUtility.verifyDisplayMessage(registerPage);
+			getnEnterRegisterData(testData);
+			verifyDisplayMessage();
 			break;
 
 		case "TC_10":
-			getRegisterData(testData);
-			HelperUtility.verifyDisplayMessage(registerPage);
+			getnEnterRegisterData(testData);
+			verifyDisplayMessage();
 			break;
 
 		case "TC_11":
-			getRegisterData(testData);
+			getnEnterRegisterData(testData);
 			verifyValidDisplayMessage();
 			break;
 
 		case "TC_12":
+			getnEnterRegisterData(testData);
 			verifyUserNameLength(testData);
 			break;
 
 		default:
-
+			break;
 		}
 	}
 
@@ -139,7 +139,7 @@ public class RegisterPageTest extends BaseClass {
 		Assert.assertEquals(actualErrMsg, ninjaPageTitle);
 	}
 
-	private void getRegisterData(Map<String, String> data) {
+	private void getnEnterRegisterData(Map<String, String> data) {
 		registerPage.enterDetails(data.get("Username"), data.get("Password"), data.get("ConfirmPassword"));
 		registerPage.clickRegister();
 	}
@@ -178,5 +178,17 @@ public class RegisterPageTest extends BaseClass {
 		int userLength = userName.length();
 		Assert.assertEquals(userLength, 150);
 
+	}
+	
+	private void verifyDisplayMessage() {
+	String actualErrMsg = registerPage.verifyErrorMessage();
+	String displyedMsg = "password_mismatch:The two password fields didn’t match.";
+	try {
+		Assert.assertEquals(actualErrMsg, displyedMsg);
+		throw new AssertionError("Test failed: Incorrect error message displayed.");
+	} catch (AssertionError e) {
+		LOGGER.error("Assertion failed: " + e.getMessage());
+		throw e;
+	}
 	}
 }

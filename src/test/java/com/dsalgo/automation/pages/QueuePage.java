@@ -14,18 +14,6 @@ public class QueuePage {
     
 	WebDriver driver;
 	
-	@FindBy (id = "id_username")
-	WebElement userName;
-	
-	@FindBy (id = "id_password")
-	WebElement password;
-	
-	//@FindBy (xpath = "/html/body/div[2]/div/div[2]/form/input[4]")
-	//WebElement loginBtn;
-
-	@FindBy(xpath = "//a[@href=\"queue\"]")
-	WebElement queueBtn;
-
 	@FindBy(xpath = "//a[text()='Implementation of Queue in Python']")
 	private WebElement implementationOfQPyLnk;
 
@@ -59,10 +47,6 @@ public class QueuePage {
 	public QueuePage() {
 		this.driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
-	}
-
-	public void clickQueues() {
-		queueBtn.click();
 	}
 
 	public String verfyQueuePage() {

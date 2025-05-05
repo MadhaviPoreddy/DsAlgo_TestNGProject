@@ -31,16 +31,15 @@ public class QueuePageTest extends BaseClass {
 	public void verifyLoginPageTitle() {
 		this.driver = DriverFactory.getDriver();
 		homePage = new HomePage(driver);
-	    loginPage = new LoginPage(driver);
+		loginPage = new LoginPage(driver);
 		NavigationUtil.navigateToHomePage(homePage);
 		NavigationUtil.performLogin(homePage, loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Queue");
-		
-		
+
 		queuePage = new QueuePage();
 
 	}
-	
+
 	@AfterMethod
 	public void signout() {
 		NavigationUtil.clickSignout(homePage);
@@ -56,40 +55,14 @@ public class QueuePageTest extends BaseClass {
 	@Test(priority = 2)
 	public void verifyImplOfQueueInPyPracticeQ() {
 		queuePage.clickimpOfQPy();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 3, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyImplOfQueueInPyCodeEditor(Map<String, String> testData) {
 		queuePage.clickimpOfQPy();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-		switch (testData.get("Scenario")) {
+		codeEditorDataTest(testData);
 
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
 	}
 
 	@Test(priority = 4)
@@ -102,40 +75,14 @@ public class QueuePageTest extends BaseClass {
 	@Test(priority = 5)
 	public void verifyImplUsngCollctnDqPracticeQ() {
 		queuePage.clickimpOfCollectionDq();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 6, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyImplUsngCollctnDqCodeEditor(Map<String, String> testData) {
 		queuePage.clickimpOfCollectionDq();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-		switch (testData.get("Scenario")) {
+		codeEditorDataTest(testData);
 
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
 	}
 
 	@Test(priority = 7)
@@ -148,40 +95,15 @@ public class QueuePageTest extends BaseClass {
 	@Test(priority = 8)
 	public void verifyImplUsngArrayPracticeQ() {
 		queuePage.clickImplementationUsingArray();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
+
 	}
 
 	@Test(priority = 9, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyImplUsngArrayCodeEditor(Map<String, String> testData) {
 		queuePage.clickImplementationUsingArray();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-		switch (testData.get("Scenario")) {
+		codeEditorDataTest(testData);
 
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
 	}
 
 	@Test(priority = 10)
@@ -194,39 +116,55 @@ public class QueuePageTest extends BaseClass {
 	@Test(priority = 11)
 	public void verifyQueueOperationsPracticeQ() {
 		queuePage.clickQueueOperation();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		} 
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 12, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyQueueOperationsCodeEditor(Map<String, String> testData) {
 		queuePage.clickQueueOperation();
+		codeEditorDataTest(testData);
+	}
+
+	private void verifyPracticeQuestion() {
+		boolean pageContentPresent = HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
+		try {
+			Assert.assertTrue(pageContentPresent);
+			throw new AssertionError("Test failed: Incorrect error message displayed.");
+		} catch (AssertionError e) {
+			LOGGER.error("Assertion failed: " + e.getMessage());
+			throw e;
+		}
+
+	}
+
+	private void codeEditorDataTest(Map<String, String> testData) {
 		if (testData == null) {
 			throw new RuntimeException("No test data found for TC_ID");
 		}
 		switch (testData.get("Scenario")) {
 
 		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
+			String codeOutput = HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
+			Assert.assertEquals(codeOutput, "");
 			driver.navigate().back();
 			break;
 
 		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
+			String validCodeOutput = HelperUtility.verifyEditorWithValidCode(queuePage, testData);
+			String expectedOutput = testData.get("Output");
+			Assert.assertEquals(validCodeOutput, expectedOutput);
 			driver.navigate().back();
 			break;
 
 		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
+			Boolean isAlertPresent = HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
+			Assert.assertTrue(isAlertPresent);
+			queuePage.handleAlert();
 			driver.navigate().back();
 			break;
 
 		default:
-
+			break;
 		}
 	}
 }

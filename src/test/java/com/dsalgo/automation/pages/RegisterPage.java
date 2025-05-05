@@ -1,8 +1,5 @@
 package com.dsalgo.automation.pages;
 
-	
-
-//	import org.jspecify.annotations.Nullable;
 	import org.openqa.selenium.JavascriptExecutor;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
@@ -13,7 +10,7 @@ import com.dsalgo.automation.driver.DriverFactory;
 
 	
 	public class RegisterPage {
-		private WebDriver driver;
+		WebDriver driver;
 		
 		@FindBy (xpath = "//a[@href=\"/register\"]")
 		private WebElement register;

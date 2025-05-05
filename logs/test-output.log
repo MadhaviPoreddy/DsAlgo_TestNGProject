@@ -1,0 +1,1632 @@
+2025-05-05 16:31:24 DEBUG org.testng.TestNG - suiteXmlPath: "C:\dev\GitProjects\DsAlgoTestNg\Integration\DsAlgo_TestNGProject\testng.xml"
+2025-05-05 16:31:25 DEBUG com.aventstack.chaintest.service.ChainPluginService - Found configuration entry chaintest.generator.simple.enabled, will use chaintest.generator.simple.class-name to resolve class
+2025-05-05 16:31:25 DEBUG com.aventstack.chaintest.service.ChainPluginService - Found configuration entry chaintest.generator.email.enabled, will use chaintest.generator.email.class-name to resolve class
+2025-05-05 16:31:25 DEBUG com.aventstack.chaintest.service.ChainPluginService - Found configuration entry chaintest.generator.chainlp.enabled, will use chaintest.generator.chainlp.class-name to resolve class
+2025-05-05 16:31:25 DEBUG com.aventstack.chaintest.generator.FileGenerator - Loading template index.ftl for class class com.aventstack.chaintest.generator.ChainTestSimpleGenerator with basePackagePath simple
+2025-05-05 16:31:26 DEBUG com.aventstack.chaintest.generator.FileGenerator - Loading template index.ftl for class class com.aventstack.chaintest.generator.ChainTestEmailGenerator with basePackagePath email/
+2025-05-05 16:31:27 DEBUG com.aventstack.chaintest.http.HttpRetryHandler - Creating HttpRetryHandler instance for 3 retry attempts
+2025-05-05 16:31:27 DEBUG com.aventstack.chaintest.http.ChainTestApiClient - Created request for entity Build with body: {"id":0,"projectId":0,"projectName":"DsAlgoTestNG","startedAt":1746480687072,"endedAt":0,"durationMs":0,"executionStage":"IN_PROGRESS","testRunner":"testng","name":null,"result":"PASSED","tagStatsMonitor":{},"tags":[],"gitRepository":null,"gitBranch":null,"gitCommitHash":null,"gitTags":null,"gitCommitMessage":null,"systemInfo":[{"id":0,"name":"java.version","val":"21.0.5"},{"id":0,"name":"java.vm.name","val":"OpenJDK 64-Bit Server VM"},{"id":0,"name":"java.vm.vendor","val":"Eclipse Adoptium"},{"id":0,"name":"java.class.version","val":"65.0"},{"id":0,"name":"java.runtime.name","val":"OpenJDK Runtime Environment"},{"id":0,"name":"os.name","val":"Windows 11"},{"id":0,"name":"os.arch","val":"amd64"},{"id":0,"name":"os.version","val":"10.0"}],"durationPretty":"0ms","bdd":false}
+2025-05-05 16:31:27 DEBUG com.aventstack.chaintest.http.HttpRetryHandler - Failed to connect to the ChainTest service
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:951) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:?]
+	at com.aventstack.chaintest.http.ChainTestApiClient.send(ChainTestApiClient.java:150) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:57) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:90) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.generator.ChainLPGenerator.start(ChainLPGenerator.java:98) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.lambda$start$1(ChainPluginService.java:101) ~[chaintest-core-1.0.12.jar:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) [?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) [?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:101) [chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:65) [chaintest-testng-1.0.12.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2025-05-05 16:31:29 DEBUG com.aventstack.chaintest.http.ChainTestApiClient - Created request for entity Build with body: {"id":0,"projectId":0,"projectName":"DsAlgoTestNG","startedAt":1746480687072,"endedAt":0,"durationMs":0,"executionStage":"IN_PROGRESS","testRunner":"testng","name":null,"result":"PASSED","tagStatsMonitor":{},"tags":[],"gitRepository":null,"gitBranch":null,"gitCommitHash":null,"gitTags":null,"gitCommitMessage":null,"systemInfo":[{"id":0,"name":"java.version","val":"21.0.5"},{"id":0,"name":"java.vm.name","val":"OpenJDK 64-Bit Server VM"},{"id":0,"name":"java.vm.vendor","val":"Eclipse Adoptium"},{"id":0,"name":"java.class.version","val":"65.0"},{"id":0,"name":"java.runtime.name","val":"OpenJDK Runtime Environment"},{"id":0,"name":"os.name","val":"Windows 11"},{"id":0,"name":"os.arch","val":"amd64"},{"id":0,"name":"os.version","val":"10.0"}],"durationPretty":"0ms","bdd":false}
+2025-05-05 16:31:29 DEBUG com.aventstack.chaintest.http.HttpRetryHandler - Failed to connect to the ChainTest service
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:951) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:?]
+	at com.aventstack.chaintest.http.ChainTestApiClient.send(ChainTestApiClient.java:150) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:57) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:90) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.generator.ChainLPGenerator.start(ChainLPGenerator.java:98) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.lambda$start$1(ChainPluginService.java:101) ~[chaintest-core-1.0.12.jar:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) [?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) [?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:101) [chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:65) [chaintest-testng-1.0.12.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2025-05-05 16:31:31 DEBUG com.aventstack.chaintest.http.ChainTestApiClient - Created request for entity Build with body: {"id":0,"projectId":0,"projectName":"DsAlgoTestNG","startedAt":1746480687072,"endedAt":0,"durationMs":0,"executionStage":"IN_PROGRESS","testRunner":"testng","name":null,"result":"PASSED","tagStatsMonitor":{},"tags":[],"gitRepository":null,"gitBranch":null,"gitCommitHash":null,"gitTags":null,"gitCommitMessage":null,"systemInfo":[{"id":0,"name":"java.version","val":"21.0.5"},{"id":0,"name":"java.vm.name","val":"OpenJDK 64-Bit Server VM"},{"id":0,"name":"java.vm.vendor","val":"Eclipse Adoptium"},{"id":0,"name":"java.class.version","val":"65.0"},{"id":0,"name":"java.runtime.name","val":"OpenJDK Runtime Environment"},{"id":0,"name":"os.name","val":"Windows 11"},{"id":0,"name":"os.arch","val":"amd64"},{"id":0,"name":"os.version","val":"10.0"}],"durationPretty":"0ms","bdd":false}
+2025-05-05 16:31:31 DEBUG com.aventstack.chaintest.http.HttpRetryHandler - Failed to connect to the ChainTest service
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:951) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:?]
+	at com.aventstack.chaintest.http.ChainTestApiClient.send(ChainTestApiClient.java:150) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:57) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:90) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.generator.ChainLPGenerator.start(ChainLPGenerator.java:98) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.lambda$start$1(ChainPluginService.java:101) ~[chaintest-core-1.0.12.jar:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) [?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) [?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:101) [chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:65) [chaintest-testng-1.0.12.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2025-05-05 16:31:33 DEBUG com.aventstack.chaintest.http.ChainTestApiClient - Created request for entity Build with body: {"id":0,"projectId":0,"projectName":"DsAlgoTestNG","startedAt":1746480687072,"endedAt":0,"durationMs":0,"executionStage":"IN_PROGRESS","testRunner":"testng","name":null,"result":"PASSED","tagStatsMonitor":{},"tags":[],"gitRepository":null,"gitBranch":null,"gitCommitHash":null,"gitTags":null,"gitCommitMessage":null,"systemInfo":[{"id":0,"name":"java.version","val":"21.0.5"},{"id":0,"name":"java.vm.name","val":"OpenJDK 64-Bit Server VM"},{"id":0,"name":"java.vm.vendor","val":"Eclipse Adoptium"},{"id":0,"name":"java.class.version","val":"65.0"},{"id":0,"name":"java.runtime.name","val":"OpenJDK Runtime Environment"},{"id":0,"name":"os.name","val":"Windows 11"},{"id":0,"name":"os.arch","val":"amd64"},{"id":0,"name":"os.version","val":"10.0"}],"durationPretty":"0ms","bdd":false}
+2025-05-05 16:31:33 DEBUG com.aventstack.chaintest.http.HttpRetryHandler - Failed to connect to the ChainTest service
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:951) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:?]
+	at com.aventstack.chaintest.http.ChainTestApiClient.send(ChainTestApiClient.java:150) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:57) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.http.HttpRetryHandler.trySend(HttpRetryHandler.java:90) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.generator.ChainLPGenerator.start(ChainLPGenerator.java:98) ~[chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.lambda$start$1(ChainPluginService.java:101) ~[chaintest-core-1.0.12.jar:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) [?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) [?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:101) [chaintest-core-1.0.12.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:65) [chaintest-testng-1.0.12.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.11.0.jar:7.11.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2025-05-05 16:31:41 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:31:41 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:31:41 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:31:41 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:31:41 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:31:41 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:42 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:31:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:31:44 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:45 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:45 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:31:46 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:31:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:31:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:31:47 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:31:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:47 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:31:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:50 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:50 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:31:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:31:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:31:51 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:51 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:51 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:31:51 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:31:52 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:31:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:31:52 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:31:53 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:31:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:31:54 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:54 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:54 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:54 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:54 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:31:54 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:31:54 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:31:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:31:56 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:56 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:57 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:31:57 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:31:57 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:31:57 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:31:57 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:31:58 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:58 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:58 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:31:58 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:31:59 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:31:59 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:01 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:01 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:01 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:01 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:01 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:02 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:02 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:03 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:03 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:03 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:04 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:04 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:04 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:32:04 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:32:04 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:32:04 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:04 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:06 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:06 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:07 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:07 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:08 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:08 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:09 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:09 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:32:09 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:32:09 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:09 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:09 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:09 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:11 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:11 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:11 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:11 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:12 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:12 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:12 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:12 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:12 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:13 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:14 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:15 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:15 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:15 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:16 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:16 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:16 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:16 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:17 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:17 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:17 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:17 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:18 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:18 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:18 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:19 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:19 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:19 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:19 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:19 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:21 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:21 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:21 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:21 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:21 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:22 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:22 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:22 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:23 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:23 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:24 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:24 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:25 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:25 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:25 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:25 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:25 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:25 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:26 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:26 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:27 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:28 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:28 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:28 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:28 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:29 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:30 ERROR com.dsalgo.automation.tests.RegisterPageTest - Assertion failed: Test failed: Incorrect error message displayed.
+2025-05-05 16:32:30 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:32 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:32 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:32 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: Test failed: Column Value is blank
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:33 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:34 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:35 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:35 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:32:35 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:32:36 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:36 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:36 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:36 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:36 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:36 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: Test failed: Column Value is blank
+2025-05-05 16:32:37 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:37 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:37 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:37 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:37 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:37 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:38 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:39 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:39 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Register link.
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:40 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:41 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:41 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:41 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:41 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: Test failed: Column Value is blank
+2025-05-05 16:32:41 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:42 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:42 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:42 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:42 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:44 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:44 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:44 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:44 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:44 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:44 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:45 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:45 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:46 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:46 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:46 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:46 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:50 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:51 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:51 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:51 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:52 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:53 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:53 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:53 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:53 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:54 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:54 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:54 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:32:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:55 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:32:55 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:32:57 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:32:57 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:32:57 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:32:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:32:59 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:32:59 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:00 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:00 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:01 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:02 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:04 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:04 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:04 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:04 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:06 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:33:07 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:09 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:09 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:09 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:09 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:11 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:11 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:11 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:11 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:13 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:14 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:14 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:14 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:15 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:16 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:18 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:18 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:19 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:19 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:20 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:21 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:21 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:21 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:21 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:21 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:21 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:21 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:22 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:23 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:23 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:23 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:24 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:24 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:25 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:25 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:25 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:25 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:26 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:26 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:27 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:28 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:28 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:29 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:29 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:33:29 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:30 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:32 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:32 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:33 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:34 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:35 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:35 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:38 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:38 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:39 ERROR com.dsalgo.automation.tests.QueuePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:33:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:40 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:41 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:33:41 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:33:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:42 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:42 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:42 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:42 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:43 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:43 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:44 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:44 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:44 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:46 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:46 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:49 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:50 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:50 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:51 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:51 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:52 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:33:52 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:33:52 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:52 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:53 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:53 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:53 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:54 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on queue 
+2025-05-05 16:33:54 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:54 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:33:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:33:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:33:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:33:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:57 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:33:57 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:33:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:33:59 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:00 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:01 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:01 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:02 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:34:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:03 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:03 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:05 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:05 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:07 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:34:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:08 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:09 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:10 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:11 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:34:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:34:12 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:34:13 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:13 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:13 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:13 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:14 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:14 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:16 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:16 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:17 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:18 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:18 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:20 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:20 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:21 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:21 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:24 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:24 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:24 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:24 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:25 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:25 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:27 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:28 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:28 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:29 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:29 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:30 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:34 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:34:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:35 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:35 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:36 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:37 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:38 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:34:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:40 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:40 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:41 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:42 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:42 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:44 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:34:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:34:45 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:34:45 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:45 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:46 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:46 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:48 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:48 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:50 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:50 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:52 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:52 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:55 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:34:57 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:34:57 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:34:57 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:34:57 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:34:57 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:34:58 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:34:58 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:00 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:00 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:01 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:02 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:02 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:03 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:03 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:04 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:05 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:05 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:06 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:35:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:07 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:08 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:09 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:35:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:10 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:10 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:11 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:12 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:12 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:13 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:35:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:35:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:35:14 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:14 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:16 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:16 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:18 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:18 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:18 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:18 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:20 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:20 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:22 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:22 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:23 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:23 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:26 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:26 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:28 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:28 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:31 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:34 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:34 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:35 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:36 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:37 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:37 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:39 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:39 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:39 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:39 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:41 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:41 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:43 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:35:44 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:44 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:44 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:44 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:46 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:46 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:47 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:35:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:47 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:48 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:49 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:50 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:35:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:35:51 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:35:51 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:51 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:53 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:53 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:35:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:35:56 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:35:57 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:35:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:35:59 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:35:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:35:59 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:00 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:01 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:01 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:03 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:03 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:03 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:04 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:05 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:05 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:06 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:06 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:08 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:09 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:36:09 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:10 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:10 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:12 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:12 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:14 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:36:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:15 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:15 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:16 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:16 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:18 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:36:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:36:19 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:36:19 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:19 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:20 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:20 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:22 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:23 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:24 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:24 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:27 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:28 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:28 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:30 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:30 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:31 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:33 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:33 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:34 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:34 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:36 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:36 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:36 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:38 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:38 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:39 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:36:39 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:39 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:40 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:40 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:40 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:41 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:42 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:36:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:43 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:43 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:44 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:44 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:46 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:36:46 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:36:46 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:36:47 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:48 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:48 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:50 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:50 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:50 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:52 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:52 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:54 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:54 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:55 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:36:56 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:36:56 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:36:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:36:58 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:36:58 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:36:58 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:36:59 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:00 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:00 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:01 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:01 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:02 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:02 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:03 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:03 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:04 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:37:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:05 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:05 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:07 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:08 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:37:09 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:09 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:09 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:09 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:11 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:11 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:12 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:37:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:37:14 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:37:14 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:14 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:14 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:15 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:16 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:16 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:19 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:19 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:19 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:20 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:21 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:21 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:22 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:23 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:23 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:23 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:24 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:24 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:26 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:27 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:27 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:27 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:28 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:28 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:30 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:30 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:30 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:32 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:33 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:37:33 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:34 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:34 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:35 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:35 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:36 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:37:37 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:37 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:37 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:37 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:37 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:39 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:39 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:41 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:37:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:37:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:37:42 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:42 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:43 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:44 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:44 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:47 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:47 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:49 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:51 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:51 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:52 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:52 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:53 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:53 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:37:55 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:37:56 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:37:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:37:56 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:37:56 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:37:58 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:37:58 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:01 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:01 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:01 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:01 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:01 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:02 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:04 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:05 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:05 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:06 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:06 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:08 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:09 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:38:09 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:10 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:10 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:10 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:11 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:11 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:12 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:38:12 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:13 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:13 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:13 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:13 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:15 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:15 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:16 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:38:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:38:17 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:38:17 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:17 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:17 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:18 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:18 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:21 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:21 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:21 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:21 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:21 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:22 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:22 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:24 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:24 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:24 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:24 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:25 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:26 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:26 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:28 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:28 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:28 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:28 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:28 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:29 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:29 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:31 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:31 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:31 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:32 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:32 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:34 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:38:34 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:34 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:35 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:35 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:36 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:36 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:37 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:38:38 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:38 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:38 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:38 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:38 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:39 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:39 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:41 ERROR com.dsalgo.automation.tests.TreePageTest - Assertion failed: expected [true] but found [false]
+2025-05-05 16:38:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:38:42 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:38:42 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:42 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:42 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:43 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:43 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:45 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:45 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:46 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:46 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:46 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:47 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:47 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:38:49 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:38:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:38:49 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:38:49 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:38:51 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:38:51 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:38:53 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Sign out link.
+2025-05-05 16:39:03 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:39:03 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:39:04 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:39:04 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:39:04 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:39:05 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:39:06 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet6.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet7.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet8.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2025-05-05 16:39:06 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-05-05 16:39:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:39:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:39:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:39:07 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:39:07 INFO  com.dsalgo.automation.pages.HomePage - Navigated to DSAlgo portal: https://dsportalapp.herokuapp.com/
+2025-05-05 16:39:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:39:07 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Signin link.
+2025-05-05 16:39:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:39:08 INFO  com.dsalgo.automation.pages.HomePage - Clicked on Get Started button in DSAlgo Portal.
+2025-05-05 16:39:08 INFO  com.dsalgo.automation.utils.NavigationUtil - Navigated to DS Algo Home Page
+2025-05-05 16:39:09 INFO  com.dsalgo.automation.utils.NavigationUtil - Login performed successfully
+2025-05-05 16:39:09 INFO  com.dsalgo.automation.pages.HomePage - clicked Get Startedlink on Tree 
+2025-05-05 16:39:09 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Register linkorg.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cdc626ca-c948-45a5-95bb-06746a9a40c3, findElement {using=xpath, value=//a[@href ='/register']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.1, moz:accessibilityChecks: false, moz:buildID: 20250430203103, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 53168, moz:profile: C:\Users\kalpa\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: cdc626ca-c948-45a5-95bb-06746a9a40c3
+2025-05-05 16:39:09 ERROR com.dsalgo.automation.pages.HomePage - Failed to click Get Started link for: Queue
+2025-05-05 16:39:10 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Sign out link
+2025-05-05 16:39:10 INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+2025-05-05 16:39:10 INFO  com.dsalgo.automation.pages.LoginPage - LoginPage initialized with WebDriver and waitHelper
+2025-05-05 16:39:11 ERROR com.dsalgo.automation.pages.HomePage - Failed to click on Sign out link

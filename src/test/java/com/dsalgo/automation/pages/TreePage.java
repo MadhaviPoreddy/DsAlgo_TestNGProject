@@ -183,33 +183,6 @@ public class TreePage {
 		implementationOfBSTLnk.click();
 	}
 	
-	public void practiceQuestions() {
-		queuepage.runBtn.click();
-	}
-
-	public void tryCodeEditor() {
-		queuepage.tryHereBtn.click();
-	}
-	
-	public void verifyCodeEditor(String code) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].CodeMirror.setValue(arguments[1]);", queuepage.codeEditor, code);
-	}
-	
-	public void runCode() {
-		queuepage.runBtn.click();
-	}
-	
-	public String verifyOutput() {
-		return queuepage.output.getText();
-	}
-	
-	public void handleAlert() {
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
-	
-	}
-	
 	public String verifyTitleOfPage() {
 		return driver.getTitle();
 	}
@@ -226,7 +199,4 @@ public class TreePage {
 		return treeTraversalTable.isDisplayed();
 		
 	}
-
-		
-	
 }

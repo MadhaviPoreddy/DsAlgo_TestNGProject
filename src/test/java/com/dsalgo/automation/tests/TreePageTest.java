@@ -73,41 +73,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 3)
 	public void verifyOverviewOfTreePracticeQ() {
 		treePage.clickOverviewOfTreeslnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 4, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyOverviewOfTreeCodeEditor(Map<String, String> testData) {
 		treePage.clickOverviewOfTreeslnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 5)
@@ -137,41 +109,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 7)
 	public void verifyTerminologiesPracticeQ() {
 		treePage.clickTerminologieslnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 8, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyTerminologiesCodeEditor(Map<String, String> testData) {
 		treePage.clickTerminologieslnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 9)
@@ -185,41 +129,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 10)
 	public void verifyTypesofTreesPracticeQ() {
 		treePage.clickTypesOfTreeslnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 11, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyTypesofTreesCodeEditor(Map<String, String> testData) {
 		treePage.clickTypesOfTreeslnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 12)
@@ -249,41 +165,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 15)
 	public void verifyTreeTraversalsPracticeQ() {
 		treePage.clickTreeTraversalsLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 16, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyTreeTraversalsCodeEditor(Map<String, String> testData) {
 		treePage.clickTreeTraversalsLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 17)
@@ -305,43 +193,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 19)
 	public void verifyTraversalsIllustrationPracticeQ() {
 		treePage.clickTraversalsIllustrationLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		} finally {
-			driver.navigate().back();
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 20, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyTraversalsIllustrationCodeEditor(Map<String, String> testData) {
 		treePage.clickTraversalsIllustrationLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 21)
@@ -363,41 +221,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 23)
 	public void verifyBinaryTreesPracticeQ() {
 		treePage.clickBinaryTreesLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 24, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyBinaryTreesCodeEditor(Map<String, String> testData) {
 		treePage.clickBinaryTreesLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 25)
@@ -427,41 +257,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 28)
 	public void verifyTypesOfBinaryTreesPracticeQ() {
 		treePage.clickTypesOfBinaryTreesLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 29, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyTypesOfBinaryTreesCodeEditor(Map<String, String> testData) {
 		treePage.clickTypesOfBinaryTreesLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 30)
@@ -475,41 +277,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 31)
 	public void verifyImplementationInPythonPracticeQ() {
 		treePage.clickImplementationInPythonLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 32, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyImplementationInPythonCodeEditor(Map<String, String> testData) {
 		treePage.clickImplementationInPythonLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 33)
@@ -531,41 +305,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 35)
 	public void verifyBinaryTreeTraversalsPracticeQ() {
 		treePage.clickBinaryTreeTraversalsLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		} 
+		verifyPracticeQuestion(); 
 	}
 
 	@Test(priority = 36, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyBinaryTreeTraversalsCodeEditor(Map<String, String> testData) {
 		treePage.clickBinaryTreeTraversalsLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 37)
@@ -579,41 +325,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 38)
 	public void verifyImplementationOfBinaryTreesPracticeQ() {
 		treePage.clickImplementationOfBinaryTreesLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 39, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyImplementationOfBinaryTreesCodeEditor(Map<String, String> testData) {
 		treePage.clickImplementationOfBinaryTreesLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);	
 	}
 
 	@Test(priority = 40)
@@ -627,41 +345,13 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 41)
 	public void verifyApplicationsOfBinaryTreesPracticeQ() {
 		treePage.clickApplicationsOfBinaryTreesLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 42, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyApplicationsOfBinaryTreesCodeEditor(Map<String, String> testData) {
 		treePage.clickApplicationsOfBinaryTreesLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
-		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
+		codeEditorDataTest(testData);
 	}
 
 	@Test(priority = 43)
@@ -683,42 +373,15 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 45)
 	public void verifyBinarySearchTreePracticeQ() {
 		treePage.clickBinarySearchTreesLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 46, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyBinarySearchTreeCodeEditor(Map<String, String> testData) {
 		treePage.clickBinarySearchTreesLnk();
-		if (testData == null) {
-			throw new RuntimeException("No test data found for TC_ID");
+		codeEditorDataTest(testData);
 		}
-
-		switch (testData.get("Scenario")) {
-
-		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
-			driver.navigate().back();
-			break;
-
-		default:
-
-		}
-	}
+	
 
 	@Test(priority = 47)
 	public void verifyImplementationOfBSTPage() {
@@ -731,41 +394,52 @@ public class TreePageTest extends BaseClass {
 	@Test(priority = 48)
 	public void verifyImplementationOfBSTPracticeQ() {
 		treePage.clickImplementationOfBSTLnk();
-		try {
-			HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
-		} catch (AssertionError e) {
-			LOGGER.error("Verification failed: " + e.getMessage());
-			throw e;
-		}
+		verifyPracticeQuestion();
 	}
 
 	@Test(priority = 49, dataProvider = "CodeEditor", dataProviderClass = TestDataProvider.class)
 	public void verifyImplementationOfBSTCodeEditor(Map<String, String> testData) {
 		treePage.clickImplementationOfBSTLnk();
+		codeEditorDataTest(testData);
+	}
+	
+	private void codeEditorDataTest(Map<String, String> testData) {
 		if (testData == null) {
 			throw new RuntimeException("No test data found for TC_ID");
 		}
-
 		switch (testData.get("Scenario")) {
 
 		case "EmptyCode":
-			HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
+			String codeOutput = HelperUtility.verifyEditorWithEmptyCode(queuePage, testData);
+			Assert.assertEquals(codeOutput, "");
 			driver.navigate().back();
 			break;
 
 		case "ValidCode":
-			HelperUtility.verifyEditorWithValidCode(queuePage, testData);
+			String validCodeOutput = HelperUtility.verifyEditorWithValidCode(queuePage, testData);
+			String expectedOutput = testData.get("Output");
+			Assert.assertEquals(validCodeOutput, expectedOutput);
 			driver.navigate().back();
 			break;
 
 		case "InvalidCode":
-			HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
+			Boolean isAlertPresent = HelperUtility.verifyEditorWithInvalidCode(queuePage, testData);
+			Assert.assertTrue(isAlertPresent);
+			queuePage.handleAlert();
 			driver.navigate().back();
 			break;
 
 		default:
-
+			break;
+		}}
+	
+	private void verifyPracticeQuestion() {
+		boolean pageContentPresent = HelperUtility.verifyPracticeQuestionPage(queuePage, "Practice Questions");
+		try {
+			Assert.assertTrue(pageContentPresent);
+			throw new AssertionError("Test failed: Incorrect error message displayed.");
+		} catch (AssertionError e) {
+			LOGGER.error("Assertion failed: " + e.getMessage());
+			throw e;
 		}
-	}
-
-}
+}}
