@@ -1,6 +1,6 @@
 package com.dsalgo.automation.tests;
 
-import java.util.List;
+
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.dsalgo.automation.base.BaseClass;
@@ -16,7 +15,6 @@ import com.dsalgo.automation.pages.DataStructure;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
 import com.dsalgo.automation.utils.TestDataProvider;
-import com.dsalgo.automation.utils.ExcelReader;
 import com.dsalgo.automation.utils.NavigationUtil;
 
 public class DataStructureTest extends BaseClass {
@@ -42,17 +40,45 @@ public class DataStructureTest extends BaseClass {
         NavigationUtil.clickSignout(homePage);
 	}
 	
+	@Test
+	public void testDisplayDatastructure() {
+		NavigationUtil.performLogin(homePage,loginPage);
+		NavigationUtil.clickModuleGetStarted(homePage, "Data Structures-Introduction");
+		Assert.assertTrue(homePage.isDataStructurePageDisplayed(), "Failed to navigate to Data Structure Page");
+	}
+	
+	@Test
+	public void testNumpyninjaLogo() {
+		NavigationUtil.performLogin(homePage,loginPage);
+		NavigationUtil.clickModuleGetStarted(homePage, "Data Structures-Introduction");
+		dataStructure.clickNumpyninjaLogo();
+		Assert.assertTrue(homePage.isSignoutLinkVisible(), "Failed to navigate to Home Page");
+	}
+	
+	@Test
+	public void testDisplayTimeCom() {
+		NavigationUtil.performLogin(homePage,loginPage);
+		NavigationUtil.clickModuleGetStarted(homePage, "Data Structures-Introduction");
+		dataStructure.clickTimeCom();
+		Assert.assertEquals(dataStructure.getTitleofPage(), "Time Complexity", "Failed to navigate to Time Complexity Page");
+	}
+	
+	@Test
+	public void testDisplayAssessment() {
+		NavigationUtil.performLogin(homePage,loginPage);
+		NavigationUtil.clickModuleGetStarted(homePage, "Data Structures-Introduction");
+		dataStructure.clickTimeCom();
+		dataStructure.clickTryHere();
+		Assert.assertEquals(dataStructure.getTitleofPage(), "Assessment", "Failed to navigate to Try Editor Page");
+	
+	}
 	
 	@Test(dataProvider = "pythoncodeData", dataProviderClass = TestDataProvider.class)
 	public void testValidInvalidPythonCode(Map<String, String> data) {
 		NavigationUtil.performLogin(homePage,loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Data Structures-Introduction");
-		Assert.assertTrue(homePage.isDataStructurePageDisplayed(), "Failed to navigate to Data Structure Page");
 		dataStructure.clickTimeCom();
-		Assert.assertEquals(dataStructure.getTitleofPage(), "Time Complexity", "Failed to navigate to Time Complexity Page");
 		dataStructure.clickTryHere();
-		Assert.assertEquals(dataStructure.getTitleofPage(), "Assessment", "Failed to navigate to Try Editor Page");
-	
 		String pythonCode = data.get("PythonCode");
         String expectedOutput = data.get("Output");
         String expectedType = data.get("Type");
@@ -77,11 +103,8 @@ public class DataStructureTest extends BaseClass {
 	public void practiceQues() {
 		NavigationUtil.performLogin(homePage, loginPage);
 		NavigationUtil.clickModuleGetStarted(homePage, "Data Structures-Introduction");
-		Assert.assertTrue(homePage.isDataStructurePageDisplayed(), "Failed to navigate to Data Structure Page");
 		dataStructure.clickTimeCom();
-		Assert.assertEquals(dataStructure.getTitleofPage(), "Time Complexity", "Failed to navigate to Time Complexity Page");
 		dataStructure.clickPracticeQues();
-		Assert.assertEquals(dataStructure.getTitleofPage(), "Practice Questions", "Failed to navigate to Practice Questions Page");
 		Assert.assertTrue(dataStructure.isPageBlank(), "The Practice Questions page is unexpectedly blank!");
 		
 	}
