@@ -5,14 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
-
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-
 import org.testng.annotations.Test;
-
 import com.dsalgo.automation.base.BaseClass;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
@@ -24,6 +20,7 @@ import com.dsalgo.automation.utils.NavigationUtil;
  * of the DSAlgo application. It includes tests for logo navigation, dropdown validation,
  * get started button checks, and navigation to Register/SignIn pages.
  */
+
 public class HomePageTest extends BaseClass {
 	private HomePage homePage; // Global declaration for reuse
 	private LoginPage loginPage; // Global declaration for reuse
