@@ -92,12 +92,10 @@ public class ArrayPageTest extends BaseClass{
 		}	
 		    
 		}
-    		
-	
+   
 		@Test(dataProvider="arrayPractieceCode1", dataProviderClass = TestDataProvider.class)
 		public void testMaxConsecutivePractieceCodeRun(Map<String, String> data)
 		{
-
 			String practieceQ = data.get("ValidCode");
 		    String expectedOutput = data.get("Output");
 		    String button=data.get("Button");
@@ -116,10 +114,7 @@ public class ArrayPageTest extends BaseClass{
 			Array.arrayPracticeSubmit();    
 			verifyResult(expectedOutput);
 		       }
-			
-		}
-	
-	 
+			}
 		@Test(dataProvider="arrayPractieceCode2", dataProviderClass = TestDataProvider.class)
 		public void testFindEvenPractieceCodeRun(Map<String, String> data)
 		{
@@ -131,7 +126,6 @@ public class ArrayPageTest extends BaseClass{
 			Array.arrayPractieceQue();
 			Array.findNumwithEvenDigitsPractieceQue();
 			Array.verifyCodeEditor(practieceQ);
-		
 			switch(button)
 			{
 			case "run":
@@ -148,13 +142,9 @@ public class ArrayPageTest extends BaseClass{
 			}	
 			
 		}        
-
-	 
-	 
 		 @Test(dataProvider="arrayPractieceCode3", dataProviderClass = TestDataProvider.class)
 			public void testSoertedArrayPractieceCodeRun(Map<String, String> data)
 			{
-
 				String practieceQ = data.get("ValidCode");
 			    String expectedOutput = data.get("Output");
 			    String button=data.get("Button");
@@ -182,36 +172,24 @@ public class ArrayPageTest extends BaseClass{
 				}	
 
 		       }
-				
-				
-
-
 	    
 	@Test(dataProvider="pythoncode", dataProviderClass = TestDataProvider.class)
 	public void testcodeEditor(Map<String, String> data)
 	{
-		
 		Array.arrayPythonLink();
 		Array.arrayPythonLinkTryEdit();
 		String pythonCode = data.get("ValidCode");
 	    String expectedOutput = data.get("Output");
 	    Array.verifyCodeEditor(pythonCode);
 	    Array.arrayPythonTextEditRun();
-	   	
-	    
-	        if ("Alert".equalsIgnoreCase(expectedOutput)) {
-	        	String alertMessage = (String) Array.readAlert();
-	        	Assert.assertEquals(alertMessage,"NameError: name 'System' is not defined on line 1", "Testcase Failed: Mismatched! expected output is: " + expectedOutput);
-	            logger.info("Tested alert with code: " + pythonCode + " | Alert: " + alertMessage);
-	            Array.acceptAlert();
-	            
-	        }else {
-		        String actualOutput = Array.verifyOutput();
-		        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Testcase Failed: Mismatch in Try Editor Output!");
+	       if ("Alert".equalsIgnoreCase(expectedOutput)) {
+	        	verifyTxtEditAlert(expectedOutput);
+	        }
+	        else {
+	        	verifyResult(expectedOutput);
 	       }
 		} 
-	
-	    
+		    
 	@Test
 	public void checkArrayLandingPage() {
 		Array.arrayPageHeading();
@@ -347,6 +325,14 @@ public class ArrayPageTest extends BaseClass{
 		String alertMessage = (String) Array.readAlert();
       	Assert.assertEquals(alertMessage,"SyntaxError: bad input on line 2", "TestCase Failed: Actual Output is not matched with Expected: " + expectedOutput);
           Array.acceptAlert();
+	}
+	
+	public void verifyTxtEditAlert(String expectedOutput)
+	{
+		String alertMessage = (String) Array.readAlert();
+		Assert.assertEquals(alertMessage,"NameError: name 'System' is not defined on line 1", "Testcase Failed: Mismatched! expected output is: " + expectedOutput);
+		logger.info("Tested alert with code:| Alert: " + alertMessage);
+      	Array.acceptAlert();
 	}
 	public void verifyOutputError(String expectedOutput)
 	{  
