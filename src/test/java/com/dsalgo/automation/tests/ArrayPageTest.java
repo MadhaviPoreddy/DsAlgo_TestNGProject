@@ -1,5 +1,5 @@
 package com.dsalgo.automation.tests;
-import java.util.List;
+//import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
@@ -9,14 +9,12 @@ import org.apache.logging.log4j.Logger;
 //import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-//import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
+//import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.dsalgo.automation.base.BaseClass;
-import com.dsalgo.automation.driver.DriverFactory;
+//import com.dsalgo.automation.driver.DriverFactory;
 import com.dsalgo.automation.pages.*;
 //import com.dsalgo.automation.tests.HomePageTest;
 
@@ -29,7 +27,6 @@ public class ArrayPageTest extends BaseClass{
 	private ArrayPage Array; 
 	private HomePage homePage; // Global declaration for reuse
 	private LoginPage loginPage;
-	
 
    private static final Logger logger = LogManager.getLogger(ArrayPageTest.class);
 
@@ -53,7 +50,7 @@ public class ArrayPageTest extends BaseClass{
    
 		    
 		@Test(dataProvider="arrayPractieceCode", dataProviderClass = TestDataProvider.class)
-		public void testSearchPractieceCode(Map<String, String> data)
+		public void testSearchPractieceCodeRun1(Map<String, String> data)
 		{
 
 			String practieceQ = data.get("ValidCode");
@@ -63,54 +60,36 @@ public class ArrayPageTest extends BaseClass{
 			Array.arrayPractieceQue();
 			Array.searchArrayPractieceQue();
 			Array.verifyCodeEditor(practieceQ);
-
-		    if("run".equalsIgnoreCase(button))
-		    {
-			    Array.arrayPythonTextEditRun();
-			    	    
-		        if ("Alert".equalsIgnoreCase(expectedOutput)) {
-		        	String alertMessage = (String) Array.readAlert();
-		        	Assert.assertEquals(alertMessage,"SyntaxError: bad input on line 2", "TestCase Failed: Actual Output is not matched with Expected: " + expectedOutput);
-		            logger.info("Tested alert with code: " + practieceQ + " | Alert: " + alertMessage);
-		            Array.acceptAlert();
-	            
-		        }
-		        else {
-		        	 String actualOutput = Array.verifyOutput();
-				        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "TestCase Failed: Output is mismatched : "+ expectedOutput);
-		        }
-			} 
-		    
-		    else if("Submit".equalsIgnoreCase(button))
-		    {
-
-			    Array.arrayPracticeSubmit();
-	    	    
-		        if ("Submission Successful".equalsIgnoreCase(expectedOutput)) {
-		        	String actualOutput = Array.verifyOutputError();
-		        	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
-		            logger.info("Actual Output is " + actualOutput );
-
-          
-		        }else if("Error occurred during submission".equalsIgnoreCase(expectedOutput)) {
-			        String actualOutput = Array.verifyOutputError();
-			        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
-		            logger.info("Actual Output is " + actualOutput );
-
-		       }
-		        else {
-		        	 String actualOutput = Array.verifyOutput();
-				        Assert.assertEquals(actualOutput.trim(), expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
-			            logger.info("Actual Output is " + actualOutput );
-
-		        }
-		    }
-		    else
-		    {
-		    	   System.out.println("Page name is incorrect.");
-		    	    //driver.close();
-		    	   return;
-		    }
+			
+		switch(button)
+		{
+		case "run1":
+			Array.arrayPythonTextEditRun();
+			verifyResult(expectedOutput);
+			break;
+		case "run2":
+			Array.arrayPythonTextEditRun();
+			verifyResult(expectedOutput);
+			break;
+		case "run3":
+			Array.arrayPythonTextEditRun();
+			verifyAlert(expectedOutput);
+			break;	    	    
+		case "Submit1":
+			Array.arrayPracticeSubmit();
+			verifyResult(expectedOutput);
+			break;
+		case "Submit2":
+			Array.arrayPracticeSubmit();
+			verifyOutputError(expectedOutput);
+			break;
+		case "Submit3":
+			Array.arrayPracticeSubmit();
+			verifyOutputError(expectedOutput);
+			break;
+		default:
+			break;
+		}	
 		    
 		}
     		
@@ -130,24 +109,14 @@ public class ArrayPageTest extends BaseClass{
 			 if("run".equalsIgnoreCase(button))
 			    {
 		 	Array.arrayPythonTextEditRun();    
-		 	String actualOutput = Array.verifyOutput();
-			Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
-            logger.info("Actual Output is " + actualOutput );
-
-		       }
-			 else if("Submit".equalsIgnoreCase(button))
-			    {
-			Array.arrayPracticeSubmit();    
-		 	String actualOutput = Array.verifyOutput();
-			Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
-			logger.info("Actual Output upon clicking Submit is " + actualOutput );
+		 	verifyResult(expectedOutput);
 		       }
 			 else
 			    {
-			    	   System.out.println("Page name is incorrect.");
-			    	    //driver.close();
-			    	   return;
-			    }
+			Array.arrayPracticeSubmit();    
+			verifyResult(expectedOutput);
+		       }
+			
 		}
 	
 	 
@@ -163,26 +132,21 @@ public class ArrayPageTest extends BaseClass{
 			Array.findNumwithEvenDigitsPractieceQue();
 			Array.verifyCodeEditor(practieceQ);
 		
-			if("run".equalsIgnoreCase(button))
-		    {
-			 	Array.arrayPythonTextEditRun();    
-			 	String actualOutput = Array.verifyOutput();
-				Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
-	       }
-			else if("Submit".equalsIgnoreCase(button)) 
-		    {
-				
-			    Array.arrayPracticeSubmit();
-		        String actualOutput = Array.verifyOutput();
-		        Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
-		        logger.info("Actual Output is: " + actualOutput );
-	       }
+			switch(button)
+			{
+			case "run":
+				Array.arrayPythonTextEditRun();
+				verifyResult(expectedOutput);
+				break;   	    
+			case "Submit":
+				Array.arrayPracticeSubmit();
+				verifyResult(expectedOutput);
+				break;
+					
+			default:
+				break;
+			}	
 			
-			else
-		    {
-		    	   System.out.println("Page name is incorrect.");
-		    	   return;
-		    }
 		}        
 
 	 
@@ -198,48 +162,28 @@ public class ArrayPageTest extends BaseClass{
 				Array.arrayPractieceQue();
 				Array.squaresOfSortedArrayPractieceQue();
 				Array.verifyCodeEditor(practieceQ);
-				if("run".equalsIgnoreCase(button))
-				    {
-				 	Array.arrayPythonTextEditRun();    
-				 	String actualOutput = Array.verifyOutput();
-					Assert.assertEquals(actualOutput, expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
-				    }
-				else if("Submit".equalsIgnoreCase(button)) 
-			    {
-					
-				    Array.arrayPracticeSubmit();
-
-					if ("Submission Successful".equalsIgnoreCase(expectedOutput)) {
-			        	String actualOutput = Array.verifyOutput();
-			        	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
-			            logger.info("Actual Output is " + actualOutput );
-
-	         		}
-			        else if("No tests were collected".equalsIgnoreCase(expectedOutput))
-			        {
-			        	 String actualOutput = Array.verifyBlankOutputError();
-					        Assert.assertEquals(actualOutput, expectedOutput, "Test Case Failed: Actual output is not same as expected output:"+ expectedOutput);
-				            logger.info("Actual Output is " + actualOutput );
-
-			        }
-					else 
-					{
-			        	String actualOutput = Array.verifyOutput();
-			        	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
-			            logger.info("Actual Output is " + actualOutput );
-
-	         		}
+				switch(button)
+				{
+				case "run":
+					Array.arrayPythonTextEditRun();
+					verifyResult(expectedOutput);
+					break;   	    
+				case "Submit1":
+					Array.arrayPracticeSubmit();
+					verifyBlankOutputError(expectedOutput);
+					break;
+				case "Submit2":
+					Array.arrayPracticeSubmit();
+					verifyBlankOutputError(expectedOutput);
+					break;
+				
+				default:
+					break;
+				}	
 
 		       }
 				
-				else
-			    {
-			    	   System.out.println("Page name is incorrect.");
-			    	    //driver.close();
-			    	   return;
-			    }
-			}     
-	 
+				
 
 
 	    
@@ -392,5 +336,31 @@ public class ArrayPageTest extends BaseClass{
 	}
 	
  
+	public void verifyResult(String expectedOutput)
+	{
+	        	String actualOutput = Array.verifyOutput();
+		        Assert.assertEquals(actualOutput,expectedOutput, "TestCase Failed: Output is mismatched : "+ expectedOutput);
+		        logger.info("Actual Output upon clicking Run is " + actualOutput );
+        }
+	public void verifyAlert(String expectedOutput)
+	{
+		String alertMessage = (String) Array.readAlert();
+      	Assert.assertEquals(alertMessage,"SyntaxError: bad input on line 2", "TestCase Failed: Actual Output is not matched with Expected: " + expectedOutput);
+          Array.acceptAlert();
+	}
+	public void verifyOutputError(String expectedOutput)
+	{  
+     	String actualOutput = Array.verifyOutputError();
+      	Assert.assertEquals(actualOutput,expectedOutput, "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
+      	logger.info("Actual Output upon clicking Submit is " + actualOutput );        
+	}
+	
+	public void verifyBlankOutputError(String expectedOutput)
+	{  
+     	String actualOutput = Array.verifyBlankOutputError();
+      	Assert.assertEquals(actualOutput.trim(),expectedOutput.trim(), "Test Case Failed: Actual output is not same as expected output: " + expectedOutput);
+      	logger.info("Actual Output upon clicking Submit is " + actualOutput );        
+	}
+	
 	
 }

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [ParallelByClasses]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.dsalgo.automation.listener.RetryListener"/>
+    <listener class-name="com.dsalgo.automation.listener.AllureRptListener"/>
+    <listener class-name="com.dsalgo.automation.listener.ExtentRptListener"/>
+    <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+    <listener class-name="com.dsalgo.automation.utils.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="3" parallel="classes" name="CrossBrowserTests-Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.dsalgo.automation.tests.QueuePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyImplOfQueueInPyPracticeQ"/>
+          <include name="verifyImplUsngCollctnDqPracticeQ"/>
+          <include name="setUp"/>
+          <include name="verifyImplUsngArrayPracticeQ"/>
+          <include name="verifyQueueOperationsPracticeQ"/>
+          <include name="signout"/>
+          <include name="verifyLoginPageTitle"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.QueuePageTest -->
+      <class name="com.dsalgo.automation.tests.GraphPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testGraphRepPageLayout"/>
+          <include name="setUp"/>
+          <include name="afterEachTest"/>
+          <include name="navigateBeforeEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.GraphPageTest -->
+      <class name="com.dsalgo.automation.tests.DataStructureTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="testNumpyninjaLogo"/>
+          <include name="setUp"/>
+          <include name="practiceQues"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.DataStructureTest -->
+      <class name="com.dsalgo.automation.tests.TreePageTest">
+        <methods>
+          <include name="initialClassSetup"/>
+          <include name="tearDown"/>
+          <include name="verifyTraversalsIllustrationPracticeQ"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="verifyImplementationInPythonPracticeQ"/>
+          <include name="verifyBinaryTreesPracticeQ"/>
+          <include name="verifyOverviewOfTreePracticeQ"/>
+          <include name="verifyApplicationsOfBinaryTreesPracticeQ"/>
+          <include name="verifyTypesOfBinaryTreesPracticeQ"/>
+          <include name="verifyTypesofTreesPracticeQ"/>
+          <include name="verifyImplementationOfBinaryTreesPracticeQ"/>
+          <include name="VerifyTerminologiesPageTable"/>
+          <include name="signout"/>
+          <include name="setUp"/>
+          <include name="verifyTreeTraversalsPracticeQ"/>
+          <include name="verifyTerminologiesPracticeQ"/>
+          <include name="verifyImplementationOfBSTPracticeQ"/>
+          <include name="verifyBinarySearchTreePracticeQ"/>
+          <include name="verifyBinaryTreeTraversalsPracticeQ"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.TreePageTest -->
+      <class name="com.dsalgo.automation.tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyCustomDropdownOptions"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.HomePageTest -->
+      <class name="com.dsalgo.automation.tests.ArrayPageTest">
+        <methods>
+          <include name="testSoertedArrayPractieceCodeRun" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="testFindEvenPractieceCodeRun" invocation-numbers="1"/>
+          <include name="navigateAfterEachTest"/>
+          <include name="setUp"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="testMaxConsecutivePractieceCodeRun" invocation-numbers="1"/>
+          <include name="testSearchPractieceCodeRun1" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.ArrayPageTest -->
+      <class name="com.dsalgo.automation.tests.RegisterPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="initialClassSetup"/>
+          <include name="setUp"/>
+          <include name="verifyRegister" invocation-numbers="0 3 6 7 8 9"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.RegisterPageTest -->
+      <class name="com.dsalgo.automation.tests.LinkedListPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TypesOfLL_LinkedListLink"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="setUp"/>
+          <include name="TypesOfLL_SinglyLinkedListLink"/>
+          <include name="TypesOfLL_DoublyLinkedListLink"/>
+          <include name="TypesOfLL_TypesofLinkedListLink"/>
+          <include name="navigateAfterEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.LinkedListPageTest -->
+    </classes>
+  </test> <!-- CrossBrowserTests-Chrome(failed) -->
+  <test thread-count="3" parallel="classes" name="CrossBrowserTests-Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.dsalgo.automation.tests.QueuePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyImplOfQueueInPyPracticeQ"/>
+          <include name="verifyImplUsngCollctnDqPracticeQ"/>
+          <include name="setUp"/>
+          <include name="verifyImplUsngArrayPracticeQ"/>
+          <include name="signout"/>
+          <include name="verifyQueueOperationsPracticeQ"/>
+          <include name="verifyLoginPageTitle"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.QueuePageTest -->
+      <class name="com.dsalgo.automation.tests.GraphPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testGraphRepPageLayout"/>
+          <include name="setUp"/>
+          <include name="afterEachTest"/>
+          <include name="navigateBeforeEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.GraphPageTest -->
+      <class name="com.dsalgo.automation.tests.DataStructureTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="testNumpyninjaLogo"/>
+          <include name="setUp"/>
+          <include name="practiceQues"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.DataStructureTest -->
+      <class name="com.dsalgo.automation.tests.TreePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialClassSetup"/>
+          <include name="verifyTraversalsIllustrationPracticeQ"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="verifyImplementationInPythonPracticeQ"/>
+          <include name="verifyBinaryTreesPracticeQ"/>
+          <include name="verifyOverviewOfTreePracticeQ"/>
+          <include name="verifyApplicationsOfBinaryTreesPracticeQ"/>
+          <include name="verifyTypesOfBinaryTreesPracticeQ"/>
+          <include name="verifyTypesofTreesPracticeQ"/>
+          <include name="verifyImplementationOfBinaryTreesPracticeQ"/>
+          <include name="VerifyTerminologiesPageTable"/>
+          <include name="signout"/>
+          <include name="setUp"/>
+          <include name="verifyTreeTraversalsPracticeQ"/>
+          <include name="verifyTerminologiesPracticeQ"/>
+          <include name="verifyImplementationOfBSTPracticeQ"/>
+          <include name="verifyBinarySearchTreePracticeQ"/>
+          <include name="verifyBinaryTreeTraversalsPracticeQ"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.TreePageTest -->
+      <class name="com.dsalgo.automation.tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="setUp"/>
+          <include name="verifyCustomDropdownOptions"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.HomePageTest -->
+      <class name="com.dsalgo.automation.tests.ArrayPageTest">
+        <methods>
+          <include name="testSoertedArrayPractieceCodeRun" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="testFindEvenPractieceCodeRun" invocation-numbers="1"/>
+          <include name="navigateAfterEachTest"/>
+          <include name="setUp"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="testMaxConsecutivePractieceCodeRun" invocation-numbers="1"/>
+          <include name="testSearchPractieceCodeRun1" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.ArrayPageTest -->
+      <class name="com.dsalgo.automation.tests.RegisterPageTest">
+        <methods>
+          <include name="verifyLoginPageTitle"/>
+          <include name="tearDown"/>
+          <include name="initialClassSetup"/>
+          <include name="setUp"/>
+          <include name="verifyRegister" invocation-numbers="0 3 6 7 8 9"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.RegisterPageTest -->
+      <class name="com.dsalgo.automation.tests.LinkedListPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TypesOfLL_LinkedListLink"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="setUp"/>
+          <include name="TypesOfLL_SinglyLinkedListLink"/>
+          <include name="TypesOfLL_DoublyLinkedListLink"/>
+          <include name="TypesOfLL_TypesofLinkedListLink"/>
+          <include name="navigateAfterEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.LinkedListPageTest -->
+    </classes>
+  </test> <!-- CrossBrowserTests-Firefox(failed) -->
+  <test thread-count="3" parallel="classes" name="CrossBrowserTests-Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.dsalgo.automation.tests.QueuePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyImplOfQueueInPyPracticeQ"/>
+          <include name="verifyImplUsngCollctnDqPracticeQ"/>
+          <include name="setUp"/>
+          <include name="verifyImplUsngArrayPracticeQ"/>
+          <include name="verifyQueueOperationsPracticeQ"/>
+          <include name="signout"/>
+          <include name="verifyLoginPageTitle"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.QueuePageTest -->
+      <class name="com.dsalgo.automation.tests.GraphPageTest">
+        <methods>
+          <include name="testGraphRepPageLayout"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="afterEachTest"/>
+          <include name="navigateBeforeEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.GraphPageTest -->
+      <class name="com.dsalgo.automation.tests.DataStructureTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="testNumpyninjaLogo"/>
+          <include name="setUp"/>
+          <include name="practiceQues"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.DataStructureTest -->
+      <class name="com.dsalgo.automation.tests.TreePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialClassSetup"/>
+          <include name="verifyTraversalsIllustrationPracticeQ"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="verifyImplementationInPythonPracticeQ"/>
+          <include name="verifyBinaryTreesPracticeQ"/>
+          <include name="verifyApplicationsOfBinaryTreesPracticeQ"/>
+          <include name="verifyOverviewOfTreePracticeQ"/>
+          <include name="verifyTypesOfBinaryTreesPracticeQ"/>
+          <include name="verifyTypesofTreesPracticeQ"/>
+          <include name="verifyImplementationOfBinaryTreesPracticeQ"/>
+          <include name="VerifyTerminologiesPageTable"/>
+          <include name="signout"/>
+          <include name="setUp"/>
+          <include name="verifyTreeTraversalsPracticeQ"/>
+          <include name="verifyTerminologiesPracticeQ"/>
+          <include name="verifyImplementationOfBSTPracticeQ"/>
+          <include name="verifyBinarySearchTreePracticeQ"/>
+          <include name="verifyBinaryTreeTraversalsPracticeQ"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.TreePageTest -->
+      <class name="com.dsalgo.automation.tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="setUp"/>
+          <include name="verifyCustomDropdownOptions"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.HomePageTest -->
+      <class name="com.dsalgo.automation.tests.ArrayPageTest">
+        <methods>
+          <include name="testSoertedArrayPractieceCodeRun" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="testFindEvenPractieceCodeRun" invocation-numbers="1"/>
+          <include name="navigateAfterEachTest"/>
+          <include name="setUp"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="testMaxConsecutivePractieceCodeRun" invocation-numbers="1"/>
+          <include name="testSearchPractieceCodeRun1" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.ArrayPageTest -->
+      <class name="com.dsalgo.automation.tests.RegisterPageTest">
+        <methods>
+          <include name="verifyLoginPageTitle"/>
+          <include name="tearDown"/>
+          <include name="initialClassSetup"/>
+          <include name="setUp"/>
+          <include name="verifyRegister" invocation-numbers="0 3 6 7 8 9"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.RegisterPageTest -->
+      <class name="com.dsalgo.automation.tests.LinkedListPageTest">
+        <methods>
+          <include name="TypesOfLL_LinkedListLink"/>
+          <include name="tearDown"/>
+          <include name="navigateBeforeEachTest"/>
+          <include name="setUp"/>
+          <include name="TypesOfLL_SinglyLinkedListLink"/>
+          <include name="TypesOfLL_DoublyLinkedListLink"/>
+          <include name="TypesOfLL_TypesofLinkedListLink"/>
+          <include name="navigateAfterEachTest"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.tests.LinkedListPageTest -->
+    </classes>
+  </test> <!-- CrossBrowserTests-Edge(failed) -->
+</suite> <!-- Failed suite [ParallelByClasses] -->
